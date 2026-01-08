@@ -1,0 +1,1 @@
+{"version":3,"file":"smart-info-box/style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;AACD,C","sources":["webpack://smart-info-box/./src/smart-info-box/style.scss"],"sourcesContent":[".wp-block-create-block-smart-info-box {\n\tbackground-color: #21759b;\n\tcolor: #fff;\n\tpadding: 2px;\n}"],"names":[],"ignoreList":[],"sourceRoot":""}

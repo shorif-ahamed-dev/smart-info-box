@@ -7,7 +7,7 @@ return array(
 		'name' => 'create-block/smart-info-box',
 		'version' => '0.1.0',
 		'title' => 'Smart Info Box',
-		'category' => 'text',
+		'category' => 'smart-post',
 		'icon' => 'smiley',
 		'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
 		'example' => array(

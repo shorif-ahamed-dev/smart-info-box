@@ -1,1 +1,141 @@
-.wp-block-create-block-smart-info-box{border:1px dotted red}
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/smart-info-box/editor.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+.wp-block-create-block-smart-info-box {
+  border: 1px dotted #f00;
+  padding: 12px;
+}
+
+.my-tab-panel .components-tab-panel__tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.my-tab-panel {
+  /* Tab button */
+}
+
+.my-tab-panel .components-tab-panel__tabs-item {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background: none;
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666;
+  position: relative;
+  border-bottom: 2px solid #ddd;
+}
+
+.my-tab-panel .components-tab-panel__tabs-item span {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.my-tab-panel .components-tab-panel__tabs-item:hover {
+  color: #6F22DD;
+}
+
+.my-tab-panel .components-tab-panel__tabs-item.active-tab {
+  color: #6F22DD;
+}
+
+.my-tab-panel .components-tab-panel__tabs-item.active-tab::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1.5px;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid #6F22DD;
+}
+
+.inspector-section {
+  margin-bottom: 20px;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+
+.layout-card {
+  cursor: pointer;
+}
+
+.layout-card svg {
+  color: #9EA9B2;
+}
+
+.layout-card.is-active svg {
+  color: #7c3aed;
+}
+
+.alignment-buttons {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.alignment-buttons button {
+  background: #fff;
+  border: none;
+  padding: 6px 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.alignment-buttons button span {
+  color: #757575;
+}
+
+.alignment-buttons button.is-active {
+  background: #EFE6FB;
+  border: 1px solid #D6C2F5;
+}
+
+.alignment-buttons button.is-active span {
+  color: #6F22DD;
+}
+
+.alignment-buttons button:hover {
+  background: #EFE6FB;
+}
+
+.style-hover-buttons {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: 400px;
+  line-height: 20px;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.style-hover-buttons button {
+  background: #fff;
+  border: none;
+  padding: 8px 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.style-hover-buttons button.is-active {
+  background: #EFE6FB;
+  border: 1px solid #D6C2F5;
+  color: #6F22DD;
+  border-radius: 2px;
+}
