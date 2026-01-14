@@ -2,20 +2,153 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/smart-info-box/editor.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************/
 .wp-block-create-block-smart-info-box {
-  border: 1px dotted #f00;
-  padding: 12px;
+  padding: 0;
+  position: relative;
+  width: 384px;
 }
-
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container {
+  display: grid;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container h4 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container a:hover {
+  text-decoration: underline;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.default {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.default svg,
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.default h4,
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.default p,
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.default a {
+  grid-column: 1/-1;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-solo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: stretch;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  row-gap: 6px;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-solo svg {
+  grid-column: 1;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: stretch;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-solo h4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-solo p {
+  grid-column: 2;
+  grid-row: 2;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-solo a {
+  grid-column: 2;
+  grid-row: 3;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-left {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 12px;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-left svg {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-left h4 {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-left p {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-left a {
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-link {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 12px;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-link svg {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-link a {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-link h4 {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-link p {
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-top > svg {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 2;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-top h4,
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-top p {
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/-1;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-top a {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+}
+.wp-block-create-block-smart-info-box .wp-block-create-block-smart-info-box-container.icon-top a svg {
+  position: static;
+}
 .my-tab-panel .components-tab-panel__tabs {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
 }
-
 .my-tab-panel {
   /* Tab button */
 }
-
 .my-tab-panel .components-tab-panel__tabs-item {
   display: flex;
   justify-content: center;
@@ -30,22 +163,18 @@
   position: relative;
   border-bottom: 2px solid #ddd;
 }
-
 .my-tab-panel .components-tab-panel__tabs-item span {
   display: flex;
   gap: 8px;
   justify-content: center;
   justify-items: center;
 }
-
 .my-tab-panel .components-tab-panel__tabs-item:hover {
   color: #6F22DD;
 }
-
 .my-tab-panel .components-tab-panel__tabs-item.active-tab {
   color: #6F22DD;
 }
-
 .my-tab-panel .components-tab-panel__tabs-item.active-tab::after {
   content: "";
   position: absolute;
@@ -55,29 +184,23 @@
   height: 2px;
   border-bottom: 2px solid #6F22DD;
 }
-
 .inspector-section {
   margin-bottom: 20px;
 }
-
 .layout-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 7px;
 }
-
 .layout-card {
   cursor: pointer;
 }
-
 .layout-card svg {
   color: #9EA9B2;
 }
-
 .layout-card.is-active svg {
   color: #7c3aed;
 }
-
 .alignment-buttons {
   display: inline-flex;
   border: 1px solid #ddd;
@@ -87,7 +210,6 @@
   justify-content: space-around;
   padding: 4px;
 }
-
 .alignment-buttons button {
   background: #fff;
   border: none;
@@ -95,24 +217,19 @@
   width: 100%;
   cursor: pointer;
 }
-
 .alignment-buttons button span {
   color: #757575;
 }
-
 .alignment-buttons button.is-active {
   background: #EFE6FB;
   border: 1px solid #D6C2F5;
 }
-
 .alignment-buttons button.is-active span {
   color: #6F22DD;
 }
-
 .alignment-buttons button:hover {
   background: #EFE6FB;
 }
-
 .style-hover-buttons {
   display: inline-flex;
   border: 1px solid #ddd;
@@ -124,7 +241,6 @@
   justify-content: space-around;
   padding: 4px;
 }
-
 .style-hover-buttons button {
   background: #fff;
   border: none;
@@ -132,10 +248,148 @@
   width: 100%;
   cursor: pointer;
 }
-
+.style-border-buttons {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: 400px;
+  line-height: 20px;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-around;
+  padding: 3px;
+}
+.style-border-buttons button {
+  background: #fff;
+  border: none;
+  padding: 2px 0;
+  width: 48px;
+  height: 32px;
+  cursor: pointer;
+}
+.style-border-buttons button.is-active {
+  background: #EFE6FB;
+  border: 1px solid #D6C2F5;
+  color: #6F22DD;
+  border-radius: 2px;
+}
 .style-hover-buttons button.is-active {
   background: #EFE6FB;
   border: 1px solid #D6C2F5;
   color: #6F22DD;
   border-radius: 2px;
+}
+.style-normal-background-types-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.style-normal-background-types-button button {
+  border: none;
+  display: inline-flex;
+  place-content: center;
+  padding: 4px !important;
+  background-color: #fff;
+}
+.style-normal-background-types-button button.is-active {
+  border-radius: 2px;
+  border: 1px solid var(--Primary-2-400, #884AE3);
+}
+.color-picker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.color-picker-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.components-range-control__root {
+  align-items: start !important;
+}
+.border-width-heading-container {
+  display: flex;
+  margin: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.border-width-heading-container p {
+  padding: 0;
+  margin: 0;
+}
+.border-width-heading-container div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+.image-upload-box {
+  position: relative;
+  height: 140px;
+  border: 1px solid #D6C2F5;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #EFE6FB;
+}
+.image-upload-box button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-upload-box .image-preview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.image-upload-box .image-preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+.image-upload-box .image-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+}
+.image-upload-box .change-image {
+  background: #f0f0f0;
+  color: #1e1e1e;
+  border: none;
+  padding: 4px 8px;
+  font-size: 13px;
+  width: 100%;
+  cursor: pointer;
+}
+.image-upload-box .clear-image {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f0f0;
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+.image-upload-box .clear-image:hover {
+  background: #cc1818;
 }

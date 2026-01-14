@@ -8,6 +8,40 @@
 	"icon": "smiley",
 	"description": "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.",
 	"example": {},
+	"attributes": {
+		"layout": {
+			"type": "string",
+			"default": "default"
+		},
+		"contentAlignment": {
+			"type": "string",
+			"default": "center"
+		},
+		"styles": {
+			"type": "object",
+			"default": {
+				"backgroundType": "solid",
+				"backgroundColor": "#ffffff",
+				"gradient": "linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)",
+				"image": {
+					"id": "",
+					"url": "",
+					"position": "center",
+					"size": "cover",
+					"repeat": "no-repeat"
+				},
+				"imageOverlayColor": "#000000",
+				"imageOverlayOpacity": 50,
+				"borderType": "solid",
+				"borderWidth": 1,
+				"borderRadius": 0,
+				"borderColor": "#e5e5e5",
+				"boxShadow": "none",
+				"padding": 48,
+				"margin": 0
+			}
+		}
+	},
 	"supports": {
 		"html": false
 	},

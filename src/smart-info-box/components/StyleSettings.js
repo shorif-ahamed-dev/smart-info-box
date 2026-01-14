@@ -3,32 +3,30 @@ import NormalStyle from "./NormalStyle";
 import HoverStyle from "./HoverStyle";
 
 export default function StyleSettings({ attributes, setAttributes }) {
-    const [toggleStyleMode, setToggleStyleMode] = useState(false)
-    const { layout, contentAlignment } = attributes;
+    const [toggleStyleMode, setToggleStyleMode] = useState('normal')
+    const { contentAlignment } = attributes;
     return (
         <>
             <div className="inspector-section">
                 <div className="style-hover-buttons">
                     <button
                         type="button"
-                        className={contentAlignment === 'left' ? 'is-active' : ''}
+                        className={toggleStyleMode === 'normal' ? 'is-active' : ''}
                         aria-pressed={contentAlignment === 'left'}
-                        onClick={() => setAttributes({ layout: item.id })}
-                    // onClick={() => setToggleStyleMode(!toggleStyleMode)}
+                        onClick={() => setToggleStyleMode('normal')}
                     >
                         Normal
                     </button>
 
                     <button
-                        className={contentAlignment === 'center' ? 'is-active' : ''}
+                        className={toggleStyleMode === 'hover' ? 'is-active' : ''}
                         aria-pressed={contentAlignment === 'center'}
-                        onClick={() => setAttributes({ layout: item.id })}
-                    // onClick={() => setToggleStyleMode(!toggleStyleMode)}
+                        onClick={() => setToggleStyleMode('hover')}
                     >
                         Hover
                     </button>
                 </div>
-                {toggleStyleMode ? <NormalStyle /> : <HoverStyle />}
+                {toggleStyleMode === "normal" ? <NormalStyle /> : <HoverStyle />}
             </div>
         </ >
     )
