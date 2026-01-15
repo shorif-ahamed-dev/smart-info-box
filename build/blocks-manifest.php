@@ -39,11 +39,26 @@ return array(
 					'imageOverlayOpacity' => 50,
 					'borderType' => 'solid',
 					'borderWidth' => 1,
-					'borderRadius' => 0,
+					'borderRadius' => array(
+						'topLeft' => '8px',
+						'topRight' => '8px',
+						'bottomLeft' => '8px',
+						'bottomRight' => '8px'
+					),
 					'borderColor' => '#e5e5e5',
 					'boxShadow' => 'none',
-					'padding' => 48,
-					'margin' => 0
+					'padding' => array(
+						'top' => '48px',
+						'bottom' => '48px',
+						'left' => '48px',
+						'right' => '48px'
+					),
+					'margin' => array(
+						'top' => '0px',
+						'bottom' => '0px',
+						'left' => '0px',
+						'right' => '0px'
+					)
 				)
 			)
 		),

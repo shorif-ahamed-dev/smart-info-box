@@ -33,25 +33,11 @@ export default function StyleRangeControl({
 
     return (
         <>
-            {/* <div className="style-control-header">
+            <div className="components-header">
                 <p>{label}</p>
                 <button onClick={handleReset}>
-                    <ResetIcon />
+                    <ResetIcon onClick={handleReset} />
                 </button>
-            </div> */}
-            <div className='border-width-heading-container'>
-                <p>
-                    {label}
-                    {/* <span>
-                                <DesktopIcon />
-                            </span> */}
-                </p>
-                <div>
-                    <ResetIcon />
-                    <ResetIcon />
-                    <ResetIcon />
-                </div>
-
             </div>
             <RangeControl
                 value={value}

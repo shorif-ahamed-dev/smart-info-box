@@ -1,42 +1,30 @@
 import StyleRangeControl from "./StyleRangeControl";
 import StyleColorControl from "./StyleColorControl";
 import StyleBoxControl from "./StyleBoxControl";
-import BackgroundType from "./BackgroundType";
+import BackgroundStyle from "./BackgroundStyle";
 import BorderStyle from "./BorderStyle";
+import CustomBoxControls from "./CustomBoxControls";
+import BoxShadow from "./BoxShadow";
 
 export default function NormalStyle() {
     return (
         <>
-            <BackgroundType />
+            <BackgroundStyle />
             <BorderStyle />
-            <StyleRangeControl
-                label="Border Width"
-                attributeKey="borderWidth"
-                min={0}
-                max={2}
-                step={0.5}
-            />
-
-            <StyleColorControl
-                label="Border Color"
-                attributeKey="borderColor"
-            />
-            <StyleBoxControl
-                label="Border Radius"
-                attributeKey="borderRadius"
-            />
-
-            <StyleRangeControl
+            <BoxShadow label="Box Shadow" />
+            <CustomBoxControls
                 label="Padding"
                 attributeKey="padding"
                 min={0}
-                max={48}
-                step={12}
-            />
-            <StyleBoxControl
+                max={200} />
+            <br />
+            <CustomBoxControls
                 label="Margin"
                 attributeKey="margin"
-            />
+                min={0}
+                max={200} />
+            {/* <StyleRangeControl/> */}
+            {/* <StyleBoxControl/> */}
         </>
     );
 }

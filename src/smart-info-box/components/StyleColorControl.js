@@ -31,14 +31,10 @@ export default function StyleColorControl({
 
     return (
         <>
-            <div className="color-picker-container">
+            <div className="components-header">
                 <p>{label}</p>
-
                 <span>
-                    <button onClick={handleReset}>
-                        <ResetIcon />
-                    </button>
-
+                    <ResetIcon onClick={handleReset} />
                     <div
                         onClick={() => setIsOpen(!isOpen)}
                         style={{

@@ -570,6 +570,52 @@ function CheckMark() {
 
 /***/ },
 
+/***/ "./src/smart-info-box/assets/PixelIcon.js"
+/*!************************************************!*\
+  !*** ./src/smart-info-box/assets/PixelIcon.js ***!
+  \************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PixelIcon)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function PixelIcon() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+    width: "23",
+    height: "20",
+    viewBox: "0 0 23 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+      x: "0.5",
+      y: "0.5",
+      width: "22",
+      height: "19",
+      rx: "1.5",
+      fill: "white"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+      x: "0.5",
+      y: "0.5",
+      width: "22",
+      height: "19",
+      rx: "1.5",
+      stroke: "#8C8F94"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M8.44727 10.7119H6.54785V9.94531H8.44727C8.8151 9.94531 9.11296 9.88672 9.34082 9.76953C9.56868 9.65234 9.7347 9.48958 9.83887 9.28125C9.94629 9.07292 10 8.83529 10 8.56836C10 8.32422 9.94629 8.09473 9.83887 7.87988C9.7347 7.66504 9.56868 7.49251 9.34082 7.3623C9.11296 7.22884 8.8151 7.16211 8.44727 7.16211H6.76758V13.5H5.8252V6.39062H8.44727C8.98438 6.39062 9.43848 6.4834 9.80957 6.66895C10.1807 6.85449 10.4622 7.11165 10.6543 7.44043C10.8464 7.76595 10.9424 8.13867 10.9424 8.55859C10.9424 9.01432 10.8464 9.40332 10.6543 9.72559C10.4622 10.0479 10.1807 10.2936 9.80957 10.4629C9.43848 10.6289 8.98438 10.7119 8.44727 10.7119ZM12.5879 6.39062L14.2969 9.11523L16.0059 6.39062H17.1045L14.8584 9.91113L17.1582 13.5H16.0498L14.2969 10.7217L12.5439 13.5H11.4355L13.7354 9.91113L11.4893 6.39062H12.5879Z",
+      fill: "#8C8F94"
+    })]
+  });
+}
+
+/***/ },
+
 /***/ "./src/smart-info-box/assets/ResetIcon.js"
 /*!************************************************!*\
   !*** ./src/smart-info-box/assets/ResetIcon.js ***!
@@ -672,6 +718,53 @@ function SettingsIcon() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
       d: "M13.7269 8.9685C13.8241 8.32649 13.8241 7.67351 13.7269 7.0315C14.7198 6.4375 14.9951 5.21484 14.4467 4.27063L14.1342 3.72937C13.5786 2.76709 12.3491 2.43122 11.3827 2.97272C10.8756 2.5672 10.3103 2.24033 9.70585 2.00313C9.69079 0.895938 8.78545 0 7.67479 0H7.04979C5.93914 0 5.03379 0.895938 5.01873 2.00313C4.4143 2.24033 3.84902 2.5672 3.34192 2.97272C2.37545 2.43122 1.14595 2.76709 0.590353 3.72937L0.277853 4.27063C-0.270522 5.21484 0.0048219 6.4375 0.997635 7.0315C0.900465 7.67351 0.900465 8.32649 0.997635 8.9685C0.0459469 9.535 -0.277584 10.7673 0.277853 11.7294L0.590353 12.2706C1.14595 13.2329 2.37545 13.5688 3.34192 13.0273C3.84902 13.4328 4.4143 13.7597 5.01873 13.9969C5.03382 15.1041 5.93914 16 7.04979 16H7.67479C8.78545 16 9.69079 15.1041 9.70585 13.9969C10.3103 13.7597 10.8756 13.4328 11.3827 13.0273C12.3491 13.5688 13.5786 13.233 14.1342 12.2707L14.4467 11.7294C15.0022 10.7673 14.6786 9.535 13.7269 8.9685ZM13.0936 10.9481L12.7811 11.4894C12.6519 11.7132 12.3646 11.7902 12.1408 11.6609L11.6793 11.3945C11.5324 11.3097 11.3619 11.275 11.1936 11.2956C11.0253 11.3163 10.8683 11.3911 10.7462 11.5088C10.1734 12.0614 9.46914 12.4686 8.70942 12.6865C8.54636 12.7333 8.40295 12.8319 8.30087 12.9674C8.19878 13.1028 8.14357 13.2679 8.14357 13.4375V13.9688C8.14357 14.2272 7.93329 14.4375 7.67482 14.4375H7.04982C6.79135 14.4375 6.58107 14.2272 6.58107 13.9688V13.4375C6.58107 13.2679 6.52586 13.1028 6.42378 12.9674C6.32169 12.8319 6.17829 12.7333 6.01523 12.6865C5.25551 12.4686 4.5512 12.0614 3.97842 11.5088C3.85637 11.3911 3.69933 11.3163 3.53102 11.2956C3.3627 11.275 3.19224 11.3097 3.04538 11.3945L2.58385 11.6609C2.36007 11.7902 2.07279 11.7132 1.94354 11.4894L1.63104 10.9481C1.50179 10.7243 1.57876 10.437 1.8026 10.3078L2.26298 10.042C2.40975 9.95724 2.52499 9.82709 2.59132 9.67114C2.65765 9.51519 2.67147 9.3419 2.6307 9.17741C2.53557 8.79359 2.48732 8.39747 2.48732 7.99997C2.48732 7.60247 2.53557 7.20634 2.6307 6.82256C2.67147 6.65807 2.65766 6.48479 2.59133 6.32884C2.52501 6.17289 2.40977 6.04273 2.26301 5.958L1.8026 5.69219C1.56154 5.54688 1.52248 5.25781 1.63104 5.05188L1.94354 4.51062C2.07279 4.28678 2.36004 4.20988 2.58385 4.33906L3.04538 4.6055C3.19224 4.69028 3.36269 4.72498 3.531 4.70436C3.69931 4.68374 3.85634 4.60891 3.97838 4.49119C4.5512 3.93862 5.25551 3.53138 6.01523 3.31347C6.17829 3.2667 6.32169 3.16812 6.42378 3.03264C6.52586 2.89716 6.58107 2.73214 6.58107 2.5625V2.03125C6.58107 1.77278 6.79135 1.5625 7.04982 1.5625H7.67482C7.93329 1.5625 8.14357 1.77278 8.14357 2.03125V2.5625C8.14357 2.73214 8.19878 2.89716 8.30087 3.03264C8.40295 3.16812 8.54636 3.2667 8.70942 3.31347C9.46914 3.53138 10.1734 3.93862 10.7463 4.49119C10.8683 4.60891 11.0253 4.68374 11.1936 4.70436C11.362 4.72498 11.5324 4.69028 11.6793 4.6055L12.1408 4.33906C12.3646 4.20988 12.6519 4.28678 12.7811 4.51062L13.0936 5.05188C13.2022 5.25781 13.1631 5.54688 12.922 5.69219L12.4616 5.958C12.3149 6.04273 12.1996 6.17289 12.1333 6.32884C12.067 6.48479 12.0532 6.65807 12.0939 6.82256C12.1892 7.20778 12.2374 7.60314 12.2373 7.99997C12.2373 8.39744 12.1891 8.79359 12.0939 9.17741C12.0532 9.3419 12.067 9.51519 12.1333 9.67114C12.1997 9.82709 12.3149 9.95724 12.4617 10.042L12.9221 10.3078C13.1459 10.437 13.2228 10.7243 13.0936 10.9481Z",
       fill: "currentColor"
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "./src/smart-info-box/assets/ToolbarIcon.js"
+/*!**************************************************!*\
+  !*** ./src/smart-info-box/assets/ToolbarIcon.js ***!
+  \**************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ToolbarIcon)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function ToolbarIcon() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+      x: "0.8",
+      y: "0.8",
+      width: "22.4",
+      height: "22.4",
+      rx: "3.2",
+      fill: "white"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+      x: "0.8",
+      y: "0.8",
+      width: "22.4",
+      height: "22.4",
+      rx: "3.2",
+      stroke: "#2F2F2F",
+      "stroke-width": "1.6"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M19.5832 7.9375C19.5832 7.48877 19.2194 7.125 18.7707 7.125H11.3195C10.9849 6.17828 10.082 5.5 9.02067 5.5C7.95937 5.5 7.05649 6.17828 6.72187 7.125H5.229C4.78027 7.125 4.4165 7.48877 4.4165 7.9375C4.4165 8.38623 4.78027 8.75 5.229 8.75H6.72187C7.05649 9.69672 7.95937 10.375 9.02067 10.375C10.082 10.375 10.9849 9.69672 11.3195 8.75H18.7707C19.2194 8.75 19.5832 8.38623 19.5832 7.9375Z",
+      fill: "#2F2F2F"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M19.5832 16.0625C19.5832 15.6138 19.2194 15.25 18.7707 15.25H17.2778C16.9432 14.3033 16.0403 13.625 14.979 13.625C13.9177 13.625 13.0148 14.3033 12.6802 15.25H5.229C4.78027 15.25 4.4165 15.6138 4.4165 16.0625C4.4165 16.5112 4.78027 16.875 5.229 16.875H12.6802C13.0148 17.8217 13.9177 18.5 14.979 18.5C16.0403 18.5 16.9432 17.8217 17.2778 16.875H18.7707C19.2194 16.875 19.5832 16.5112 19.5832 16.0625Z",
+      fill: "#2F2F2F"
     })]
   });
 }
@@ -796,6 +889,36 @@ function DashBorder() {
     })
   });
 }
+
+/***/ },
+
+/***/ "./src/smart-info-box/assets/styleLayoutIcon/DesktopIcon.js"
+/*!******************************************************************!*\
+  !*** ./src/smart-info-box/assets/styleLayoutIcon/DesktopIcon.js ***!
+  \******************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function DesktopIcon() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "14",
+    height: "12",
+    viewBox: "0 0 14 12",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M12.5714 0H1.14286C0.511905 0 0 0.503906 0 1.125V8.625C0 9.24609 0.511905 9.75 1.14286 9.75H5.71428L5.33333 10.875H3.61905C3.30238 10.875 3.04762 11.1258 3.04762 11.4375C3.04762 11.7492 3.30238 12 3.61905 12H10.0952C10.4119 12 10.6667 11.7492 10.6667 11.4375C10.6667 11.1258 10.4119 10.875 10.0952 10.875H8.38095L8.00001 9.75H12.5714C13.2024 9.75 13.7143 9.24609 13.7143 8.625V1.125C13.7143 0.503906 13.2024 0 12.5714 0ZM12.1905 8.25H1.52381V1.5H12.1905V8.25Z",
+      fill: "#8C8F94"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DesktopIcon);
 
 /***/ },
 
@@ -1224,19 +1347,19 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":0,"borderColor":"#e5e5e5","boxShadow":"none","padding":48,"margin":0}}},"supports":{"html":false},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"8px","topRight":"8px","bottomLeft":"8px","bottomRight":"8px"},"borderColor":"#e5e5e5","boxShadow":"none","padding":{"top":"48px","bottom":"48px","left":"48px","right":"48px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"}}}},"supports":{"html":false},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ },
 
-/***/ "./src/smart-info-box/components/BackgroundType.js"
-/*!*********************************************************!*\
-  !*** ./src/smart-info-box/components/BackgroundType.js ***!
-  \*********************************************************/
+/***/ "./src/smart-info-box/components/BackgroundStyle.js"
+/*!**********************************************************!*\
+  !*** ./src/smart-info-box/components/BackgroundStyle.js ***!
+  \**********************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ BackgroundType)
+/* harmony export */   "default": () => (/* binding */ BackgroundStyle)
 /* harmony export */ });
 /* harmony import */ var _assets_styleLayoutIcon_TransparentBox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/styleLayoutIcon/TransparentBox */ "./src/smart-info-box/assets/styleLayoutIcon/TransparentBox.js");
 /* harmony import */ var _assets_styleLayoutIcon_SquareBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/styleLayoutIcon/SquareBox */ "./src/smart-info-box/assets/styleLayoutIcon/SquareBox.js");
@@ -1260,7 +1383,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function BackgroundType() {
+function BackgroundStyle() {
   const {
     attributes,
     setAttributes
@@ -1332,12 +1455,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ BorderStyle)
 /* harmony export */ });
-/* harmony import */ var _assets_styleLayoutIcon_SolidBorder__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/styleLayoutIcon/SolidBorder */ "./src/smart-info-box/assets/styleLayoutIcon/SolidBorder.js");
-/* harmony import */ var _assets_styleLayoutIcon_DashBorder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DashBorder */ "./src/smart-info-box/assets/styleLayoutIcon/DashBorder.js");
-/* harmony import */ var _assets_styleLayoutIcon_DottedBorder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DottedBorder */ "./src/smart-info-box/assets/styleLayoutIcon/DottedBorder.js");
-/* harmony import */ var _assets_styleLayoutIcon_DoubleBorder__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DoubleBorder */ "./src/smart-info-box/assets/styleLayoutIcon/DoubleBorder.js");
-/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
-/* harmony import */ var _CustomBoxControls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CustomBoxControls */ "./src/smart-info-box/components/CustomBoxControls.js");
+/* harmony import */ var _BorderType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BorderType */ "./src/smart-info-box/components/BorderType.js");
+/* harmony import */ var _BoxShadow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BoxShadow */ "./src/smart-info-box/components/BoxShadow.js");
+/* harmony import */ var _CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CustomBoxControls */ "./src/smart-info-box/components/CustomBoxControls.js");
+/* harmony import */ var _StyleColorControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StyleColorControl */ "./src/smart-info-box/components/StyleColorControl.js");
+/* harmony import */ var _StyleRangeControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./StyleRangeControl */ "./src/smart-info-box/components/StyleRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+function BorderStyle() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_BorderType__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      label: "Border Type"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleColorControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "Border Color",
+      attributeKey: "borderColor"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleRangeControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      label: "Border Width",
+      attributeKey: "borderWidth",
+      min: 1,
+      max: 5,
+      step: 1
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Border Radius",
+      attributeKey: "borderRadius"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {})]
+  });
+}
+
+/***/ },
+
+/***/ "./src/smart-info-box/components/BorderType.js"
+/*!*****************************************************!*\
+  !*** ./src/smart-info-box/components/BorderType.js ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BorderType)
+/* harmony export */ });
+/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
+/* harmony import */ var _assets_styleLayoutIcon_SolidBorder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/styleLayoutIcon/SolidBorder */ "./src/smart-info-box/assets/styleLayoutIcon/SolidBorder.js");
+/* harmony import */ var _assets_styleLayoutIcon_DashBorder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DashBorder */ "./src/smart-info-box/assets/styleLayoutIcon/DashBorder.js");
+/* harmony import */ var _assets_styleLayoutIcon_DottedBorder__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DottedBorder */ "./src/smart-info-box/assets/styleLayoutIcon/DottedBorder.js");
+/* harmony import */ var _assets_styleLayoutIcon_DoubleBorder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DoubleBorder */ "./src/smart-info-box/assets/styleLayoutIcon/DoubleBorder.js");
+/* harmony import */ var _assets_ToolbarIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/ToolbarIcon */ "./src/smart-info-box/assets/ToolbarIcon.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
 
@@ -1347,11 +1515,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function BorderStyle() {
+function BorderType() {
   const {
     attributes,
     setAttributes
-  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_4__.useAttributes)();
+  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
   const {
     borderType,
     borderColor,
@@ -1363,16 +1531,16 @@ function BorderStyle() {
     icon: null
   }, {
     type: "solid",
-    icon: _assets_styleLayoutIcon_SolidBorder__WEBPACK_IMPORTED_MODULE_0__["default"]
+    icon: _assets_styleLayoutIcon_SolidBorder__WEBPACK_IMPORTED_MODULE_1__["default"]
   }, {
     type: "dashed",
-    icon: _assets_styleLayoutIcon_DashBorder__WEBPACK_IMPORTED_MODULE_1__["default"]
+    icon: _assets_styleLayoutIcon_DashBorder__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
     type: "dotted",
-    icon: _assets_styleLayoutIcon_DottedBorder__WEBPACK_IMPORTED_MODULE_2__["default"]
+    icon: _assets_styleLayoutIcon_DottedBorder__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
     type: "double",
-    icon: _assets_styleLayoutIcon_DoubleBorder__WEBPACK_IMPORTED_MODULE_3__["default"]
+    icon: _assets_styleLayoutIcon_DoubleBorder__WEBPACK_IMPORTED_MODULE_4__["default"]
   }];
   const handleBorderChange = type => {
     setAttributes({
@@ -1384,24 +1552,91 @@ function BorderStyle() {
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "transparent-style",
+      className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
         children: "Border"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-        className: "style-border-buttons",
-        children: borderButtons.map(({
-          type,
-          label,
-          icon: Icon
-        }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-          type: "button",
-          className: borderType === type ? "is-active" : "",
-          "aria-pressed": borderType === type,
-          onClick: () => handleBorderChange(type),
-          children: Icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Icon, {}) : label
-        }, type))
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_ToolbarIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {})
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_CustomBoxControls__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "style-border-buttons",
+      children: borderButtons.map(({
+        type,
+        label,
+        icon: Icon
+      }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+        type: "button",
+        className: borderType === type ? "is-active" : "",
+        "aria-pressed": borderType === type,
+        onClick: () => handleBorderChange(type),
+        children: Icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Icon, {}) : label
+      }, type))
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {})]
+  });
+}
+
+/***/ },
+
+/***/ "./src/smart-info-box/components/BoxShadow.js"
+/*!****************************************************!*\
+  !*** ./src/smart-info-box/components/BoxShadow.js ***!
+  \****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BoxShadow)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function BoxShadow({
+  label
+}) {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__.useAttributes)();
+  const {
+    boxShadow
+  } = attributes.styles;
+  const [value, setValue] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(boxShadow === "none" ? false : true);
+  const onToggleShadow = () => {
+    setValue(state => !state);
+    if (value) {
+      setAttributes({
+        styles: {
+          ...attributes.styles,
+          boxShadow: "0 0 20px rgba(102, 126, 234, 0.6)"
+        }
+      });
+    } else {
+      setAttributes({
+        styles: {
+          ...attributes.styles,
+          boxShadow: "none"
+        }
+      });
+    }
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "components-header",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+      children: [label, " "]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.ToggleControl, {
+        checked: value,
+        onChange: onToggleShadow
+      })
+    })]
   });
 }
 
@@ -1419,39 +1654,129 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_css_customBoxControls_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/css/customBoxControls.scss */ "./src/smart-info-box/assets/css/customBoxControls.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DesktopIcon */ "./src/smart-info-box/assets/styleLayoutIcon/DesktopIcon.js");
+/* harmony import */ var _assets_css_customBoxControls_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/css/customBoxControls.scss */ "./src/smart-info-box/assets/css/customBoxControls.scss");
+/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
+/* harmony import */ var _assets_ResetIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/ResetIcon */ "./src/smart-info-box/assets/ResetIcon.js");
+/* harmony import */ var _assets_PixelIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/PixelIcon */ "./src/smart-info-box/assets/PixelIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
-function CustomBoxControls() {
+
+
+
+
+const SIDE_MAP = {
+  borderRadius: ["topLeft", "topRight", "bottomRight", "bottomLeft"],
+  padding: ["top", "right", "bottom", "left"],
+  margin: ["top", "right", "bottom", "left"]
+};
+function CustomBoxControls({
+  label,
+  attributeKey = "borderRadius",
+  min = 0,
+  max = 100,
+  step = 4,
+  unit = "px"
+}) {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.useAttributes)();
+  const sides = SIDE_MAP[attributeKey];
+  const styleValue = attributes.styles?.[attributeKey] || {};
   const [values, setValues] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([0, 0, 0, 0]);
-  const updateValue = (index, delta) => {
-    setValues(prev => prev.map((v, i) => i === index ? Math.max(0, v + delta) : v));
+  const [isLinked, setIsLinked] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const synced = sides.map(side => parseInt(styleValue?.[side]) || 0);
+    setValues(synced);
+  }, [styleValue, sides]);
+  const updateAttributes = newValues => {
+    const updatedStyle = {};
+    sides.forEach((side, index) => {
+      updatedStyle[side] = `${newValues[index]}${unit}`;
+    });
+    setAttributes({
+      styles: {
+        ...attributes.styles,
+        [attributeKey]: updatedStyle
+      }
+    });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "stepper-container",
-    children: [values.map((value, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "stepper-box",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-        value: value,
-        readOnly: true
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "stepper-buttons",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-          onClick: () => updateValue(index, 1),
-          children: "\u25B2"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-          onClick: () => updateValue(index, -1),
-          children: "\u25BC"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "counter-corner"
+  const onChangeValue = (index, value) => {
+    const numericValue = Math.min(max, Math.max(min, Number(value) || 0));
+    setValues(prev => {
+      let next = [...prev];
+      if (isLinked) {
+        next = [numericValue, numericValue, numericValue, numericValue];
+      } else {
+        next[index] = numericValue;
+      }
+      updateAttributes(next);
+      return next;
+    });
+  };
+  const toggleLink = () => {
+    setIsLinked(prev => {
+      const nextLinked = !prev;
+      if (nextLinked) {
+        const unified = values[0] || 0;
+        const synced = [unified, unified, unified, unified];
+        setValues(synced);
+        updateAttributes(synced);
+      }
+      return nextLinked;
+    });
+  };
+  const resetValues = () => {
+    const reset = [0, 0, 0, 0];
+    setValues(reset);
+    updateAttributes(reset);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "components-header",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
+        children: [label, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {}), " "]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+        onClick: resetValues,
+        title: "Reset",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_PixelIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
       })]
-    }, index)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-      className: "link-button",
-      children: "\uD83D\uDD17"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "stepper-container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "stepper-box-groups",
+        children: values.map((value, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "stepper-box",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+            type: "number",
+            min: min,
+            max: max,
+            step: step,
+            value: value,
+            onChange: e => onChangeValue(index, e.target.value)
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            className: `counter-corner-${index}`
+          })]
+        }, index))
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+        className: `link-button ${!isLinked ? "active" : ""}`,
+        onClick: toggleLink,
+        title: isLinked ? "Unlink values" : "Link values",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "24",
+          height: "24",
+          viewBox: "0 0 24 24",
+          fill: "currentColor",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
+            d: "M15.6 7.2H14v1.5h1.6c2 0 3.7 1.7 3.7 3.7s-1.7 3.7-3.7 3.7H14v1.5h1.6c2.8 0 5.2-2.3 5.2-5.2S18.4 7.2 15.6 7.2ZM4.7 12.4c0-2 1.7-3.7 3.7-3.7H10V7.2H8.4c-2.9 0-5.2 2.3-5.2 5.2s2.3 5.2 5.2 5.2H10v-1.5H8.4c-2 0-3.7-1.7-3.7-3.7ZM9.3 13.3h5.3v-1.5H9.3v1.5Z"
+          })
+        })
+      })]
     })]
   });
 }
@@ -1767,8 +2092,27 @@ const InfoBox = () => {
     borderWidth,
     borderRadius,
     padding,
-    margin
+    margin,
+    boxShadow
   } = styles;
+  const borderRadiusValue = `
+  ${borderRadius.topLeft}
+  ${borderRadius.topRight}
+  ${borderRadius.bottomRight}
+  ${borderRadius.bottomLeft}
+`;
+  const paddingValue = `
+  ${padding.top}
+  ${padding.right}
+  ${padding.bottom}
+  ${padding.left}
+`;
+  const marginValue = `
+  ${margin.top}
+  ${margin.right}
+  ${margin.bottom}
+  ${margin.left}
+`;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -1777,9 +2121,10 @@ const InfoBox = () => {
         borderStyle: borderType,
         borderColor: borderColor,
         borderWidth: borderWidth,
-        borderRadius: borderRadius,
-        padding,
-        margin,
+        borderRadius: borderRadiusValue,
+        padding: paddingValue,
+        margin: marginValue,
+        boxShadow,
         ...(0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_1__["default"])(styles)
       },
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
@@ -1931,10 +2276,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _StyleRangeControl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StyleRangeControl */ "./src/smart-info-box/components/StyleRangeControl.js");
 /* harmony import */ var _StyleColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StyleColorControl */ "./src/smart-info-box/components/StyleColorControl.js");
 /* harmony import */ var _StyleBoxControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StyleBoxControl */ "./src/smart-info-box/components/StyleBoxControl.js");
-/* harmony import */ var _BackgroundType__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BackgroundType */ "./src/smart-info-box/components/BackgroundType.js");
+/* harmony import */ var _BackgroundStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BackgroundStyle */ "./src/smart-info-box/components/BackgroundStyle.js");
 /* harmony import */ var _BorderStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./BorderStyle */ "./src/smart-info-box/components/BorderStyle.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CustomBoxControls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CustomBoxControls */ "./src/smart-info-box/components/CustomBoxControls.js");
+/* harmony import */ var _BoxShadow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./BoxShadow */ "./src/smart-info-box/components/BoxShadow.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
+
+
 
 
 
@@ -1942,28 +2291,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NormalStyle() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_BackgroundType__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_BorderStyle__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleRangeControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      label: "Border Width",
-      attributeKey: "borderWidth",
-      min: 0,
-      max: 2,
-      step: 0.5
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      label: "Border Color",
-      attributeKey: "borderColor"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleBoxControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      label: "Border Radius",
-      attributeKey: "borderRadius"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleRangeControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_BackgroundStyle__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_BorderStyle__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_BoxShadow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      label: "Box Shadow"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_CustomBoxControls__WEBPACK_IMPORTED_MODULE_5__["default"], {
       label: "Padding",
       attributeKey: "padding",
       min: 0,
-      max: 48,
-      step: 12
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StyleBoxControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      max: 200
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_CustomBoxControls__WEBPACK_IMPORTED_MODULE_5__["default"], {
       label: "Margin",
-      attributeKey: "margin"
+      attributeKey: "margin",
+      min: 0,
+      max: 200
     })]
   });
 }
@@ -2213,11 +2553,11 @@ function StyleBoxControl({
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "style-box-control",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "border-width-heading-container",
+      className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
         children: label
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
       })]
     }), isLinked ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
       __next40pxDefaultSize: true,
@@ -2298,13 +2638,12 @@ function StyleColorControl({
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "color-picker-container",
+      className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
         children: label
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-          onClick: handleReset,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          onClick: handleReset
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           onClick: () => setIsOpen(!isOpen),
           style: {
@@ -2382,11 +2721,14 @@ function StyleRangeControl({
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "border-width-heading-container",
+      className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
         children: label
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        onClick: handleReset,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          onClick: handleReset
+        })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
       value: value,

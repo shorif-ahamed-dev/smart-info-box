@@ -44,15 +44,13 @@ export default function StyleBoxControl({
 
     return (
         <div className="style-box-control">
-            <div className='border-width-heading-container'>
+            <div className='components-header'>
                 <p>
                     {label}
                 </p>
-                <div>
+                <span>
                     <ResetIcon />
-                    <ResetIcon />
-                    <ResetIcon />
-                </div>
+                </span>
 
             </div>
 

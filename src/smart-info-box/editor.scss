@@ -137,7 +137,7 @@
 		}
 
 		&.icon-top {
-			> svg {
+			>svg {
 				position: absolute;
 				top: 0;
 				left: 50%;
@@ -463,4 +463,35 @@
 			background: #cc1818;
 		}
 	}
+}
+
+
+// re useable css for component header
+.components-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-bottom: 16px;
+
+	p {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 8px
+	}
+
+	span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+	}
+
+	button {
+		all: unset;
+	}
+}
+
+.components-base-control {
+	margin-bottom: 0;
 }

@@ -14,7 +14,27 @@ const InfoBox = () => {
 		borderRadius,
 		padding,
 		margin,
+		boxShadow
 	} = styles;
+
+	const borderRadiusValue = `
+  ${borderRadius.topLeft}
+  ${borderRadius.topRight}
+  ${borderRadius.bottomRight}
+  ${borderRadius.bottomLeft}
+`;
+	const paddingValue = `
+  ${padding.top}
+  ${padding.right}
+  ${padding.bottom}
+  ${padding.left}
+`;
+	const marginValue = `
+  ${margin.top}
+  ${margin.right}
+  ${margin.bottom}
+  ${margin.left}
+`;
 	return (
 		<div {...useBlockProps()}>
 			<div
@@ -23,9 +43,10 @@ const InfoBox = () => {
 					borderStyle: borderType,
 					borderColor: borderColor,
 					borderWidth: borderWidth,
-					borderRadius: borderRadius,
-					padding,
-					margin,
+					borderRadius: borderRadiusValue,
+					padding: paddingValue,
+					margin: marginValue,
+					boxShadow,
 					...getBackgroundStyle(styles),
 				}}
 			>

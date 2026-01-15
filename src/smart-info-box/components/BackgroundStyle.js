@@ -7,7 +7,7 @@ import { useState } from "@wordpress/element";
 import CustomGradientPicker from "./CustomGradientPicker";
 import { useAttributes } from '../context/AttributesContext';
 import SelectImage from './SelectImage';
-export default function BackgroundType() {
+export default function BackgroundStyle() {
     const { attributes, setAttributes } = useAttributes();
     const { styles } = attributes
     const { backgroundType } = styles;
@@ -49,7 +49,6 @@ export default function BackgroundType() {
                     })}
                 </div>
             </div>
-            {/* {backgroundType === "transparent" && <TransparentStyle />} */}
             {backgroundType === "solid" && <CustomColorPicker />}
 
             {backgroundType === "gradient" && (
