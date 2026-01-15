@@ -14,7 +14,7 @@ const InfoBox = () => {
 		borderRadius,
 		padding,
 		margin,
-		boxShadow
+		boxShadow,
 	} = styles;
 
 	const borderRadiusValue = `
@@ -40,6 +40,7 @@ const InfoBox = () => {
 			<div
 				className={`wp-block-create-block-smart-info-box-container ${layout}`}
 				style={{
+					justifyItems: contentAlignment,
 					borderStyle: borderType,
 					borderColor: borderColor,
 					borderWidth: borderWidth,

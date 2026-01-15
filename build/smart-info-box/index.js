@@ -1609,8 +1609,7 @@ function BoxShadow({
     boxShadow
   } = attributes.styles;
   const [value, setValue] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(boxShadow === "none" ? false : true);
-  const onToggleShadow = () => {
-    setValue(state => !state);
+  const onToggleShadow = value => {
     if (value) {
       setAttributes({
         styles: {
@@ -1626,6 +1625,7 @@ function BoxShadow({
         }
       });
     }
+    setValue(value);
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: "components-header",
@@ -1759,7 +1759,7 @@ function CustomBoxControls({
             value: value,
             onChange: e => onChangeValue(index, e.target.value)
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-            className: `counter-corner-${index}`
+            className: attributeKey === "borderRadius" ? `counter-corner-${index}` : `padding-margin-indicator-${index}`
           })]
         }, index))
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
@@ -1829,7 +1829,7 @@ function CustomColorPicker({}) {
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "color-picker-container",
+      className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
         children: "Solid Color"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
@@ -1838,11 +1838,11 @@ function CustomColorPicker({}) {
           onClick: () => setIsPickerOpen(!isPickerOpen),
           style: {
             backgroundColor: backgroundColor,
-            height: '24px',
-            width: '24px',
-            borderRadius: '50%',
-            border: '2px solid #DDD',
-            cursor: 'pointer'
+            height: "24px",
+            width: "24px",
+            borderRadius: "50%",
+            border: "2px solid #DDD",
+            cursor: "pointer"
           }
         })]
       })]
@@ -2118,6 +2118,7 @@ const InfoBox = () => {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: `wp-block-create-block-smart-info-box-container ${layout}`,
       style: {
+        justifyItems: contentAlignment,
         borderStyle: borderType,
         borderColor: borderColor,
         borderWidth: borderWidth,
@@ -2715,7 +2716,7 @@ function StyleRangeControl({
     setAttributes({
       styles: {
         ...attributes.styles,
-        [attributeKey]: 0
+        [attributeKey]: 1
       }
     });
   };
@@ -2736,6 +2737,8 @@ function StyleRangeControl({
       min: min,
       max: max,
       step: step,
+      color: "#884AE3",
+      trackColor: "#884AE3",
       marks: true
     })]
   });

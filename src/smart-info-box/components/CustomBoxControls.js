@@ -1,5 +1,5 @@
 import { useEffect, useState } from "@wordpress/element";
-import DesktopIcon from "../assets/styleLayoutIcon/DesktopIcon"
+import DesktopIcon from "../assets/styleLayoutIcon/DesktopIcon";
 import "../assets/css/customBoxControls.scss";
 import { useAttributes } from "../context/AttributesContext";
 import ResetIcon from "../assets/ResetIcon";
@@ -19,17 +19,13 @@ export default function CustomBoxControls({
 	unit = "px",
 }) {
 	const { attributes, setAttributes } = useAttributes();
-
 	const sides = SIDE_MAP[attributeKey];
 	const styleValue = attributes.styles?.[attributeKey] || {};
-
 	const [values, setValues] = useState([0, 0, 0, 0]);
 	const [isLinked, setIsLinked] = useState(true);
 
 	useEffect(() => {
-		const synced = sides.map(
-			(side) => parseInt(styleValue?.[side]) || 0
-		);
+		const synced = sides.map((side) => parseInt(styleValue?.[side]) || 0);
 		setValues(synced);
 	}, [styleValue, sides]);
 
@@ -48,10 +44,7 @@ export default function CustomBoxControls({
 		});
 	};
 	const onChangeValue = (index, value) => {
-		const numericValue = Math.min(
-			max,
-			Math.max(min, Number(value) || 0)
-		);
+		const numericValue = Math.min(max, Math.max(min, Number(value) || 0));
 
 		setValues((prev) => {
 			let next = [...prev];
@@ -89,7 +82,9 @@ export default function CustomBoxControls({
 	return (
 		<>
 			<div className="components-header">
-				<p>{label} <DesktopIcon /> </p>
+				<p>
+					{label} <DesktopIcon />{" "}
+				</p>
 				<span onClick={resetValues} title="Reset">
 					<ResetIcon />
 					<PixelIcon />
@@ -106,11 +101,16 @@ export default function CustomBoxControls({
 								max={max}
 								step={step}
 								value={value}
-								onChange={(e) =>
-									onChangeValue(index, e.target.value)
+								onChange={(e) => onChangeValue(index, e.target.value)}
+							/>
+							{/* <div className={`counter-corner-${index}`} /> */}
+							<div
+								className={
+									attributeKey === "borderRadius"
+										? `counter-corner-${index}`
+										: `padding-margin-indicator-${index}`
 								}
 							/>
-							<div className={`counter-corner-${index}`} />
 						</div>
 					))}
 				</div>

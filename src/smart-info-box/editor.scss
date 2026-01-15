@@ -5,8 +5,7 @@
 
 	.wp-block-create-block-smart-info-box-container {
 		display: grid;
-		// padding: 48px 36px;
-
+		// justify-items: start;
 		h4 {
 			margin: 0;
 			font-size: 1.125rem;
@@ -33,7 +32,7 @@
 		}
 
 		&.default {
-			justify-items: center;
+			// justify-items: center;
 			align-items: center;
 			text-align: center;
 			gap: 12px;
@@ -137,7 +136,7 @@
 		}
 
 		&.icon-top {
-			>svg {
+			> svg {
 				position: absolute;
 				top: 0;
 				left: 50%;
@@ -465,19 +464,18 @@
 	}
 }
 
-
 // re useable css for component header
 .components-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-bottom: 16px;
+	padding-bottom: 4px;
 
 	p {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 8px
+		gap: 8px;
 	}
 
 	span {
@@ -494,4 +492,15 @@
 
 .components-base-control {
 	margin-bottom: 0;
+}
+
+.components-base-control,
+.components-range-control,
+.-bb-b-bc-cbdb-qy3gpb,
+.ej5x27r4 {
+	margin-bottom: 0 !important;
+}
+
+.def--bb-cd-eebada-7gj15f {
+	margin-bottom: 0 !important;
 }
