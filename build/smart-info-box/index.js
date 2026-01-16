@@ -1347,7 +1347,7 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"8px","topRight":"8px","bottomLeft":"8px","bottomRight":"8px"},"borderColor":"#e5e5e5","boxShadow":"none","padding":{"top":"48px","bottom":"48px","left":"48px","right":"48px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"}}}},"supports":{"html":false},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#e5e5e5","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"}}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}},"content":{"type":"object","default":{"icon":"","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More"}}},"supports":{"html":false,"align":["wide","center","full","left","right"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2069,8 +2069,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
 /* harmony import */ var _assets_Airplane__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/Airplane */ "./src/smart-info-box/assets/Airplane.js");
 /* harmony import */ var _assets_RightArrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/RightArrow */ "./src/smart-info-box/assets/RightArrow.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -2079,13 +2082,20 @@ __webpack_require__.r(__webpack_exports__);
 
 const InfoBox = () => {
   const {
-    attributes
+    attributes,
+    setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__.useAttributes)();
   const {
     contentAlignment,
     layout,
-    styles
+    styles,
+    content,
+    hoverStyles
   } = attributes;
+  const {
+    title,
+    description
+  } = content;
   const {
     borderType,
     borderColor,
@@ -2113,9 +2123,25 @@ const InfoBox = () => {
   ${margin.bottom}
   ${margin.left}
 `;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  const handleTitleChange = title => {
+    setAttributes({
+      content: {
+        ...content,
+        title: title
+      }
+    });
+  };
+  const handleDescriptionChange = description => {
+    setAttributes({
+      content: {
+        ...content,
+        description: description
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: `wp-block-create-block-smart-info-box-container ${layout}`,
       style: {
         justifyItems: contentAlignment,
@@ -2128,19 +2154,69 @@ const InfoBox = () => {
         boxShadow,
         ...(0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_1__["default"])(styles)
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
-        children: "Automated AI Chatbots"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Title', 'smart-info-box'),
+        tagName: "h4",
+        onChange: handleTitleChange,
+        value: title,
+        allowedFormats: []
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
         style: {
           textAlign: contentAlignment
         },
-        children: "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Description', 'smart-info-box'),
+        tagName: "p",
+        onChange: handleDescriptionChange,
+        value: description,
+        allowedFormats: []
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("a", {
         href: "https://google.com",
-        children: ["Learn More ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
+        children: ["Learn More ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
       })]
     })
   });
+
+  // lagacy
+  // return (
+  // 	<div {...useBlockProps()}>
+  // 		<div
+  // 			className={`wp-block-create-block-smart-info-box-container ${layout}`}
+  // 			style={{
+  // 				justifyItems: contentAlignment,
+  // 				borderStyle: borderType,
+  // 				borderColor: borderColor,
+  // 				borderWidth: borderWidth,
+  // 				borderRadius: borderRadiusValue,
+  // 				padding: paddingValue,
+  // 				margin: marginValue,
+  // 				boxShadow,
+  // 				...getBackgroundStyle(styles),
+  // 				'--hover-bg': hoverStyles?.backgroundColor,
+  // 				'--hover-border': hoverStyles.borderColor,
+  // 			}}
+  // 		>
+  // 			<Airplane />
+  // 			<RichText
+  // 				placeholder={__('Title', 'smart-info-box')}
+  // 				tagName="h4"
+  // 				onChange={handleTitleChange}
+  // 				value={title}
+  // 				allowedFormats={[]}
+  // 			/>
+  // 			<RichText
+  // 				style={{ textAlign: contentAlignment }}
+  // 				placeholder={__('Description', 'smart-info-box')}
+  // 				tagName="p"
+  // 				onChange={handleDescriptionChange}
+  // 				value={description}
+  // 				allowedFormats={[]}
+  // 			/>
+  // 			<a href="https://google.com">
+  // 				Learn More <RightArrow />
+  // 			</a>
+  // 		</div>
+  // 	</div>
+  // );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InfoBox);
 

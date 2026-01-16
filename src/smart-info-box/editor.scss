@@ -1,26 +1,32 @@
 .wp-block-create-block-smart-info-box {
 	padding: 0;
 	position: relative;
-	width: 384px;
 
 	.wp-block-create-block-smart-info-box-container {
 		display: grid;
-		// justify-items: start;
+
 		h4 {
 			margin: 0;
+			padding: 0;
 			font-size: 1.125rem;
 			font-weight: 600;
 		}
 
 		p {
-			margin: 0;
-			font-size: 0.875rem;
-			color: #555;
+			font-family: Inter, sans-serif;
+			padding: 0;
+			margin: 0px 0px 6px 0px;
+			font-size: 14px;
+			line-height: 1.6;
+			letter-spacing: 0px;
+			word-spacing: 0px;
 		}
 
 		a {
 			display: inline-flex;
 			align-items: center;
+			margin: 0;
+			padding: 0;
 			gap: 4px;
 			text-decoration: none;
 			font-weight: 500;
@@ -32,7 +38,6 @@
 		}
 
 		&.default {
-			// justify-items: center;
 			align-items: center;
 			text-align: center;
 			gap: 12px;
@@ -41,7 +46,11 @@
 			h4,
 			p,
 			a {
-				grid-column: 1 / -1; // full width
+				grid-column: 1 / -1;
+			}
+
+			svg {
+				padding-bottom: 6px;
 			}
 		}
 
@@ -50,8 +59,8 @@
 			grid-template-columns: auto 1fr;
 			grid-template-rows: auto auto;
 			align-items: stretch;
-			column-gap: 12px;
-			row-gap: 6px;
+			column-gap: 16px;
+			row-gap: 12px;
 
 			svg {
 				grid-column: 1;
@@ -80,7 +89,8 @@
 			grid-template-columns: auto 1fr;
 			grid-template-rows: auto auto;
 			align-items: center;
-			gap: 12px;
+			row-gap: 12px;
+			column-gap: 16px;
 
 			svg {
 				grid-column: 1;
@@ -109,7 +119,8 @@
 			grid-template-columns: auto 1fr;
 			grid-template-rows: auto auto;
 			align-items: center;
-			gap: 12px;
+			row-gap: 12px;
+			column-gap: 16px;
 
 			svg {
 				grid-column: 1;
@@ -136,12 +147,19 @@
 		}
 
 		&.icon-top {
-			> svg {
+			row-gap: 12px;
+			column-gap: 16px;
+
+			>svg {
 				position: absolute;
 				top: 0;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				z-index: 2;
+			}
+
+			h4 {
+				padding-top: 6px;
 			}
 
 			h4,
@@ -163,6 +181,28 @@
 				}
 			}
 		}
+
+		&:hover {
+			background: var(--hover-bg, var(--bg));
+			border-color: var(--hover-border, var(--border));
+
+			h4 {
+				color: #000;
+			}
+
+			p {
+				color: #333;
+			}
+
+			a {
+				color: #0073aa;
+			}
+		}
+
+	}
+
+	.wp-block-create-block-smart-info-box-container * {
+		transition: all 0.3s ease;
 	}
 }
 
@@ -173,7 +213,6 @@
 		margin-bottom: 12px;
 	}
 
-	/* Tab button */
 	.components-tab-panel__tabs-item {
 		display: flex;
 		justify-content: center;
@@ -226,11 +265,8 @@
 }
 
 .layout-card {
-	// background: #fff;
-	// padding: 10px;
 	cursor: pointer;
 
-	// border-radius: 4px;
 	svg {
 		color: #9ea9b2;
 	}
@@ -330,7 +366,6 @@
 	border: 1px solid #d6c2f5;
 	color: #6f22dd;
 	border-radius: 2px;
-	// border-style: ;
 }
 
 .style-normal-background-types-button {
@@ -464,7 +499,7 @@
 	}
 }
 
-// re useable css for component header
+// re-useable css for component header
 .components-header {
 	display: flex;
 	justify-content: space-between;

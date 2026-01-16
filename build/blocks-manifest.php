@@ -40,18 +40,18 @@ return array(
 					'borderType' => 'solid',
 					'borderWidth' => 1,
 					'borderRadius' => array(
-						'topLeft' => '8px',
-						'topRight' => '8px',
-						'bottomLeft' => '8px',
-						'bottomRight' => '8px'
+						'topLeft' => '4px',
+						'topRight' => '4px',
+						'bottomLeft' => '4px',
+						'bottomRight' => '4px'
 					),
 					'borderColor' => '#e5e5e5',
 					'boxShadow' => 'none',
 					'padding' => array(
-						'top' => '48px',
-						'bottom' => '48px',
-						'left' => '48px',
-						'right' => '48px'
+						'top' => '28px',
+						'bottom' => '28px',
+						'left' => '24px',
+						'right' => '24px'
 					),
 					'margin' => array(
 						'top' => '0px',
@@ -60,10 +60,34 @@ return array(
 						'right' => '0px'
 					)
 				)
+			),
+			'hoverStyles' => array(
+				'type' => 'object',
+				'default' => array(
+					'borderType' => 'solid',
+					'borderColor' => '#884AE3',
+					'backgroundColor' => '#884AE3'
+				)
+			),
+			'content' => array(
+				'type' => 'object',
+				'default' => array(
+					'icon' => '',
+					'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
+					'title' => 'Automated AI Chatbotsx',
+					'buttonText' => 'Learn More'
+				)
 			)
 		),
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'align' => array(
+				'wide',
+				'center',
+				'full',
+				'left',
+				'right'
+			)
 		),
 		'textdomain' => 'smart-info-box',
 		'editorScript' => 'file:./index.js',
