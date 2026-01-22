@@ -63,7 +63,9 @@
 					"right": "0px"
 				},
 				"iconSize": 45,
-				"titleFontSize": 20
+				"titleFontSize": 20,
+				"descriptionFontSize": 14,
+				"buttonFontSize": 14
 			}
 		},
 		"hoverStyles": {
@@ -90,13 +92,7 @@
 			"margin": true
 		},
 		"html": false,
-		"align": [
-			"wide",
-			"center",
-			"full",
-			"left",
-			"right"
-		]
+		"align": ["wide", "center", "full", "left", "right"]
 	},
 	"textdomain": "smart-info-box",
 	"editorScript": "file:./index.js",

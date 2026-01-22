@@ -68,7 +68,9 @@ return array(
 						'right' => '0px'
 					),
 					'iconSize' => 45,
-					'titleFontSize' => 20
+					'titleFontSize' => 20,
+					'descriptionFontSize' => 14,
+					'buttonFontSize' => 14
 				)
 			),
 			'hoverStyles' => array(

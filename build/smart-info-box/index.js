@@ -1278,7 +1278,7 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":3},"columnsGap":{"type":"number","default":20},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}}},"providesContext":{"smartInfoBox/layout":"layout","smartInfoBox/styles":"styles","smartInfoBox/contentAlignment":"contentAlignment"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide","center","full","left","right"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":3},"columnsGap":{"type":"number","default":20},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20,"descriptionFontSize":14,"buttonFontSize":14}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}}},"providesContext":{"smartInfoBox/layout":"layout","smartInfoBox/styles":"styles","smartInfoBox/contentAlignment":"contentAlignment"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide","center","full","left","right"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2084,8 +2084,38 @@ function InspectorContainer({
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
         className: "inspector-section",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_StyleRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          label: "Title",
+          label: "Title Font Size",
           attributeKey: "titleFontSize",
+          marks: false,
+          min: 10,
+          max: 100,
+          step: 1
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+      title: "Description",
+      opened: openPanel === "description",
+      onToggle: () => setOpenPanel(openPanel === "description" ? null : "description"),
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+        className: "inspector-section",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_StyleRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          label: "Description Font Size",
+          attributeKey: "descriptionFontSize",
+          marks: false,
+          min: 10,
+          max: 100,
+          step: 1
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+      title: "Call To Action",
+      opened: openPanel === "calltoaction",
+      onToggle: () => setOpenPanel(openPanel === "calltoaction" ? null : "calltoaction"),
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+        className: "inspector-section",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_StyleRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          label: "Button Font Size",
+          attributeKey: "buttonFontSize",
           marks: false,
           min: 10,
           max: 100,
