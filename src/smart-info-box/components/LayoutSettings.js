@@ -1,3 +1,5 @@
+import { __ } from "@wordpress/i18n";
+import { RangeControl } from "@wordpress/components";
 import Box1 from '../assets/Box1';
 import Box2 from '../assets/Box2';
 import Box3 from '../assets/Box3';
@@ -5,7 +7,7 @@ import Box4 from '../assets/Box4';
 import Box5 from '../assets/Box5';
 
 export default function LayoutSettings({ attributes, setAttributes }) {
-    const { layout, contentAlignment } = attributes;
+    const { layout, contentAlignment, columns, columnsGap } = attributes;
 
     const layouts = [
         { id: 'default', label: 'Icon Top', icon: Box1 },
@@ -71,6 +73,26 @@ export default function LayoutSettings({ attributes, setAttributes }) {
                         <span className="dashicons dashicons-editor-alignright" />
                     </button>
                 </div>
+            </div>
+            <div className="inspector-section">
+                <RangeControl
+                    label={__('Columns', 'smart-info-box')}
+                    min={1}
+                    max={6}
+                    value={columns}
+                    onChange={(value) => setAttributes({ columns: value })}
+                    color='#6f22dd'
+                />
+            </div>
+            <div className="inspector-section">
+                <RangeControl
+                    label={__('Columns Gap', 'smart-info-box')}
+                    min={4}
+                    max={50}
+                    value={columnsGap}
+                    onChange={(value) => setAttributes({ columnsGap: value })}
+                    color='#6f22dd'
+                />
             </div>
         </>
     );

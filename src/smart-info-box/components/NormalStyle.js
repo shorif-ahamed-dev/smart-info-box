@@ -23,8 +23,6 @@ export default function NormalStyle() {
                 attributeKey="margin"
                 min={0}
                 max={200} />
-            {/* <StyleRangeControl/> */}
-            {/* <StyleBoxControl/> */}
         </>
     );
 }

@@ -8,6 +8,7 @@ export default function StyleRangeControl({
 	min = 0,
 	max = 50,
 	step = 1,
+	marks = true,
 	unit = "px",
 }) {
 	const { attributes, setAttributes } = useAttributes();
@@ -26,7 +27,7 @@ export default function StyleRangeControl({
 		setAttributes({
 			styles: {
 				...attributes.styles,
-				[attributeKey]: 1,
+				[attributeKey]: attributeKey === "iconSize" ? 45 : 1,
 			},
 		});
 	};
@@ -47,7 +48,7 @@ export default function StyleRangeControl({
 				step={step}
 				color="#884AE3"
 				trackColor="#884AE3"
-				marks
+				marks={marks}
 			/>
 		</>
 	);

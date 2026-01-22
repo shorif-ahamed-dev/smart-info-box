@@ -17,6 +17,14 @@
 			"type": "string",
 			"default": "center"
 		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"columnsGap": {
+			"type": "number",
+			"default": 20
+		},
 		"styles": {
 			"type": "object",
 			"default": {
@@ -40,7 +48,7 @@
 					"bottomLeft": "4px",
 					"bottomRight": "4px"
 				},
-				"borderColor": "#e5e5e5",
+				"borderColor": "#cccccc",
 				"boxShadow": "none",
 				"padding": {
 					"top": "28px",
@@ -53,7 +61,9 @@
 					"bottom": "0px",
 					"left": "0px",
 					"right": "0px"
-				}
+				},
+				"iconSize": 45,
+				"titleFontSize": 20
 			}
 		},
 		"hoverStyles": {
@@ -63,18 +73,22 @@
 				"borderColor": "#884AE3",
 				"backgroundColor": "#884AE3"
 			}
-		},
-		"content": {
-			"type": "object",
-			"default": {
-				"icon": "",
-				"description": "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.",
-				"title": "Automated AI Chatbotsx",
-				"buttonText": "Learn More"
-			}
 		}
 	},
+	"providesContext": {
+		"smartInfoBox/layout": "layout",
+		"smartInfoBox/styles": "styles",
+		"smartInfoBox/contentAlignment": "contentAlignment"
+	},
 	"supports": {
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
 		"html": false,
 		"align": [
 			"wide",
@@ -88,6 +102,5 @@
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"render": "file:./render.php",
 	"viewScript": "file:./view.js"
 }

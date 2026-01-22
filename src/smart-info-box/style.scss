@@ -1,5 +1,12 @@
+// Frontend styles (style.scss)
 .wp-block-create-block-smart-info-box {
-	// background-color: #21759b;
-	// color: #fff;
-	padding: 2px;
+
+	@for $i from 1 through 6 {
+		&.has-#{$i}-columns {
+			display: grid;
+			grid-template-columns: repeat($i, 1fr);
+			gap: 20px;
+		}
+	}
+
 }

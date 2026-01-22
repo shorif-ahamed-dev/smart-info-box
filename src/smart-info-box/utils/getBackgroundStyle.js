@@ -1,48 +1,29 @@
-import hexToRgb from "./hexToRgb";
+
 
 const getBackgroundStyle = (styles) => {
     if (!styles) return {};
 
-    switch (styles.backgroundType) {
-        case "solid":
-            return {
-                backgroundColor: styles.backgroundColor
-            };
+    const bgStyle = {};
 
-        case "gradient":
-            return {
-                backgroundImage: styles.gradient
-            };
+    if (styles.backgroundType === 'solid') {
+        bgStyle.backgroundColor = styles.backgroundColor;
+    } else if (styles.backgroundType === 'gradient') {
+        bgStyle.background = styles.gradient;
+    } else if (styles.backgroundType === 'image' && styles.image?.url) {
+        bgStyle.backgroundImage = `url(${styles.image.url})`;
+        bgStyle.backgroundPosition = styles.image.position || 'center';
+        bgStyle.backgroundSize = styles.image.size || 'cover';
+        bgStyle.backgroundRepeat = styles.image.repeat || 'no-repeat';
 
-        case "image": {
-            const imageUrl = styles.image?.url;
-            const overlayColor = styles.imageOverlayColor || "#000000";
-            const overlayOpacity =
-                styles.imageOverlayOpacity !== undefined
-                    ? styles.imageOverlayOpacity / 100
-                    : 50;
-
-            const overlay = `linear-gradient(
-                rgba(${hexToRgb(overlayColor)}, ${overlayOpacity}),
-                rgba(${hexToRgb(overlayColor)}, ${overlayOpacity})
-            )`;
-
-            return {
-                backgroundImage: imageUrl
-                    ? `${overlay}, url(${imageUrl})`
-                    : "none",
-                backgroundPosition: styles.image?.position || "center",
-                backgroundSize: styles.image?.size || "cover",
-                backgroundRepeat: styles.image?.repeat || "no-repeat",
-            };
+        // Add overlay if specified
+        if (styles.imageOverlayColor && styles.imageOverlayOpacity) {
+            const opacity = styles.imageOverlayOpacity / 100;
+            bgStyle.position = 'relative';
+            bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
         }
-
-        case "none":
-        default:
-            return {
-                background: "none"
-            };
     }
+
+    return bgStyle;
 };
 
 export default getBackgroundStyle

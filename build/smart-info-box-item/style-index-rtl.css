@@ -1,0 +1,174 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/smart-info-box-item/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-create-block-smart-info-box-item {
+  padding: 0px;
+  position: relative;
+  font-family: Inter;
+}
+.wp-block-create-block-smart-info-box-item h1,
+.wp-block-create-block-smart-info-box-item h2,
+.wp-block-create-block-smart-info-box-item h3,
+.wp-block-create-block-smart-info-box-item h4,
+.wp-block-create-block-smart-info-box-item h5,
+.wp-block-create-block-smart-info-box-item h6,
+.wp-block-create-block-smart-info-box-item p,
+.wp-block-create-block-smart-info-box-item a,
+.wp-block-create-block-smart-info-box-item span {
+  margin: 0;
+  padding: 0;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container {
+  display: grid;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container a {
+  display: flex;
+  align-items: end;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container a:hover {
+  text-decoration: underline;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default {
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default img,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default h4,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default p,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default a {
+  grid-column: 1/-1;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.default img {
+  padding-bottom: 6px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-solo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: stretch;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 12px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-solo svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-solo img {
+  grid-column: 1;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: stretch;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-solo h4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-solo p {
+  grid-column: 2;
+  grid-row: 2;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-solo a {
+  grid-column: 2;
+  grid-row: 3;
+  align-items: end !important;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-left {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  row-gap: 12px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-left svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-left img {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-left h4 {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-left p {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-left a {
+  grid-column: 1/-1;
+  grid-row: 3;
+  align-items: center;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-link {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  row-gap: 12px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-link svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-link img {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-link a {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-items: center;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-link h4 {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-link p {
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top {
+  row-gap: 12px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top > svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top img {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 2;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top h4 {
+  padding-top: 6px;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top h4,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top p {
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/-1;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top a {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top a svg,
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container.icon-top a img {
+  position: static;
+}
+.wp-block-create-block-smart-info-box-item .wp-block-create-block-smart-info-box-item-container:hover {
+  scale: 101%;
+  transition: 0.5s;
+}

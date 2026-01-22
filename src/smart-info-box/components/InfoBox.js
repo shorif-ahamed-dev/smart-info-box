@@ -46,42 +46,43 @@ const InfoBox = () => {
 	}
 
 	return (
-		<div {...useBlockProps()}>
-			<div
-				className={`wp-block-create-block-smart-info-box-container ${layout}`}
-				style={{
-					justifyItems: contentAlignment,
-					borderStyle: borderType,
-					borderColor: borderColor,
-					borderWidth: borderWidth,
-					borderRadius: borderRadiusValue,
-					padding: paddingValue,
-					margin: marginValue,
-					boxShadow,
-					...getBackgroundStyle(styles),
-				}}
-			>
-				<Airplane />
-				<RichText
-					placeholder={__('Title', 'smart-info-box')}
-					tagName="h4"
-					onChange={handleTitleChange}
-					value={title}
-					allowedFormats={[]}
-				/>
-				<RichText
-					style={{ textAlign: contentAlignment }}
-					placeholder={__('Description', 'smart-info-box')}
-					tagName="p"
-					onChange={handleDescriptionChange}
-					value={description}
-					allowedFormats={[]}
-				/>
-				<a href="https://google.com">
-					Learn More <RightArrow />
-				</a>
-			</div>
-		</div>
+		// <div {...useBlockProps()}>
+		// 	<div
+		// 		className={`wp-block-create-block-smart-info-box-container ${layout}`}
+		// 		style={{
+		// 			justifyItems: contentAlignment,
+		// 			borderStyle: borderType,
+		// 			borderColor: borderColor,
+		// 			borderWidth: borderWidth,
+		// 			borderRadius: borderRadiusValue,
+		// 			padding: paddingValue,
+		// 			margin: marginValue,
+		// 			boxShadow,
+		// 			...getBackgroundStyle(styles),
+		// 		}}
+		// 	>
+		// 		<Airplane />
+		// 		<RichText
+		// 			placeholder={__('Title', 'smart-info-box')}
+		// 			tagName="h4"
+		// 			onChange={handleTitleChange}
+		// 			value={title}
+		// 			allowedFormats={[]}
+		// 		/>
+		// 		<RichText
+		// 			style={{ textAlign: contentAlignment }}
+		// 			placeholder={__('Description', 'smart-info-box')}
+		// 			tagName="p"
+		// 			onChange={handleDescriptionChange}
+		// 			value={description}
+		// 			allowedFormats={[]}
+		// 		/>
+		// 		<a href="https://google.com">
+		// 			Learn More <RightArrow />
+		// 		</a>
+		// 	</div>
+		// </div>
+		<></>
 	);
 
 	// lagacy

@@ -22,6 +22,14 @@ return array(
 				'type' => 'string',
 				'default' => 'center'
 			),
+			'columns' => array(
+				'type' => 'number',
+				'default' => 3
+			),
+			'columnsGap' => array(
+				'type' => 'number',
+				'default' => 20
+			),
 			'styles' => array(
 				'type' => 'object',
 				'default' => array(
@@ -45,7 +53,7 @@ return array(
 						'bottomLeft' => '4px',
 						'bottomRight' => '4px'
 					),
-					'borderColor' => '#e5e5e5',
+					'borderColor' => '#cccccc',
 					'boxShadow' => 'none',
 					'padding' => array(
 						'top' => '28px',
@@ -58,7 +66,9 @@ return array(
 						'bottom' => '0px',
 						'left' => '0px',
 						'right' => '0px'
-					)
+					),
+					'iconSize' => 45,
+					'titleFontSize' => 20
 				)
 			),
 			'hoverStyles' => array(
@@ -68,18 +78,22 @@ return array(
 					'borderColor' => '#884AE3',
 					'backgroundColor' => '#884AE3'
 				)
-			),
-			'content' => array(
-				'type' => 'object',
-				'default' => array(
-					'icon' => '',
-					'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
-					'title' => 'Automated AI Chatbotsx',
-					'buttonText' => 'Learn More'
-				)
 			)
 		),
+		'providesContext' => array(
+			'smartInfoBox/layout' => 'layout',
+			'smartInfoBox/styles' => 'styles',
+			'smartInfoBox/contentAlignment' => 'contentAlignment'
+		),
 		'supports' => array(
+			'color' => array(
+				'background' => true,
+				'text' => true
+			),
+			'spacing' => array(
+				'padding' => true,
+				'margin' => true
+			),
 			'html' => false,
 			'align' => array(
 				'wide',
@@ -93,7 +107,73 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
-		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	),
+	'smart-info-box-item' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'create-block/smart-info-box-item',
+		'version' => '0.1.0',
+		'title' => 'Info Box Item',
+		'category' => 'text',
+		'icon' => 'id',
+		'parent' => array(
+			'create-block/smart-info-box'
+		),
+		'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
+		'example' => array(
+			
+		),
+		'attributes' => array(
+			'content' => array(
+				'type' => 'object',
+				'default' => array(
+					'icon' => array(
+						'id' => '',
+						'url' => '',
+						'position' => 'center',
+						'size' => 'cover',
+						'repeat' => 'no-repeat'
+					),
+					'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
+					'title' => 'Automated AI Chatbotsx',
+					'buttonText' => 'Learn More'
+				)
+			),
+			'styles' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'layout' => array(
+				'type' => 'string',
+				'default' => 'default'
+			),
+			'contentAlignment' => array(
+				'type' => 'string',
+				'default' => 'center'
+			)
+		),
+		'usesContext' => array(
+			'smartInfoBox/layout',
+			'smartInfoBox/styles',
+			'smartInfoBox/hoverStyles',
+			'smartInfoBox/contentAlignment'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'center',
+				'full',
+				'left',
+				'right'
+			)
+		),
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
 	)
 );
