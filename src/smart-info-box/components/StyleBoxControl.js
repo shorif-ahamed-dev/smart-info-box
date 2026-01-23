@@ -57,7 +57,6 @@ export default function StyleBoxControl({
             {/* Controls */}
             {isLinked ? (
                 <RangeControl
-                    __next40pxDefaultSize
                     initialPosition={value}
                     value={value}
                     max={100}

@@ -5,8 +5,6 @@ import AddButton from '../assets/AddButton';
 export default function IconSelect({ attributes, setAttributes }) {
     const { content } = attributes
     const { icon } = content
-    console.log(content)
-    // const [image, setImage] = useState(null);
 
     const onIconSelect = (media) => {
         setAttributes({

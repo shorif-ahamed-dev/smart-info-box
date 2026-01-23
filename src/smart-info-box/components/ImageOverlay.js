@@ -55,7 +55,7 @@ export default function ImageOverlay({ }) {
             </div>
 
             {isPickerOpen && (
-                <Popover position="middle left">
+                <Popover placement="left-start" offset={8} onFocusOutside={() => setIsPickerOpen(false)}>
                     <ColorPicker
                         color={backgroundColor}
                         onChangeComplete={onColorChange}
@@ -76,7 +76,6 @@ export default function ImageOverlay({ }) {
                 </div>
             </div>
             <RangeControl
-                __next40pxDefaultSize
                 value={imageOverlayOpacity}
                 min={0}
                 max={100}

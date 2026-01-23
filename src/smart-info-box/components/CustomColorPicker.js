@@ -1,48 +1,54 @@
 import { useState } from "@wordpress/element";
-import { Button, ColorPicker, PanelBody, Popover } from "@wordpress/components";
+import { ColorPicker, Popover } from "@wordpress/components";
 import ResetIcon from "../assets/ResetIcon";
-import { useAttributes } from "../context/AttributesContext";
-export default function CustomColorPicker({}) {
-	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { backgroundColor } = styles;
+
+export default function CustomColorPicker({
+	label = "Color",
+	value = "#ffffff",
+	onChange,
+	onReset,
+	placement = "left-start",
+}) {
 	const [isPickerOpen, setIsPickerOpen] = useState(false);
 
-	const onColorChange = (value) => {
-		setAttributes({
-			styles: {
-				...styles,
-				backgroundType: "solid",
-				backgroundColor: value.hex,
-			},
-		});
+	const handleColorChange = (color) => {
+		onChange?.(color.hex);
 	};
+
 	return (
 		<>
 			<div className="components-header">
-				<p>Solid Color</p>
+				<p>{label}</p>
 				<span>
-					<ResetIcon />
+					{onReset && (
+						<button onClick={onReset}>
+							<ResetIcon />
+						</button>
+					)}
+
 					<div
-						variant="secondary"
-						onClick={() => setIsPickerOpen(!isPickerOpen)}
+						onClick={() => setIsPickerOpen((prev) => !prev)}
 						style={{
-							backgroundColor: backgroundColor,
+							backgroundColor: value,
 							height: "24px",
 							width: "24px",
 							borderRadius: "50%",
 							border: "2px solid #DDD",
 							cursor: "pointer",
 						}}
-					></div>
+					/>
 				</span>
 			</div>
 
 			{isPickerOpen && (
-				<Popover position="middle left">
+				<Popover
+					placement={placement}
+					offset={8}
+					onFocusOutside={() => setIsPickerOpen(false)}
+				>
 					<ColorPicker
-						color={backgroundColor}
-						onChangeComplete={onColorChange}
+						color={value}
+						onChangeComplete={handleColorChange}
 						disableAlpha
 					/>
 				</Popover>

@@ -7,10 +7,16 @@ import StyleSettings from "./StyleSettings";
 import StyleRangeControl from "./StyleRangeControl";
 import AppearenceIcon from "../assets/AppearenceIcon";
 import LayoutSettings from "./LayoutSettings";
+import { ToggleControl } from "@wordpress/components";
+import ToolbarIcon from "../assets/ToolbarIcon";
+import { SelectControl } from "@wordpress/components";
+import CustomColorPicker from "./CustomColorPicker";
 
 export default function InspectorContainer({ attributes, setAttributes }) {
+	const { styles } = attributes
+	const { descriptionColor, titleColor, buttonTextColor, badgeColor } = styles
 	const [openPanel, setOpenPanel] = useState("info");
-	const onSelect = (value) => {};
+	const onSelect = (value) => { };
 	return (
 		<InspectorControls>
 			<PanelBody
@@ -24,16 +30,6 @@ export default function InspectorContainer({ attributes, setAttributes }) {
 					onSelect={onSelect}
 					tabs={[
 						{
-							name: "style",
-							title: (
-								<span>
-									<AppearenceIcon />
-									Style
-								</span>
-							),
-							className: "tab-two",
-						},
-						{
 							name: "layout",
 							title: (
 								<span>
@@ -43,6 +39,17 @@ export default function InspectorContainer({ attributes, setAttributes }) {
 							),
 							className: "tab-one",
 						},
+						{
+							name: "style",
+							title: (
+								<span>
+									<AppearenceIcon />
+									Style
+								</span>
+							),
+							className: "tab-two",
+						},
+
 					]}
 				>
 					{(tab) => {
@@ -96,6 +103,26 @@ export default function InspectorContainer({ attributes, setAttributes }) {
 						step={1}
 					/>
 				</div>
+				<CustomColorPicker
+					label="Title Color"
+					value={titleColor}
+					onChange={(color) =>
+						setAttributes({
+							styles: {
+								...styles,
+								titleColor: color,
+							},
+						})
+					}
+					onReset={() =>
+						setAttributes({
+							styles: {
+								...styles,
+								titleColor: "#000000ff",
+							},
+						})
+					}
+				/>
 			</PanelBody>
 			<PanelBody
 				title="Description"
@@ -114,6 +141,26 @@ export default function InspectorContainer({ attributes, setAttributes }) {
 						step={1}
 					/>
 				</div>
+				<CustomColorPicker
+					label="Description Color"
+					value={descriptionColor}
+					onChange={(color) =>
+						setAttributes({
+							styles: {
+								...styles,
+								descriptionColor: color,
+							},
+						})
+					}
+					onReset={() =>
+						setAttributes({
+							styles: {
+								...styles,
+								descriptionColor: "#ffffff",
+							},
+						})
+					}
+				/>
 			</PanelBody>
 			<PanelBody
 				title="Call To Action"
@@ -131,7 +178,99 @@ export default function InspectorContainer({ attributes, setAttributes }) {
 						max={100}
 						step={1}
 					/>
+					<CustomColorPicker
+						label="Button Text Color"
+						value={buttonTextColor}
+						onChange={(color) =>
+							setAttributes({
+								styles: {
+									...styles,
+									buttonTextColor: color,
+								},
+							})
+						}
+						onReset={() =>
+							setAttributes({
+								styles: {
+									...styles,
+									buttonTextColor: "#000000ff",
+								},
+							})
+						}
+					/>
 				</div>
+			</PanelBody>
+			<PanelBody
+				title="Badge"
+				opened={openPanel === "badge"}
+				onToggle={() =>
+					setOpenPanel(openPanel === "badge" ? null : "badge")
+				}
+			>
+				<div className="components-header inspector-section">
+					<p>Badge</p>
+					<span>
+						<ToggleControl checked={styles.badge} onChange={(value) => {
+							setAttributes({
+								styles: {
+									...styles,
+									badge: value,
+								},
+							})
+
+
+						}} />
+					</span>
+				</div>
+				{styles.badge && (
+					<>
+						<div className="components-header">
+							<p>Badge Position</p>
+							<span>
+								<ToolbarIcon />
+							</span>
+						</div>
+
+						<SelectControl
+							value={styles.badgePosition}
+							options={[
+								{ label: "Top Left", value: "top-left" },
+								{ label: "Top Right", value: "top-right" },
+								{ label: "Bottom Left", value: "bottom-left" },
+								{ label: "Bottom Right", value: "bottom-right" },
+							]}
+							onChange={(value) =>
+								setAttributes({
+									styles: {
+										...styles,
+										badgePosition: value,
+									},
+								})
+							}
+						/>
+						<br />
+						<CustomColorPicker
+							label="Badge Color"
+							value={badgeColor}
+							onChange={(color) =>
+								setAttributes({
+									styles: {
+										...styles,
+										badgeColor: color,
+									},
+								})
+							}
+							onReset={() =>
+								setAttributes({
+									styles: {
+										...styles,
+										badgeColor: "#000000ff",
+									},
+								})
+							}
+						/>
+					</>
+				)}
 			</PanelBody>
 		</InspectorControls>
 	);

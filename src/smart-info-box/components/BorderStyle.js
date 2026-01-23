@@ -9,7 +9,7 @@ export default function BorderStyle() {
 		<>
 			<BorderType label="Border Type" />
 			<StyleColorControl
-				label="Border Color"
+				label="Border Colors"
 				attributeKey="borderColor"
 			/>
 			<StyleRangeControl

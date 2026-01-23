@@ -19,11 +19,11 @@
 		},
 		"columns": {
 			"type": "number",
-			"default": 3
+			"default": 1
 		},
 		"columnsGap": {
 			"type": "number",
-			"default": 20
+			"default": 16
 		},
 		"styles": {
 			"type": "object",
@@ -65,7 +65,13 @@
 				"iconSize": 45,
 				"titleFontSize": 20,
 				"descriptionFontSize": 14,
-				"buttonFontSize": 14
+				"buttonFontSize": 14,
+				"badge": false,
+				"badgePosition": "top-left",
+				"descriptionColor": "#757575",
+				"titleColor": "black",
+				"buttonTextColor": "black",
+				"badgeColor": "#E0E0E0"
 			}
 		},
 		"hoverStyles": {
@@ -92,7 +98,9 @@
 			"margin": true
 		},
 		"html": false,
-		"align": ["wide", "center", "full", "left", "right"]
+		"align": [
+			"wide"
+		]
 	},
 	"textdomain": "smart-info-box",
 	"editorScript": "file:./index.js",

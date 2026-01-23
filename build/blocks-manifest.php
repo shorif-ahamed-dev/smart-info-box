@@ -24,11 +24,11 @@ return array(
 			),
 			'columns' => array(
 				'type' => 'number',
-				'default' => 3
+				'default' => 1
 			),
 			'columnsGap' => array(
 				'type' => 'number',
-				'default' => 20
+				'default' => 16
 			),
 			'styles' => array(
 				'type' => 'object',
@@ -70,7 +70,13 @@ return array(
 					'iconSize' => 45,
 					'titleFontSize' => 20,
 					'descriptionFontSize' => 14,
-					'buttonFontSize' => 14
+					'buttonFontSize' => 14,
+					'badge' => false,
+					'badgePosition' => 'top-left',
+					'descriptionColor' => '#757575',
+					'titleColor' => 'black',
+					'buttonTextColor' => 'black',
+					'badgeColor' => '#E0E0E0'
 				)
 			),
 			'hoverStyles' => array(
@@ -98,11 +104,7 @@ return array(
 			),
 			'html' => false,
 			'align' => array(
-				'wide',
-				'center',
-				'full',
-				'left',
-				'right'
+				'wide'
 			)
 		),
 		'textdomain' => 'smart-info-box',
@@ -139,7 +141,8 @@ return array(
 					),
 					'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
 					'title' => 'Automated AI Chatbotsx',
-					'buttonText' => 'Learn More'
+					'buttonText' => 'Learn More',
+					'badgeText' => 'Sold Out'
 				)
 			),
 			'styles' => array(

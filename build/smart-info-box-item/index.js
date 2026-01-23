@@ -50,16 +50,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 
 function Airplane() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
+    width: "45",
+    height: "45",
+    viewBox: "0 0 45 45",
     fill: "none",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-      d: "M21.1199 2.88002C20.1599 1.92002 18.5999 2.76002 17.8799 3.48002L13.6799 8.04002L10.7999 6.84002L11.5199 6.12002C11.7599 5.88002 11.7599 5.52002 11.5199 5.28002C11.3999 5.04002 11.0399 5.16002 10.7999 5.28002L9.7199 6.36002L7.5599 5.40002L8.1599 4.80002C8.3999 4.56002 8.3999 4.20002 8.1599 4.08002C7.9199 3.84002 7.5599 3.84002 7.3199 4.08002L6.3599 5.04002L5.7599 4.80002C4.7999 4.32002 3.7199 4.44002 2.9999 5.28002L9.9599 12.24L7.1999 15.12L2.9999 14.88L2.3999 15.72L6.1199 17.88L8.2799 21.6L9.1199 21L8.8799 16.8L11.8799 14.04L18.8399 21C19.5599 20.28 19.7999 19.08 19.3199 18.24L19.0799 17.64L20.0399 16.68C20.2799 16.44 20.2799 16.08 20.0399 15.84C19.7999 15.6 19.4399 15.6 19.1999 15.84L18.5999 16.44L17.6399 14.16L18.7199 13.08C18.9599 12.84 18.9599 12.48 18.7199 12.24C18.4799 12 18.1199 12 17.9999 12.24L17.2799 12.96L16.0799 10.08L20.6399 6.00002C21.3599 5.40002 22.0799 3.72002 21.1199 2.88002Z",
-      fill: "currentColor"
-    })
+    xmlns: "http://www.w3.org/2000/svg",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+      width: "45",
+      height: "45",
+      rx: "6",
+      fill: "#2F2F2F"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M31.6199 13.38C30.6599 12.42 29.0999 13.26 28.3799 13.98L24.1799 18.54L21.2999 17.34L22.0199 16.62C22.2599 16.38 22.2599 16.02 22.0199 15.78C21.8999 15.54 21.5399 15.66 21.2999 15.78L20.2199 16.86L18.0599 15.9L18.6599 15.3C18.8999 15.06 18.8999 14.7 18.6599 14.58C18.4199 14.34 18.0599 14.34 17.8199 14.58L16.8599 15.54L16.2599 15.3C15.2999 14.82 14.2199 14.94 13.4999 15.78L20.4599 22.74L17.6999 25.62L13.4999 25.38L12.8999 26.22L16.6199 28.38L18.7799 32.1L19.6199 31.5L19.3799 27.3L22.3799 24.54L29.3399 31.5C30.0599 30.78 30.2999 29.58 29.8199 28.74L29.5799 28.14L30.5399 27.18C30.7799 26.94 30.7799 26.58 30.5399 26.34C30.2999 26.1 29.9399 26.1 29.6999 26.34L29.0999 26.94L28.1399 24.66L29.2199 23.58C29.4599 23.34 29.4599 22.98 29.2199 22.74C28.9799 22.5 28.6199 22.5 28.4999 22.74L27.7799 23.46L26.5799 20.58L31.1399 16.5C31.8599 15.9 32.5799 14.22 31.6199 13.38Z",
+      fill: "white"
+    })]
   });
 }
 
@@ -153,7 +158,7 @@ function SingleBoxItem() {
   \********************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More"}},"styles":{"type":"object","default":{}},"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"}},"usesContext":["smartInfoBox/layout","smartInfoBox/styles","smartInfoBox/hoverStyles","smartInfoBox/contentAlignment"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out"}},"styles":{"type":"object","default":{}},"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"}},"usesContext":["smartInfoBox/layout","smartInfoBox/styles","smartInfoBox/hoverStyles","smartInfoBox/contentAlignment"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -188,9 +193,6 @@ function IconSelect({
   const {
     icon
   } = content;
-  console.log(content);
-  // const [image, setImage] = useState(null);
-
   const onIconSelect = media => {
     setAttributes({
       content: {
@@ -294,7 +296,8 @@ function InfoBox({
   context,
   handleTitleChange,
   handleDescriptionChange,
-  handleButtonTextChange
+  handleButtonTextChange,
+  setAttributes
 }) {
   const {
     content
@@ -303,7 +306,8 @@ function InfoBox({
     icon,
     title,
     description,
-    buttonText
+    buttonText,
+    badgeText
   } = content;
   const layout = context["smartInfoBox/layout"] || "default";
   const styles = context["smartInfoBox/styles"] || {};
@@ -315,13 +319,38 @@ function InfoBox({
     iconSize,
     titleFontSize,
     descriptionFontSize,
-    buttonFontSize
+    buttonFontSize,
+    badge,
+    badgePosition,
+    overlayColor,
+    descriptionColor,
+    titleColor,
+    buttonTextColor,
+    badgeColor
   } = styles;
   const contentAlignment = context["smartInfoBox/contentAlignment"] || "center";
   const borderRadiusValue = `${styles.borderRadius.topLeft} ${styles.borderRadius.topRight} ${styles.borderRadius.bottomRight} ${styles.borderRadius.bottomLeft}`;
   const paddingValue = `${styles.padding.top} ${styles.padding.right} ${styles.padding.bottom} ${styles.padding.left}`;
   const marginValue = `${styles.margin.top} ${styles.margin.right} ${styles.margin.bottom} ${styles.margin.left}`;
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({});
+  const badgePositionStyles = {
+    "top-left": {
+      top: 0,
+      left: 0
+    },
+    "top-right": {
+      top: 0,
+      right: 0
+    },
+    "bottom-left": {
+      bottom: 0,
+      left: 0
+    },
+    "bottom-right": {
+      bottom: 0,
+      right: 0
+    }
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -339,16 +368,17 @@ function InfoBox({
         ...(0,_smart_info_box_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_4__["default"])(styles)
       },
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-        className: "media-container-placeholder",
-        style: {
-          backgroundColor: "black",
-          borderRadius: 8
-        },
+        className: "media-container-placeholder"
+        // style={{
+        // 	backgroundColor: "black",
+        // 	borderRadius: 8,
+        // }}
+        ,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
           style: {
             width: iconSize !== null && iconSize !== void 0 ? iconSize : 45,
             height: iconSize !== null && iconSize !== void 0 ? iconSize : 45,
-            padding: "12px",
+            // padding: "12px",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
@@ -370,25 +400,43 @@ function InfoBox({
         value: title,
         allowedFormats: [],
         style: {
-          fontSize: `${titleFontSize}px`
+          fontSize: `${titleFontSize}px`,
+          border: '1px solid transparent',
+          boxSizing: 'border-box',
+          color: titleColor
+        },
+        onMouseEnter: e => {
+          e.currentTarget.style.borderColor = '#9051efff';
+        },
+        onMouseLeave: e => {
+          e.currentTarget.style.borderColor = 'transparent';
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         style: {
           textAlign: contentAlignment,
           fontSize: `${descriptionFontSize}px`,
-          color: "#757575"
+          color: descriptionColor,
+          border: '1px solid transparent',
+          boxSizing: 'border-box'
         },
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Description", "smart-info-box"),
         tagName: "p",
         onChange: handleDescriptionChange,
         value: description,
-        allowedFormats: []
+        allowedFormats: [],
+        onMouseEnter: e => {
+          e.currentTarget.style.borderColor = '#9051efff';
+        },
+        onMouseLeave: e => {
+          e.currentTarget.style.borderColor = 'transparent';
+        }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
         href: "#",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
           style: {
             fontSize: `${buttonFontSize}px`,
-            fontWeight: 600
+            fontWeight: 600,
+            color: buttonTextColor
           },
           placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Button Text", "smart-info-box"),
           tagName: "span",
@@ -396,6 +444,34 @@ function InfoBox({
           value: buttonText,
           allowedFormats: []
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+      }), badge && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "badge",
+        style: {
+          ...badgePositionStyles[styles.badgePosition],
+          background: badgeColor
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
+          placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Badge", "smart-info-box"),
+          tagName: "p",
+          onChange: value => setAttributes({
+            content: {
+              ...content,
+              badgeText: value
+            }
+          }),
+          value: badgeText,
+          allowedFormats: [],
+          style: {
+            border: '1px solid transparent',
+            boxSizing: 'border-box'
+          },
+          onMouseEnter: e => {
+            e.currentTarget.style.borderColor = '#9051efff';
+          },
+          onMouseLeave: e => {
+            e.currentTarget.style.borderColor = 'transparent';
+          }
+        })
       })]
     })
   });
@@ -601,7 +677,8 @@ function save({
     icon,
     title,
     description,
-    buttonText
+    buttonText,
+    badgeText
   } = content || {};
   const {
     borderType,
@@ -614,12 +691,36 @@ function save({
     descriptionFontSize,
     buttonFontSize,
     padding = {},
-    margin = {}
+    margin = {},
+    badge,
+    badgePosition,
+    descriptionColor,
+    buttonTextColor,
+    titleColor,
+    badgeColor
   } = styles;
   const borderRadiusValue = `${borderRadius.topLeft || 0} ${borderRadius.topRight || 0} ${borderRadius.bottomRight || 0} ${borderRadius.bottomLeft || 0}`;
   const paddingValue = `${padding.top || 0} ${padding.right || 0} ${padding.bottom || 0} ${padding.left || 0}`;
   const marginValue = `${margin.top || 0} ${margin.right || 0} ${margin.bottom || 0} ${margin.left || 0}`;
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save({});
+  const badgePositionStyles = {
+    "top-left": {
+      top: 0,
+      left: 0
+    },
+    "top-right": {
+      top: 0,
+      right: 0
+    },
+    "bottom-left": {
+      bottom: 0,
+      left: 0
+    },
+    "bottom-right": {
+      bottom: 0,
+      right: 0
+    }
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -637,16 +738,17 @@ function save({
         ...(0,_smart_info_box_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_3__["default"])(styles)
       },
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "media-container-placeholder",
-        style: {
-          backgroundColor: "black",
-          borderRadius: 8
-        },
+        className: "media-container-placeholder"
+        // style={{
+        // 	backgroundColor: "black",
+        // 	borderRadius: 8,
+        // }}
+        ,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
           style: {
             width: iconSize !== null && iconSize !== void 0 ? iconSize : 45,
             height: iconSize !== null && iconSize !== void 0 ? iconSize : 45,
-            padding: "12px",
+            // padding: "12px",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
@@ -665,7 +767,8 @@ function save({
         tagName: "h4",
         value: title,
         style: {
-          fontSize: `${titleFontSize}px`
+          fontSize: `${titleFontSize}px`,
+          color: titleColor
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
         tagName: "p",
@@ -673,7 +776,7 @@ function save({
         style: {
           textAlign: contentAlignment,
           fontSize: `${descriptionFontSize}px`,
-          color: "#757575"
+          color: descriptionColor
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
         href: "#",
@@ -682,9 +785,20 @@ function save({
           value: buttonText,
           style: {
             fontSize: `${buttonFontSize}px`,
-            fontWeight: 600
+            fontWeight: 600,
+            color: buttonTextColor
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_1__["default"], {})]
+      }), badge && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "badge",
+        style: {
+          ...badgePositionStyles[styles.badgePosition],
+          background: badgeColor
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+          tagName: "p",
+          value: badgeText
+        })
       })]
     })
   });
@@ -714,6 +828,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _hexToRgb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hexToRgb */ "./src/smart-info-box/utils/hexToRgb.js");
+
 const getBackgroundStyle = styles => {
   if (!styles) return {};
   const bgStyle = {};
@@ -730,13 +846,37 @@ const getBackgroundStyle = styles => {
     // Add overlay if specified
     if (styles.imageOverlayColor && styles.imageOverlayOpacity) {
       const opacity = styles.imageOverlayOpacity / 100;
+      const overlay = opacity ? `linear-gradient(${(0,_hexToRgb__WEBPACK_IMPORTED_MODULE_0__["default"])(styles.imageOverlayColor, opacity)}, ${(0,_hexToRgb__WEBPACK_IMPORTED_MODULE_0__["default"])(styles.imageOverlayColor, opacity)})` : '';
       bgStyle.position = 'relative';
+      // bgStyle.backgroundImage = `${overlay}, url(${styles.image.url})`;
       bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
     }
   }
   return bgStyle;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getBackgroundStyle);
+
+/***/ },
+
+/***/ "./src/smart-info-box/utils/hexToRgb.js"
+/*!**********************************************!*\
+  !*** ./src/smart-info-box/utils/hexToRgb.js ***!
+  \**********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const hexToRgb = hex => {
+  const cleaned = hex.replace("#", "");
+  const bigint = parseInt(cleaned, 16);
+  const r = bigint >> 16 & 255;
+  const g = bigint >> 8 & 255;
+  const b = bigint & 255;
+  return `${r}, ${g}, ${b}`;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hexToRgb);
 
 /***/ },
 

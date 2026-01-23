@@ -24,6 +24,7 @@ export default function BoxShadow({ label }) {
 			});
 		}
 		setValue(value);
+		console.log(value)
 	};
 	return (
 		<div className="components-header">

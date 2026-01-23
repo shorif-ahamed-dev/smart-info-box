@@ -10,7 +10,7 @@ import SelectImage from './SelectImage';
 export default function BackgroundStyle() {
     const { attributes, setAttributes } = useAttributes();
     const { styles } = attributes
-    const { backgroundType } = styles;
+    const { backgroundType, backgroundColor } = styles;
     const [bgType, setBgType] = useState(backgroundType);
 
     const backgroundTypes = [
@@ -49,7 +49,28 @@ export default function BackgroundStyle() {
                     })}
                 </div>
             </div>
-            {backgroundType === "solid" && <CustomColorPicker />}
+            {backgroundType === "solid" && <CustomColorPicker
+                label="Solid Color"
+                value={backgroundColor}
+                onChange={(color) =>
+                    setAttributes({
+                        styles: {
+                            ...styles,
+                            backgroundType: "solid",
+                            backgroundColor: color,
+                        },
+                    })
+                }
+                onReset={() =>
+                    setAttributes({
+                        styles: {
+                            ...styles,
+                            backgroundType: "solid",
+                            backgroundColor: "#ffffff",
+                        },
+                    })
+                }
+            />}
 
             {backgroundType === "gradient" && (
                 <CustomGradientPicker />

@@ -10,9 +10,10 @@ export default function InfoBox({
 	handleTitleChange,
 	handleDescriptionChange,
 	handleButtonTextChange,
+	setAttributes
 }) {
 	const { content } = attributes;
-	const { icon, title, description, buttonText } = content;
+	const { icon, title, description, buttonText, badgeText } = content;
 	const layout = context["smartInfoBox/layout"] || "default";
 	const styles = context["smartInfoBox/styles"] || {};
 	const {
@@ -24,6 +25,13 @@ export default function InfoBox({
 		titleFontSize,
 		descriptionFontSize,
 		buttonFontSize,
+		badge,
+		badgePosition,
+		overlayColor,
+		descriptionColor,
+		titleColor,
+		buttonTextColor,
+		badgeColor
 	} = styles;
 	const contentAlignment = context["smartInfoBox/contentAlignment"] || "center";
 	const borderRadiusValue = `${styles.borderRadius.topLeft} ${styles.borderRadius.topRight} ${styles.borderRadius.bottomRight} ${styles.borderRadius.bottomLeft}`;
@@ -31,6 +39,13 @@ export default function InfoBox({
 	const marginValue = `${styles.margin.top} ${styles.margin.right} ${styles.margin.bottom} ${styles.margin.left}`;
 
 	const blockProps = useBlockProps({});
+
+	const badgePositionStyles = {
+		"top-left": { top: 0, left: 0 },
+		"top-right": { top: 0, right: 0 },
+		"bottom-left": { bottom: 0, left: 0 },
+		"bottom-right": { bottom: 0, right: 0 },
+	};
 
 	return (
 		<div {...blockProps}>
@@ -51,16 +66,16 @@ export default function InfoBox({
 			>
 				<div
 					className="media-container-placeholder"
-					style={{
-						backgroundColor: "black",
-						borderRadius: 8,
-					}}
+				// style={{
+				// 	backgroundColor: "black",
+				// 	borderRadius: 8,
+				// }}
 				>
 					<span
 						style={{
 							width: iconSize ?? 45,
 							height: iconSize ?? 45,
-							padding: "12px",
+							// padding: "12px",
 							display: "inline-flex",
 							alignItems: "center",
 							justifyContent: "center",
@@ -81,23 +96,42 @@ export default function InfoBox({
 					onChange={handleTitleChange}
 					value={title}
 					allowedFormats={[]}
-					style={{ fontSize: `${titleFontSize}px` }}
+					style={{
+						fontSize: `${titleFontSize}px`,
+						border: '1px solid transparent',
+						boxSizing: 'border-box',
+						color: titleColor
+					}}
+					onMouseEnter={(e) => {
+						e.currentTarget.style.borderColor = '#9051efff'
+					}}
+					onMouseLeave={(e) => {
+						e.currentTarget.style.borderColor = 'transparent'
+					}}
 				/>
 				<RichText
 					style={{
 						textAlign: contentAlignment,
 						fontSize: `${descriptionFontSize}px`,
-						color: "#757575",
+						color: descriptionColor,
+						border: '1px solid transparent',
+						boxSizing: 'border-box'
 					}}
 					placeholder={__("Description", "smart-info-box")}
 					tagName="p"
 					onChange={handleDescriptionChange}
 					value={description}
 					allowedFormats={[]}
+					onMouseEnter={(e) => {
+						e.currentTarget.style.borderColor = '#9051efff'
+					}}
+					onMouseLeave={(e) => {
+						e.currentTarget.style.borderColor = 'transparent'
+					}}
 				/>
 				<a href="#">
 					<RichText
-						style={{ fontSize: `${buttonFontSize}px`, fontWeight: 600 }}
+						style={{ fontSize: `${buttonFontSize}px`, fontWeight: 600, color: buttonTextColor }}
 						placeholder={__("Button Text", "smart-info-box")}
 						tagName="span"
 						onChange={handleButtonTextChange}
@@ -106,6 +140,40 @@ export default function InfoBox({
 					/>
 					<RightArrow />
 				</a>
+				{badge && (
+					<div
+						className="badge"
+						style={{
+							...badgePositionStyles[styles.badgePosition],
+							background: badgeColor
+						}}
+					>
+						<RichText
+							placeholder={__("Badge", "smart-info-box")}
+							tagName="p"
+							onChange={(value) =>
+								setAttributes({
+									content: {
+										...content,
+										badgeText: value,
+									},
+								})
+							}
+							value={badgeText}
+							allowedFormats={[]}
+							style={{
+								border: '1px solid transparent',
+								boxSizing: 'border-box'
+							}}
+							onMouseEnter={(e) => {
+								e.currentTarget.style.borderColor = '#9051efff'
+							}}
+							onMouseLeave={(e) => {
+								e.currentTarget.style.borderColor = 'transparent'
+							}}
+						/>
+					</div>
+				)}
 			</div>
 		</div>
 	);

@@ -22,7 +22,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<InnerBlocks
 					allowedBlocks={['create-block/smart-info-box-item']}
 					template={[
-						['create-block/smart-info-box-item'], ['create-block/smart-info-box-item'], ['create-block/smart-info-box-item'], ['create-block/smart-info-box-item'], ['create-block/smart-info-box-item'], ['create-block/smart-info-box-item'],
+						['create-block/smart-info-box-item'],
 					]}
 					renderAppender={() => <InnerBlocks.ButtonBlockAppender />}
 				/>

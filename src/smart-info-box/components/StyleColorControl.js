@@ -24,7 +24,7 @@ export default function StyleColorControl({
         setAttributes({
             styles: {
                 ...attributes.styles,
-                [attributeKey]: "",
+                [attributeKey]: "#cccc",
             },
         });
     };
@@ -34,7 +34,9 @@ export default function StyleColorControl({
             <div className="components-header">
                 <p>{label}</p>
                 <span>
-                    <ResetIcon onClick={handleReset} />
+                    <button onClick={handleReset}>
+                        <ResetIcon />
+                    </button>
                     <div
                         onClick={() => setIsOpen(!isOpen)}
                         style={{
@@ -50,7 +52,7 @@ export default function StyleColorControl({
             </div>
 
             {isOpen && (
-                <Popover position="middle left">
+                <Popover placement="left-start" offset={8} onFocusOutside={() => setIsOpen(false)}>
                     <ColorPicker
                         color={value}
                         onChangeComplete={(v) => handleChange(v.hex)}

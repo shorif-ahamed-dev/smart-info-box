@@ -1,4 +1,4 @@
-
+import hexToRgb from "./hexToRgb";
 
 const getBackgroundStyle = (styles) => {
     if (!styles) return {};
@@ -18,7 +18,11 @@ const getBackgroundStyle = (styles) => {
         // Add overlay if specified
         if (styles.imageOverlayColor && styles.imageOverlayOpacity) {
             const opacity = styles.imageOverlayOpacity / 100;
+            const overlay = opacity
+                ? `linear-gradient(${hexToRgb(styles.imageOverlayColor, opacity)}, ${hexToRgb(styles.imageOverlayColor, opacity)})`
+                : '';
             bgStyle.position = 'relative';
+            // bgStyle.backgroundImage = `${overlay}, url(${styles.image.url})`;
             bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
         }
     }

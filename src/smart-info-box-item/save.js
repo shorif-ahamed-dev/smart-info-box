@@ -10,7 +10,7 @@ export default function save({ attributes }) {
 		layout = "default",
 		contentAlignment = "center",
 	} = attributes;
-	const { icon, title, description, buttonText } = content || {};
+	const { icon, title, description, buttonText, badgeText } = content || {};
 
 	const {
 		borderType,
@@ -24,18 +24,28 @@ export default function save({ attributes }) {
 		buttonFontSize,
 		padding = {},
 		margin = {},
+		badge,
+		badgePosition,
+		descriptionColor,
+		buttonTextColor,
+		titleColor,
+		badgeColor
 	} = styles;
 
-	const borderRadiusValue = `${borderRadius.topLeft || 0} ${
-		borderRadius.topRight || 0
-	} ${borderRadius.bottomRight || 0} ${borderRadius.bottomLeft || 0}`;
-	const paddingValue = `${padding.top || 0} ${padding.right || 0} ${
-		padding.bottom || 0
-	} ${padding.left || 0}`;
-	const marginValue = `${margin.top || 0} ${margin.right || 0} ${
-		margin.bottom || 0
-	} ${margin.left || 0}`;
+	const borderRadiusValue = `${borderRadius.topLeft || 0} ${borderRadius.topRight || 0
+		} ${borderRadius.bottomRight || 0} ${borderRadius.bottomLeft || 0}`;
+	const paddingValue = `${padding.top || 0} ${padding.right || 0} ${padding.bottom || 0
+		} ${padding.left || 0}`;
+	const marginValue = `${margin.top || 0} ${margin.right || 0} ${margin.bottom || 0
+		} ${margin.left || 0}`;
 	const blockProps = useBlockProps.save({});
+
+	const badgePositionStyles = {
+		"top-left": { top: 0, left: 0 },
+		"top-right": { top: 0, right: 0 },
+		"bottom-left": { bottom: 0, left: 0 },
+		"bottom-right": { bottom: 0, right: 0 },
+	};
 	return (
 		<div {...blockProps}>
 			<div
@@ -55,16 +65,16 @@ export default function save({ attributes }) {
 			>
 				<div
 					className="media-container-placeholder"
-					style={{
-						backgroundColor: "black",
-						borderRadius: 8,
-					}}
+				// style={{
+				// 	backgroundColor: "black",
+				// 	borderRadius: 8,
+				// }}
 				>
 					<span
 						style={{
 							width: iconSize ?? 45,
 							height: iconSize ?? 45,
-							padding: "12px",
+							// padding: "12px",
 							display: "inline-flex",
 							alignItems: "center",
 							justifyContent: "center",
@@ -82,7 +92,7 @@ export default function save({ attributes }) {
 				<RichText.Content
 					tagName="h4"
 					value={title}
-					style={{ fontSize: `${titleFontSize}px` }}
+					style={{ fontSize: `${titleFontSize}px`, color: titleColor }}
 				/>
 
 				<RichText.Content
@@ -91,7 +101,7 @@ export default function save({ attributes }) {
 					style={{
 						textAlign: contentAlignment,
 						fontSize: `${descriptionFontSize}px`,
-						color: "#757575",
+						color: descriptionColor,
 					}}
 				/>
 
@@ -99,10 +109,25 @@ export default function save({ attributes }) {
 					<RichText.Content
 						tagName="span"
 						value={buttonText}
-						style={{ fontSize: `${buttonFontSize}px`, fontWeight: 600 }}
+						style={{ fontSize: `${buttonFontSize}px`, fontWeight: 600, color: buttonTextColor }}
 					/>
 					<RightArrow />
 				</a>
+
+				{badge && (
+					<div
+						className="badge"
+						style={{
+							...badgePositionStyles[styles.badgePosition],
+							background: badgeColor
+						}}
+					>
+						<RichText.Content
+							tagName="p"
+							value={badgeText}
+						/>
+					</div>
+				)}
 			</div>
 		</div>
 	);
