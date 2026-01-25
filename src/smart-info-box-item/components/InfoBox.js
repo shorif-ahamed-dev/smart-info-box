@@ -10,7 +10,7 @@ export default function InfoBox({
 	handleTitleChange,
 	handleDescriptionChange,
 	handleButtonTextChange,
-	setAttributes
+	setAttributes,
 }) {
 	const { content } = attributes;
 	const { icon, title, description, buttonText, badgeText } = content;
@@ -31,7 +31,7 @@ export default function InfoBox({
 		descriptionColor,
 		titleColor,
 		buttonTextColor,
-		badgeColor
+		badgeColor,
 	} = styles;
 	const contentAlignment = context["smartInfoBox/contentAlignment"] || "center";
 	const borderRadiusValue = `${styles.borderRadius.topLeft} ${styles.borderRadius.topRight} ${styles.borderRadius.bottomRight} ${styles.borderRadius.bottomLeft}`;
@@ -66,10 +66,10 @@ export default function InfoBox({
 			>
 				<div
 					className="media-container-placeholder"
-				// style={{
-				// 	backgroundColor: "black",
-				// 	borderRadius: 8,
-				// }}
+					// style={{
+					// 	backgroundColor: "black",
+					// 	borderRadius: 8,
+					// }}
 				>
 					<span
 						style={{
@@ -89,7 +89,6 @@ export default function InfoBox({
 						)}
 					</span>
 				</div>
-
 				<RichText
 					placeholder={__("Title", "smart-info-box")}
 					tagName="h4"
@@ -98,15 +97,15 @@ export default function InfoBox({
 					allowedFormats={[]}
 					style={{
 						fontSize: `${titleFontSize}px`,
-						border: '1px solid transparent',
-						boxSizing: 'border-box',
-						color: titleColor
+						border: "1px solid transparent",
+						boxSizing: "border-box",
+						color: titleColor,
 					}}
 					onMouseEnter={(e) => {
-						e.currentTarget.style.borderColor = '#9051efff'
+						e.currentTarget.style.borderColor = "#9051efff";
 					}}
 					onMouseLeave={(e) => {
-						e.currentTarget.style.borderColor = 'transparent'
+						e.currentTarget.style.borderColor = "transparent";
 					}}
 				/>
 				<RichText
@@ -114,8 +113,8 @@ export default function InfoBox({
 						textAlign: contentAlignment,
 						fontSize: `${descriptionFontSize}px`,
 						color: descriptionColor,
-						border: '1px solid transparent',
-						boxSizing: 'border-box'
+						border: "1px solid transparent",
+						boxSizing: "border-box",
 					}}
 					placeholder={__("Description", "smart-info-box")}
 					tagName="p"
@@ -123,15 +122,20 @@ export default function InfoBox({
 					value={description}
 					allowedFormats={[]}
 					onMouseEnter={(e) => {
-						e.currentTarget.style.borderColor = '#9051efff'
+						e.currentTarget.style.borderColor = "#9051efff";
 					}}
 					onMouseLeave={(e) => {
-						e.currentTarget.style.borderColor = 'transparent'
+						e.currentTarget.style.borderColor = "transparent";
 					}}
 				/>
+				m
 				<a href="#">
 					<RichText
-						style={{ fontSize: `${buttonFontSize}px`, fontWeight: 600, color: buttonTextColor }}
+						style={{
+							fontSize: `${buttonFontSize}px`,
+							fontWeight: 600,
+							color: buttonTextColor,
+						}}
 						placeholder={__("Button Text", "smart-info-box")}
 						tagName="span"
 						onChange={handleButtonTextChange}
@@ -145,7 +149,7 @@ export default function InfoBox({
 						className="badge"
 						style={{
 							...badgePositionStyles[styles.badgePosition],
-							background: badgeColor
+							background: badgeColor,
 						}}
 					>
 						<RichText
@@ -162,14 +166,14 @@ export default function InfoBox({
 							value={badgeText}
 							allowedFormats={[]}
 							style={{
-								border: '1px solid transparent',
-								boxSizing: 'border-box'
+								border: "1px solid transparent",
+								boxSizing: "border-box",
 							}}
 							onMouseEnter={(e) => {
-								e.currentTarget.style.borderColor = '#9051efff'
+								e.currentTarget.style.borderColor = "#9051efff";
 							}}
 							onMouseLeave={(e) => {
-								e.currentTarget.style.borderColor = 'transparent'
+								e.currentTarget.style.borderColor = "transparent";
 							}}
 						/>
 					</div>

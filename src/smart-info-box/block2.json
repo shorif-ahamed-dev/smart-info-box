@@ -9,94 +9,19 @@
 	"description": "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.",
 	"example": {},
 	"attributes": {
-		"layout": {
-			"type": "string",
-			"default": "default"
-		},
-		"contentAlignment": {
-			"type": "string",
-			"default": "center"
-		},
-		"columns": {
-			"type": "number",
-			"default": 1
-		},
-		"columnsGap": {
-			"type": "number",
-			"default": 16
-		},
-		"styles": {
-			"type": "object",
-			"default": {
-				"backgroundType": "solid",
-				"backgroundColor": "#ffffff",
-				"gradient": "linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)",
-				"image": {
-					"id": "",
-					"url": "",
-					"position": "center",
-					"size": "cover",
-					"repeat": "no-repeat"
-				},
-				"imageOverlayColor": "#000000",
-				"imageOverlayOpacity": 50,
-				"borderType": "solid",
-				"borderWidth": 1,
-				"borderRadius": {
-					"topLeft": "4px",
-					"topRight": "4px",
-					"bottomLeft": "4px",
-					"bottomRight": "4px"
-				},
-				"borderColor": "#cccccc",
-				"boxShadow": "none",
-				"padding": {
-					"top": "28px",
-					"bottom": "28px",
-					"left": "24px",
-					"right": "24px"
-				},
-				"margin": {
-					"top": "0px",
-					"bottom": "0px",
-					"left": "0px",
-					"right": "0px"
-				},
-				"iconSize": 45,
-				"titleFontSize": 20,
-				"descriptionFontSize": 14,
-				"buttonFontSize": 14,
-				"badge": false,
-				"badgePosition": "top-left",
-				"descriptionColor": "#757575",
-				"titleColor": "black",
-				"buttonTextColor": "black",
-				"badgeColor": "#E0E0E0"
-			}
-		},
-		"hoverStyles": {
-			"type": "object",
-			"default": {
-				"borderType": "solid",
-				"borderColor": "#884AE3",
-				"backgroundColor": "#884AE3"
-			}
-		},
 		"infoBox": {
 			"type": "object",
 			"default": {
-				"layout": "layout-five",
+				"layout": "default",
 				"contentAlignment": "center",
-				"textAlignment": "center",
 				"columns": 1,
-				"columnsGap": 16,
-				"rowGap": 12
+				"columnsGap": 16
 			}
 		},
 		"container": {
 			"type": "object",
 			"default": {
-				"color": "black",
+				"color": "#ddd",
 				"backgroundType": "solid",
 				"backgroundColor": "#ffffff",
 				"gradient": "linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)",
@@ -119,10 +44,10 @@
 		"mediaContainer": {
 			"type": "object",
 			"default": {
-				"width": "min-content",
-				"height": "min-content",
-				"backgroundColor": "black",
-				"padding": "12px",
+				"width": "",
+				"height": "",
+				"backgroundColor": "#ffffff",
+				"padding": "28px 24px 28px 24px",
 				"margin": "0px 0px 0px 0px",
 				"borderRadius": "4px 4px 4px 4px",
 				"color": "#ddd"
@@ -131,8 +56,7 @@
 		"iconImage": {
 			"type": "object",
 			"default": {
-				"iconColor": "red",
-				"size": 24,
+				"size": 45,
 				"position": "top",
 				"alignment": "center"
 			}
@@ -156,12 +80,11 @@
 		"cta": {
 			"type": "object",
 			"default": {
-				"fontSize": "14px",
 				"width": "",
 				"height": "",
-				"textColor": "black",
+				"textColor": "red",
 				"border": "none",
-				"backgroundColor": "none",
+				"backgroundColor": "#ccc",
 				"padding": "0px",
 				"margin": "0px",
 				"gap": "6px"
@@ -178,24 +101,24 @@
 				"left": null,
 				"width": "",
 				"height": "",
-				"backgroundColor": "#e0e0e0",
-				"padding": "6px 12px 6px 12px",
-				"fontSize": "13px",
+				"backgroundColor": "#ffffff",
+				"padding": "28px 24px 28px 24px",
 				"margin": "0px 0px 0px 0px",
-				"borderRadius": "0px",
-				"color": "red"
+				"borderRadius": "4px 4px 4px 4px",
+				"color": "#ddd"
+			}
+		},
+		"hoverContainer": {
+			"type": "object",
+			"default": {
+				"backgroundColor": "#ffffff"
 			}
 		}
 	},
 	"providesContext": {
-		"smartInfoBox/infoBox": "infoBox",
-		"smartInfoBox/container": "container",
-		"smartInfoBox/mediaContainer": "mediaContainer",
-		"smartInfoBox/iconImage": "iconImage",
-		"smartInfoBox/title": "title",
-		"smartInfoBox/description": "description",
-		"smartInfoBox/cta": "cta",
-		"smartInfoBox/featured": "featured"
+		"smartInfoBox/layout": "layout",
+		"smartInfoBox/styles": "styles",
+		"smartInfoBox/contentAlignment": "contentAlignment"
 	},
 	"supports": {
 		"color": {

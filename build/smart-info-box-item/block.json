@@ -25,7 +25,8 @@
         "description": "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.",
         "title": "Automated AI Chatbotsx",
         "buttonText": "Learn More",
-        "badgeText": "Sold Out"
+        "badgeText": "Sold Out",
+        "ratting": 4
       }
     },
     "styles": {
@@ -45,7 +46,15 @@
     "smartInfoBox/layout",
     "smartInfoBox/styles",
     "smartInfoBox/hoverStyles",
-    "smartInfoBox/contentAlignment"
+    "smartInfoBox/contentAlignment",
+    "smartInfoBox/infoBox",
+    "smartInfoBox/container",
+    "smartInfoBox/mediaContainer",
+    "smartInfoBox/iconImage",
+    "smartInfoBox/title",
+    "smartInfoBox/description",
+    "smartInfoBox/cta",
+    "smartInfoBox/featured"
   ],
   "supports": {
     "html": false,

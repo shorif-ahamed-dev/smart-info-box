@@ -1,6 +1,6 @@
 import { RangeControl } from "@wordpress/components";
-import { useAttributes } from "../context/AttributesContext";
-import ResetIcon from "../assets/ResetIcon";
+import { useAttributes } from "../../context/AttributesContext";
+import ResetIcon from "../../assets/ResetIcon";
 
 export default function StyleRangeControl({
 	label,

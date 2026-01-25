@@ -86,12 +86,121 @@ return array(
 					'borderColor' => '#884AE3',
 					'backgroundColor' => '#884AE3'
 				)
+			),
+			'infoBox' => array(
+				'type' => 'object',
+				'default' => array(
+					'layout' => 'layout-five',
+					'contentAlignment' => 'center',
+					'textAlignment' => 'center',
+					'columns' => 1,
+					'columnsGap' => 16,
+					'rowGap' => 12
+				)
+			),
+			'container' => array(
+				'type' => 'object',
+				'default' => array(
+					'color' => 'black',
+					'backgroundType' => 'solid',
+					'backgroundColor' => '#ffffff',
+					'gradient' => 'linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)',
+					'image' => array(
+						'id' => '',
+						'url' => '',
+						'position' => 'center',
+						'size' => 'cover',
+						'repeat' => 'no-repeat'
+					),
+					'imageOverlayColor' => '#000000',
+					'imageOverlayOpacity' => 50,
+					'padding' => '28px 24px 28px 24px',
+					'margin' => '0px 0px 0px 0px',
+					'border' => '1px solid #cccccc',
+					'borderRadius' => '4px 4px 4px 4px',
+					'boxShadow' => 'none'
+				)
+			),
+			'mediaContainer' => array(
+				'type' => 'object',
+				'default' => array(
+					'width' => 'min-content',
+					'height' => 'min-content',
+					'backgroundColor' => 'black',
+					'padding' => '12px',
+					'margin' => '0px 0px 0px 0px',
+					'borderRadius' => '4px 4px 4px 4px',
+					'color' => '#ddd'
+				)
+			),
+			'iconImage' => array(
+				'type' => 'object',
+				'default' => array(
+					'iconColor' => 'red',
+					'size' => 24,
+					'position' => 'top',
+					'alignment' => 'center'
+				)
+			),
+			'title' => array(
+				'type' => 'object',
+				'default' => array(
+					'color' => 'black',
+					'fontSize' => 20,
+					'padding' => '0px'
+				)
+			),
+			'description' => array(
+				'type' => 'object',
+				'default' => array(
+					'color' => '#757575',
+					'fontSize' => 14,
+					'padding' => '0px'
+				)
+			),
+			'cta' => array(
+				'type' => 'object',
+				'default' => array(
+					'fontSize' => '14px',
+					'width' => '',
+					'height' => '',
+					'textColor' => 'black',
+					'border' => 'none',
+					'backgroundColor' => 'none',
+					'padding' => '0px',
+					'margin' => '0px',
+					'gap' => '6px'
+				)
+			),
+			'featured' => array(
+				'type' => 'object',
+				'default' => array(
+					'badge' => false,
+					'badgePosition' => 'top-left',
+					'top' => 0,
+					'bottom' => null,
+					'right' => 0,
+					'left' => null,
+					'width' => '',
+					'height' => '',
+					'backgroundColor' => '#e0e0e0',
+					'padding' => '6px 12px 6px 12px',
+					'fontSize' => '13px',
+					'margin' => '0px 0px 0px 0px',
+					'borderRadius' => '0px',
+					'color' => 'red'
+				)
 			)
 		),
 		'providesContext' => array(
-			'smartInfoBox/layout' => 'layout',
-			'smartInfoBox/styles' => 'styles',
-			'smartInfoBox/contentAlignment' => 'contentAlignment'
+			'smartInfoBox/infoBox' => 'infoBox',
+			'smartInfoBox/container' => 'container',
+			'smartInfoBox/mediaContainer' => 'mediaContainer',
+			'smartInfoBox/iconImage' => 'iconImage',
+			'smartInfoBox/title' => 'title',
+			'smartInfoBox/description' => 'description',
+			'smartInfoBox/cta' => 'cta',
+			'smartInfoBox/featured' => 'featured'
 		),
 		'supports' => array(
 			'color' => array(
@@ -142,7 +251,8 @@ return array(
 					'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
 					'title' => 'Automated AI Chatbotsx',
 					'buttonText' => 'Learn More',
-					'badgeText' => 'Sold Out'
+					'badgeText' => 'Sold Out',
+					'ratting' => 4
 				)
 			),
 			'styles' => array(
@@ -164,7 +274,15 @@ return array(
 			'smartInfoBox/layout',
 			'smartInfoBox/styles',
 			'smartInfoBox/hoverStyles',
-			'smartInfoBox/contentAlignment'
+			'smartInfoBox/contentAlignment',
+			'smartInfoBox/infoBox',
+			'smartInfoBox/container',
+			'smartInfoBox/mediaContainer',
+			'smartInfoBox/iconImage',
+			'smartInfoBox/title',
+			'smartInfoBox/description',
+			'smartInfoBox/cta',
+			'smartInfoBox/featured'
 		),
 		'supports' => array(
 			'html' => false,

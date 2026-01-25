@@ -1,9 +1,9 @@
 import { useEffect, useState } from "@wordpress/element";
-import DesktopIcon from "../assets/styleLayoutIcon/DesktopIcon";
-import "../assets/css/customBoxControls.scss";
-import { useAttributes } from "../context/AttributesContext";
-import ResetIcon from "../assets/ResetIcon";
-import PixelIcon from "../assets/PixelIcon";
+import DesktopIcon from "../../assets/styleLayoutIcon/DesktopIcon";
+import "../../assets/css/customBoxControls.scss";
+import { useAttributes } from "../../context/AttributesContext";
+import ResetIcon from "../../assets/ResetIcon";
+import PixelIcon from "../../assets/PixelIcon";
 const SIDE_MAP = {
 	borderRadius: ["topLeft", "topRight", "bottomRight", "bottomLeft"],
 	padding: ["top", "right", "bottom", "left"],

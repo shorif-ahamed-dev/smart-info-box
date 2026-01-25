@@ -18,10 +18,9 @@
 		}
 	}
 
-
 	@for $i from 1 through 6 {
 		&.has-#{$i}-columns {
-			>.block-editor-inner-blocks>.block-editor-block-list__layout {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
 				display: grid !important;
 				grid-template-columns: repeat($i, 1fr) !important;
 				gap: var(--columns-gap, 20px);
@@ -40,14 +39,50 @@
 	.block-editor-block-list__layout {
 		margin: 0;
 	}
-
 }
 
 .components-textarea-control__input,
 .components-text-control__input {
 	border-color: #ddd !important;
-
 }
 
+// Inspector section
+.components-panel__body {
+	--wp-components-color-accent: #7c3aed;
 
-// child scss
+	.components-header {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 16px;
+
+		p {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 8px;
+			padding: 0;
+			margin: 0;
+		}
+		svg {
+			padding: 0;
+			margin: 0;
+		}
+
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+		}
+
+		button {
+			all: unset;
+		}
+		.bacbb-f-c-ec-dacbbe-1f9s4va {
+			gap: 0px !important;
+		}
+		.components-h-stack {
+			gap: 0px !important;
+		}
+	}
+}

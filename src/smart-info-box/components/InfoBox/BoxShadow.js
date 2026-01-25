@@ -1,6 +1,6 @@
 import { ToggleControl } from "@wordpress/components";
 import { useState } from "@wordpress/element";
-import { useAttributes } from "../context/AttributesContext";
+import { useAttributes } from "../../context/AttributesContext";
 
 export default function BoxShadow({ label }) {
 	const { attributes, setAttributes } = useAttributes();
@@ -24,7 +24,7 @@ export default function BoxShadow({ label }) {
 			});
 		}
 		setValue(value);
-		console.log(value)
+		console.log(value);
 	};
 	return (
 		<div className="components-header">
