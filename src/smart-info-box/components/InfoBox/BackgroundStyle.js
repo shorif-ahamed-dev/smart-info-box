@@ -9,12 +9,12 @@ import ColorControl from "../common/ColorControl";
 import { useAttributes } from "../../context/AttributesContext";
 export default function BackgroundStyle() {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { backgroundType, backgroundColor } = styles;
+	const { container } = attributes;
+	const { backgroundType, backgroundColor } = container;
 	const [bgType, setBgType] = useState(backgroundType);
 
 	const backgroundTypes = [
-		{ id: 1, type: "none", icon: TransparentBox },
+		{ id: 1, type: "transparent", icon: TransparentBox },
 		{ id: 2, type: "solid", icon: SquareBox },
 		{ id: 3, type: "gradient", icon: GradiantBox },
 		{ id: 4, type: "image", icon: ImageBox },
@@ -23,8 +23,8 @@ export default function BackgroundStyle() {
 	const onBackgroundTypeChange = (type) => {
 		setBgType(type);
 		setAttributes({
-			styles: {
-				...styles,
+			container: {
+				...container,
 				backgroundType: type,
 			},
 		});
@@ -55,8 +55,8 @@ export default function BackgroundStyle() {
 					value={backgroundColor}
 					onChange={(color) =>
 						setAttributes({
-							styles: {
-								...styles,
+							container: {
+								...container,
 								backgroundType: "solid",
 								backgroundColor: color,
 							},
@@ -64,8 +64,8 @@ export default function BackgroundStyle() {
 					}
 					onReset={() =>
 						setAttributes({
-							styles: {
-								...styles,
+							container: {
+								...container,
 								backgroundType: "solid",
 								backgroundColor: "#ffffff",
 							},

@@ -92,7 +92,7 @@ return array(
 				'default' => array(
 					'layout' => 'layout-five',
 					'contentAlignment' => 'center',
-					'textAlignment' => 'center',
+					'gap' => 20,
 					'columns' => 1,
 					'columnsGap' => 16,
 					'rowGap' => 12
@@ -116,8 +116,10 @@ return array(
 					'imageOverlayOpacity' => 50,
 					'padding' => '28px 24px 28px 24px',
 					'margin' => '0px 0px 0px 0px',
-					'border' => '1px solid #cccccc',
-					'borderRadius' => '4px 4px 4px 4px',
+					'borderType' => 'solid',
+					'borderWidth' => 1,
+					'borderColor' => '#cccccc',
+					'borderRadius' => '4px 8px 4px 8px',
 					'boxShadow' => 'none'
 				)
 			),
@@ -127,7 +129,7 @@ return array(
 					'width' => 'min-content',
 					'height' => 'min-content',
 					'backgroundColor' => 'black',
-					'padding' => '12px',
+					'padding' => 12,
 					'margin' => '0px 0px 0px 0px',
 					'borderRadius' => '4px 4px 4px 4px',
 					'color' => '#ddd'
@@ -147,7 +149,7 @@ return array(
 				'default' => array(
 					'color' => 'black',
 					'fontSize' => 20,
-					'padding' => '0px'
+					'padding' => 12
 				)
 			),
 			'description' => array(
@@ -268,6 +270,54 @@ return array(
 			'contentAlignment' => array(
 				'type' => 'string',
 				'default' => 'center'
+			),
+			'infoBox' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'container' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'mediaContainer' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'iconImage' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'title' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'description' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'cta' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
+			'featured' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
 			)
 		),
 		'usesContext' => array(

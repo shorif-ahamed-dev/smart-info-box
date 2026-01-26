@@ -4,27 +4,26 @@ import { useAttributes } from "../../context/AttributesContext";
 
 export default function BoxShadow({ label }) {
 	const { attributes, setAttributes } = useAttributes();
-	const { boxShadow } = attributes.styles;
+	const { boxShadow } = attributes.container;
 	const [value, setValue] = useState(boxShadow === "none" ? false : true);
 
 	const onToggleShadow = (value) => {
 		if (value) {
 			setAttributes({
-				styles: {
-					...attributes.styles,
+				container: {
+					...attributes.container,
 					boxShadow: "0 0 20px rgba(102, 126, 234, 0.6)",
 				},
 			});
 		} else {
 			setAttributes({
-				styles: {
-					...attributes.styles,
+				container: {
+					...attributes.container,
 					boxShadow: "none",
 				},
 			});
 		}
 		setValue(value);
-		console.log(value);
 	};
 	return (
 		<div className="components-header">

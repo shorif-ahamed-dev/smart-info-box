@@ -5,8 +5,8 @@ import CustomBoxControls from "../common/CustomBoxControls";
 import StyleRangeControl from "../common/StyleRangeControl";
 export default function BorderStyle() {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { borderColor } = styles;
+	const { container } = attributes;
+	const { borderColor } = container;
 	return (
 		<>
 			<BorderType label="Border Type" />
@@ -15,16 +15,16 @@ export default function BorderStyle() {
 				value={borderColor}
 				onChange={(color) =>
 					setAttributes({
-						styles: {
-							...styles,
+						container: {
+							...container,
 							borderColor: color,
 						},
 					})
 				}
 				onReset={() =>
 					setAttributes({
-						styles: {
-							...styles,
+						container: {
+							...container,
 							borderColor: "#cccc",
 						},
 					})

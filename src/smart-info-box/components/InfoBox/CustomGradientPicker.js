@@ -3,13 +3,13 @@ import { useAttributes } from "../../context/AttributesContext";
 
 export default function CustomGradientPicker() {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { gradient } = styles;
+	const { container } = attributes;
+	const { gradient } = container;
 
 	const onColorChange = (value) => {
 		setAttributes({
-			styles: {
-				...styles,
+			container: {
+				...container,
 				backgroundType: "gradient",
 				gradient: value,
 			},

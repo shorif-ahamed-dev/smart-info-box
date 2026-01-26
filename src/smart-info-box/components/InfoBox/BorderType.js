@@ -7,7 +7,7 @@ import ToolbarIcon from "../../assets/ToolbarIcon";
 
 export default function BorderType() {
 	const { attributes, setAttributes } = useAttributes();
-	const { borderType } = attributes.styles;
+	const { borderType } = attributes.container;
 
 	const borderButtons = [
 		{
@@ -35,8 +35,8 @@ export default function BorderType() {
 
 	const handleBorderChange = (type) => {
 		setAttributes({
-			styles: {
-				...attributes.styles,
+			container: {
+				...attributes.container,
 				borderType: type,
 			},
 		});

@@ -10,11 +10,12 @@ const CSSVars = (attributes) => {
 		featuredStyle,
 	} = attributes;
 
+	// const borderRadius = `${container?.borderRadius?.topLeft} ${container?.borderRadius?.topRight} ${container?.borderRadius?.bottomLeft} ${container?.borderRadius?.bottomRight}`;
+	// console.log(borderRadius);
 	return {
 		/* layout */
 		"--sib-layout": infoBox?.layout,
 		"--sib-content-align": infoBox?.contentAlignment,
-		"--sib-text-align": infoBox?.textAlignment,
 		"--sib-columns": infoBox?.columns,
 		"--sib-columns-gap": `${infoBox?.columnsGap}px`,
 		"--sib-row-gap": `${infoBox?.rowGap}px`,
@@ -24,16 +25,17 @@ const CSSVars = (attributes) => {
 		"--sib-text-color": container?.color,
 		"--sib-padding": container?.padding,
 		"--sib-margin": container?.margin,
-		"--sib-border": container?.border,
-		"--sib-radius": container?.borderRadius,
+		"--sib-border": `${container?.borderWidth}px ${container?.borderType} ${container?.borderColor}`,
+		"--sib-border-radius": container?.borderRadius,
 		"--sib-shadow": container?.boxShadow,
 
 		/* media */
 		"--sib-media-bg": mediaContainer?.backgroundColor,
 		"--sib-media-width": mediaContainer?.width,
-		"--sib-media-padding": mediaContainer?.padding,
+		"--sib-media-padding": `${mediaContainer?.padding}px`,
 		"--sib-media-radius": mediaContainer?.borderRadius,
 		"--sib-media-color": mediaContainer?.color,
+		"--sib-icon-color": mediaContainer?.color,
 		"--sib-icon-size": `${iconImage?.size}px`,
 
 		/* title */

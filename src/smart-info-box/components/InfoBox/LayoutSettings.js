@@ -7,14 +7,15 @@ import Box4 from "../../assets/Box4";
 import Box5 from "../../assets/Box5";
 
 export default function LayoutSettings({ attributes, setAttributes }) {
-	const { layout, contentAlignment, columns, columnsGap } = attributes;
-
+	const { infoBox } = attributes;
+	const { layout, contentAlignment, columns, gap, columnsGap, rowGap } =
+		infoBox;
 	const layouts = [
-		{ id: "default", label: "Icon Top", icon: Box1 },
-		{ id: "icon-left", label: "Icon Left", icon: Box2 },
-		{ id: "icon-solo", label: "Icon Solo", icon: Box3 },
-		{ id: "icon-link", label: "Icon Link", icon: Box4 },
-		{ id: "icon-top", label: "Icon Top", icon: Box5 },
+		{ id: "layout-one", label: "Icon Top", icon: Box1 },
+		{ id: "layout-two", label: "Icon Left", icon: Box2 },
+		{ id: "layout-three", label: "Icon Solo", icon: Box3 },
+		{ id: "layout-four", label: "Icon Link", icon: Box4 },
+		{ id: "layout-five", label: "Icon Top", icon: Box5 },
 	];
 
 	return (
@@ -33,7 +34,9 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 								className={`layout-card ${
 									layout === item.id ? "is-active" : ""
 								}`}
-								onClick={() => setAttributes({ layout: item.id })}
+								onClick={() =>
+									setAttributes({ infoBox: { ...infoBox, layout: item.id } })
+								}
 								aria-pressed={layout === item.id}
 							>
 								<Icon active={layout === item.id} />
@@ -50,9 +53,13 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 				<div className="alignment-buttons">
 					<button
 						type="button"
-						className={contentAlignment === "left" ? "is-active" : ""}
-						aria-pressed={contentAlignment === "left"}
-						onClick={() => setAttributes({ contentAlignment: "left" })}
+						className={contentAlignment === "start" ? "is-active" : ""}
+						aria-pressed={contentAlignment === "start"}
+						onClick={() =>
+							setAttributes({
+								infoBox: { ...infoBox, contentAlignment: "start" },
+							})
+						}
 					>
 						<span className="dashicons dashicons-editor-alignleft" />
 					</button>
@@ -61,38 +68,77 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 						type="button"
 						className={contentAlignment === "center" ? "is-active" : ""}
 						aria-pressed={contentAlignment === "center"}
-						onClick={() => setAttributes({ contentAlignment: "center" })}
+						onClick={() =>
+							setAttributes({
+								infoBox: { ...infoBox, contentAlignment: "center" },
+							})
+						}
 					>
 						<span className="dashicons dashicons-editor-aligncenter" />
 					</button>
 
 					<button
 						type="button"
-						className={contentAlignment === "right" ? "is-active" : ""}
-						aria-pressed={contentAlignment === "right"}
-						onClick={() => setAttributes({ contentAlignment: "right" })}
+						className={contentAlignment === "end" ? "is-active" : ""}
+						aria-pressed={contentAlignment === "end"}
+						onClick={() =>
+							setAttributes({
+								infoBox: { ...infoBox, contentAlignment: "end" },
+							})
+						}
 					>
 						<span className="dashicons dashicons-editor-alignright" />
 					</button>
 				</div>
 			</div>
+			<br />
 			<div className="inspector-section">
 				<RangeControl
 					label={__("Columns", "smart-info-box")}
 					min={1}
 					max={6}
 					value={columns}
-					onChange={(value) => setAttributes({ columns: value })}
+					onChange={(value) =>
+						setAttributes({ infoBox: { ...infoBox, columns: value } })
+					}
 					color="#6f22dd"
 				/>
 			</div>
 			<div className="inspector-section">
 				<RangeControl
-					label={__("Columns Gap", "smart-info-box")}
+					label={__("Gap", "smart-info-box")}
+					min={4}
+					max={50}
+					value={gap}
+					onChange={(value) =>
+						setAttributes({ infoBox: { ...infoBox, gap: value } })
+					}
+					color="#6f22dd"
+				/>
+			</div>
+			<div className="inspector-section">
+				<RangeControl
+					label="Column Gap"
 					min={4}
 					max={50}
 					value={columnsGap}
-					onChange={(value) => setAttributes({ columnsGap: value })}
+					onChange={(value) =>
+						setAttributes({
+							infoBox: { ...infoBox, columnsGap: value },
+						})
+					}
+					color="#6f22dd"
+				/>
+			</div>
+			<div className="inspector-section">
+				<RangeControl
+					label="Row Gap"
+					min={4}
+					max={50}
+					value={rowGap}
+					onChange={(value) =>
+						setAttributes({ infoBox: { ...infoBox, rowGap: value } })
+					}
 					color="#6f22dd"
 				/>
 			</div>

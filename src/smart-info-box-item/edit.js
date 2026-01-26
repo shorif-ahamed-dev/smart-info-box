@@ -1,11 +1,5 @@
 import { __ } from "@wordpress/i18n";
 import "./editor.scss";
-import InfoBox from "./components/InfoBox";
-import { InspectorControls } from "@wordpress/block-editor";
-import { TextareaControl, InputControl } from "@wordpress/components";
-import { PanelBody } from "@wordpress/components";
-import { TextControl } from "@wordpress/components";
-import IconSelect from "./components/IconSelect";
 import { useEffect } from "@wordpress/element";
 import InfoBox2 from "./components/InfoBox2";
 

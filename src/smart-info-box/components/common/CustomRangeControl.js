@@ -2,9 +2,11 @@ import { RangeControl } from "@wordpress/components";
 import { useAttributes } from "../../context/AttributesContext";
 import ResetIcon from "../../assets/ResetIcon";
 
-export default function StyleRangeControl({
+export default function CustomRangeControl({
 	label,
-	attributeKey, // "borderWidth" | "borderRadius"
+	attributeKey,
+	resetValue,
+	subKey,
 	min = 0,
 	max = 50,
 	step = 1,
@@ -12,22 +14,22 @@ export default function StyleRangeControl({
 	unit = "px",
 }) {
 	const { attributes, setAttributes } = useAttributes();
-	const value = attributes.container?.[attributeKey];
+	const value = attributes[attributeKey]?.[subKey];
 
 	const handleChange = (newValue) => {
 		setAttributes({
-			container: {
-				...attributes.container,
-				[attributeKey]: newValue,
+			[attributeKey]: {
+				...attributes[attributeKey],
+				[subKey]: newValue,
 			},
 		});
 	};
 
 	const handleReset = () => {
 		setAttributes({
-			container: {
-				...attributes.container,
-				[attributeKey]: attributeKey === "iconSize" ? 45 : 1,
+			[attributeKey]: {
+				...attributes[attributeKey],
+				[subKey]: resetValue,
 			},
 		});
 	};
@@ -37,9 +39,10 @@ export default function StyleRangeControl({
 			<div className="components-header">
 				<p>{label}</p>
 				<button onClick={handleReset}>
-					<ResetIcon onClick={handleReset} />
+					<ResetIcon />
 				</button>
 			</div>
+
 			<RangeControl
 				value={value}
 				onChange={handleChange}

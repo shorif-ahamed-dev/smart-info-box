@@ -1278,7 +1278,7 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":1},"columnsGap":{"type":"number","default":16},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20,"descriptionFontSize":14,"buttonFontSize":14,"badge":false,"badgePosition":"top-left","descriptionColor":"#757575","titleColor":"black","buttonTextColor":"black","badgeColor":"#E0E0E0"}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}},"infoBox":{"type":"object","default":{"layout":"layout-five","contentAlignment":"center","textAlignment":"center","columns":1,"columnsGap":16,"rowGap":12}},"container":{"type":"object","default":{"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"padding":"28px 24px 28px 24px","margin":"0px 0px 0px 0px","border":"1px solid #cccccc","borderRadius":"4px 4px 4px 4px","boxShadow":"none"}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":"12px","margin":"0px 0px 0px 0px","borderRadius":"4px 4px 4px 4px","color":"#ddd"}},"iconImage":{"type":"object","default":{"iconColor":"red","size":24,"position":"top","alignment":"center"}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":"0px"}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":"14px","width":"","height":"","textColor":"black","border":"none","backgroundColor":"none","padding":"0px","margin":"0px","gap":"6px"}},"featured":{"type":"object","default":{"badge":false,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","padding":"6px 12px 6px 12px","fontSize":"13px","margin":"0px 0px 0px 0px","borderRadius":"0px","color":"red"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/iconImage":"iconImage","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featured":"featured"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":1},"columnsGap":{"type":"number","default":16},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20,"descriptionFontSize":14,"buttonFontSize":14,"badge":false,"badgePosition":"top-left","descriptionColor":"#757575","titleColor":"black","buttonTextColor":"black","badgeColor":"#E0E0E0"}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}},"infoBox":{"type":"object","default":{"layout":"layout-five","contentAlignment":"center","gap":20,"columns":1,"columnsGap":16,"rowGap":12}},"container":{"type":"object","default":{"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"padding":"28px 24px 28px 24px","margin":"0px 0px 0px 0px","borderType":"solid","borderWidth":1,"borderColor":"#cccccc","borderRadius":"4px 8px 4px 8px","boxShadow":"none"}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":"0px 0px 0px 0px","borderRadius":"4px 4px 4px 4px","color":"#ddd"}},"iconImage":{"type":"object","default":{"iconColor":"red","size":24,"position":"top","alignment":"center"}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":12}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":"14px","width":"","height":"","textColor":"black","border":"none","backgroundColor":"none","padding":"0px","margin":"0px","gap":"6px"}},"featured":{"type":"object","default":{"badge":false,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","padding":"6px 12px 6px 12px","fontSize":"13px","margin":"0px 0px 0px 0px","borderRadius":"0px","color":"red"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/iconImage":"iconImage","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featured":"featured"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -1375,22 +1375,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
+/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
 
 
 const IconImagePanel = () => {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
+  const {
+    mediaContainer
+  } = attributes;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "inspector-section",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Icon Size",
       attributeKey: "iconSize",
+      subKey: "size",
       marks: false,
       min: 25,
       max: 100,
       step: 1
-    })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Icon Size",
+      attributeKey: "iconImage",
+      subKey: "size",
+      resetValue: 45,
+      marks: false,
+      min: 10,
+      max: 100,
+      step: 1
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Padding",
+      attributeKey: "mediaContainer",
+      subKey: "padding",
+      resetValue: 45,
+      marks: false,
+      min: 0,
+      max: 100,
+      step: 1
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Background Color",
+      value: mediaContainer.backgroundColor,
+      onChange: color => setAttributes({
+        mediaContainer: {
+          ...mediaContainer,
+          backgroundColor: color
+        }
+      }),
+      onReset: () => setAttributes({
+        mediaContainer: {
+          ...mediaContainer,
+          backgroundColor: "#ffffff"
+        }
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Icon Color",
+      value: mediaContainer.color,
+      onChange: color => setAttributes({
+        mediaContainer: {
+          ...mediaContainer,
+          color: color
+        }
+      }),
+      onReset: () => setAttributes({
+        mediaContainer: {
+          ...mediaContainer,
+          color: "#ffffff"
+        }
+      })
+    })]
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconImagePanel);
@@ -1435,16 +1497,16 @@ function BackgroundStyle() {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_8__.useAttributes)();
   const {
-    styles
+    container
   } = attributes;
   const {
     backgroundType,
     backgroundColor
-  } = styles;
+  } = container;
   const [bgType, setBgType] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)(backgroundType);
   const backgroundTypes = [{
     id: 1,
-    type: "none",
+    type: "transparent",
     icon: _assets_styleLayoutIcon_TransparentBox__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, {
     id: 2,
@@ -1462,8 +1524,8 @@ function BackgroundStyle() {
   const onBackgroundTypeChange = type => {
     setBgType(type);
     setAttributes({
-      styles: {
-        ...styles,
+      container: {
+        ...container,
         backgroundType: type
       }
     });
@@ -1490,15 +1552,15 @@ function BackgroundStyle() {
       label: "Solid Color",
       value: backgroundColor,
       onChange: color => setAttributes({
-        styles: {
-          ...styles,
+        container: {
+          ...container,
           backgroundType: "solid",
           backgroundColor: color
         }
       }),
       onReset: () => setAttributes({
-        styles: {
-          ...styles,
+        container: {
+          ...container,
           backgroundType: "solid",
           backgroundColor: "#ffffff"
         }
@@ -1538,11 +1600,11 @@ function BorderStyle() {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
   const {
-    styles
+    container
   } = attributes;
   const {
     borderColor
-  } = styles;
+  } = container;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_BorderType__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Border Type"
@@ -1550,14 +1612,14 @@ function BorderStyle() {
       label: "Border Color",
       value: borderColor,
       onChange: color => setAttributes({
-        styles: {
-          ...styles,
+        container: {
+          ...container,
           borderColor: color
         }
       }),
       onReset: () => setAttributes({
-        styles: {
-          ...styles,
+        container: {
+          ...container,
           borderColor: "#cccc"
         }
       })
@@ -1608,7 +1670,7 @@ function BorderType() {
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
   const {
     borderType
-  } = attributes.styles;
+  } = attributes.container;
   const borderButtons = [{
     type: "none",
     label: "None",
@@ -1628,8 +1690,8 @@ function BorderType() {
   }];
   const handleBorderChange = type => {
     setAttributes({
-      styles: {
-        ...attributes.styles,
+      container: {
+        ...attributes.container,
         borderType: type
       }
     });
@@ -1691,26 +1753,25 @@ function BoxShadow({
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__.useAttributes)();
   const {
     boxShadow
-  } = attributes.styles;
+  } = attributes.container;
   const [value, setValue] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(boxShadow === "none" ? false : true);
   const onToggleShadow = value => {
     if (value) {
       setAttributes({
-        styles: {
-          ...attributes.styles,
+        container: {
+          ...attributes.container,
           boxShadow: "0 0 20px rgba(102, 126, 234, 0.6)"
         }
       });
     } else {
       setAttributes({
-        styles: {
-          ...attributes.styles,
+        container: {
+          ...attributes.container,
           boxShadow: "none"
         }
       });
     }
     setValue(value);
-    console.log(value);
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: "components-header",
@@ -1751,15 +1812,15 @@ function CustomGradientPicker() {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__.useAttributes)();
   const {
-    styles
+    container
   } = attributes;
   const {
     gradient
-  } = styles;
+  } = container;
   const onColorChange = value => {
     setAttributes({
-      styles: {
-        ...styles,
+      container: {
+        ...container,
         backgroundType: "gradient",
         gradient: value
       }
@@ -1996,29 +2057,34 @@ function LayoutSettings({
   setAttributes
 }) {
   const {
+    infoBox
+  } = attributes;
+  const {
     layout,
     contentAlignment,
     columns,
-    columnsGap
-  } = attributes;
+    gap,
+    columnsGap,
+    rowGap
+  } = infoBox;
   const layouts = [{
-    id: "default",
+    id: "layout-one",
     label: "Icon Top",
     icon: _assets_Box1__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
-    id: "icon-left",
+    id: "layout-two",
     label: "Icon Left",
     icon: _assets_Box2__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
-    id: "icon-solo",
+    id: "layout-three",
     label: "Icon Solo",
     icon: _assets_Box3__WEBPACK_IMPORTED_MODULE_4__["default"]
   }, {
-    id: "icon-link",
+    id: "layout-four",
     label: "Icon Link",
     icon: _assets_Box4__WEBPACK_IMPORTED_MODULE_5__["default"]
   }, {
-    id: "icon-top",
+    id: "layout-five",
     label: "Icon Top",
     icon: _assets_Box5__WEBPACK_IMPORTED_MODULE_6__["default"]
   }];
@@ -2035,7 +2101,10 @@ function LayoutSettings({
             role: "button",
             className: `layout-card ${layout === item.id ? "is-active" : ""}`,
             onClick: () => setAttributes({
-              layout: item.id
+              infoBox: {
+                ...infoBox,
+                layout: item.id
+              }
             }),
             "aria-pressed": layout === item.id,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Icon, {
@@ -2052,10 +2121,13 @@ function LayoutSettings({
         className: "alignment-buttons",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
           type: "button",
-          className: contentAlignment === "left" ? "is-active" : "",
-          "aria-pressed": contentAlignment === "left",
+          className: contentAlignment === "start" ? "is-active" : "",
+          "aria-pressed": contentAlignment === "start",
           onClick: () => setAttributes({
-            contentAlignment: "left"
+            infoBox: {
+              ...infoBox,
+              contentAlignment: "start"
+            }
           }),
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             className: "dashicons dashicons-editor-alignleft"
@@ -2065,24 +2137,30 @@ function LayoutSettings({
           className: contentAlignment === "center" ? "is-active" : "",
           "aria-pressed": contentAlignment === "center",
           onClick: () => setAttributes({
-            contentAlignment: "center"
+            infoBox: {
+              ...infoBox,
+              contentAlignment: "center"
+            }
           }),
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             className: "dashicons dashicons-editor-aligncenter"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
           type: "button",
-          className: contentAlignment === "right" ? "is-active" : "",
-          "aria-pressed": contentAlignment === "right",
+          className: contentAlignment === "end" ? "is-active" : "",
+          "aria-pressed": contentAlignment === "end",
           onClick: () => setAttributes({
-            contentAlignment: "right"
+            infoBox: {
+              ...infoBox,
+              contentAlignment: "end"
+            }
           }),
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             className: "dashicons dashicons-editor-alignright"
           })
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
       className: "inspector-section",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.RangeControl, {
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Columns", "smart-info-box"),
@@ -2090,19 +2168,55 @@ function LayoutSettings({
         max: 6,
         value: columns,
         onChange: value => setAttributes({
-          columns: value
+          infoBox: {
+            ...infoBox,
+            columns: value
+          }
         }),
         color: "#6f22dd"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
       className: "inspector-section",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.RangeControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Columns Gap", "smart-info-box"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Gap", "smart-info-box"),
+        min: 4,
+        max: 50,
+        value: gap,
+        onChange: value => setAttributes({
+          infoBox: {
+            ...infoBox,
+            gap: value
+          }
+        }),
+        color: "#6f22dd"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      className: "inspector-section",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.RangeControl, {
+        label: "Column Gap",
         min: 4,
         max: 50,
         value: columnsGap,
         onChange: value => setAttributes({
-          columnsGap: value
+          infoBox: {
+            ...infoBox,
+            columnsGap: value
+          }
+        }),
+        color: "#6f22dd"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      className: "inspector-section",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.RangeControl, {
+        label: "Row Gap",
+        min: 4,
+        max: 50,
+        value: rowGap,
+        onChange: value => setAttributes({
+          infoBox: {
+            ...infoBox,
+            rowGap: value
+          }
         }),
         color: "#6f22dd"
       })
@@ -2126,23 +2240,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BoxShadow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BoxShadow */ "./src/smart-info-box/components/InfoBox/BoxShadow.js");
 /* harmony import */ var _BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BackgroundStyle */ "./src/smart-info-box/components/InfoBox/BackgroundStyle.js");
 /* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
+
 
 
 
 
 
 function NormalStyle() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BorderStyle__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BoxShadow__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_4__.useAttributes)();
+  const {
+    rowGap,
+    columnsGap
+  } = attributes.infoBox;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_BorderStyle__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_BoxShadow__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Box Shadow"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Padding",
       attributeKey: "padding",
       min: 0,
       max: 200
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Margin",
       attributeKey: "margin",
       min: 0,
@@ -2351,9 +2478,6 @@ function StyleSettings({
   setAttributes
 }) {
   const [toggleStyleMode, setToggleStyleMode] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)("normal");
-  const {
-    contentAlignment
-  } = attributes;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "inspector-section",
@@ -2362,12 +2486,10 @@ function StyleSettings({
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
           type: "button",
           className: toggleStyleMode === "normal" ? "is-active" : "",
-          "aria-pressed": contentAlignment === "left",
           onClick: () => setToggleStyleMode("normal"),
           children: "Normal"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
           className: toggleStyleMode === "hover" ? "is-active" : "",
-          "aria-pressed": contentAlignment === "center",
           onClick: () => setToggleStyleMode("hover"),
           children: "Hover"
         })]
@@ -2581,115 +2703,156 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const SIDE_MAP = {
-  borderRadius: ["topLeft", "topRight", "bottomRight", "bottomLeft"],
-  padding: ["top", "right", "bottom", "left"],
-  margin: ["top", "right", "bottom", "left"]
+const expand = (v = "") => {
+  const p = v?.split(" ").map(x => parseInt(x) || 0);
+  return p.length === 1 ? [p[0], p[0], p[0], p[0]] : p.length === 2 ? [p[0], p[1], p[0], p[1]] : p.length === 3 ? [p[0], p[1], p[2], p[1]] : p.length === 4 ? p : [0, 0, 0, 0];
 };
 function CustomBoxControls({
   label,
   attributeKey = "borderRadius",
   min = 0,
   max = 100,
-  step = 4,
+  step = 1,
   unit = "px"
 }) {
   const {
     attributes,
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.useAttributes)();
-  const sides = SIDE_MAP[attributeKey];
-  const styleValue = attributes.styles?.[attributeKey] || {};
+  const style = attributes.container?.[attributeKey] || "";
   const [values, setValues] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([0, 0, 0, 0]);
-  const [isLinked, setIsLinked] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    const synced = sides.map(side => parseInt(styleValue?.[side]) || 0);
-    setValues(synced);
-  }, [styleValue, sides]);
-  const updateAttributes = newValues => {
-    const updatedStyle = {};
-    sides.forEach((side, index) => {
-      updatedStyle[side] = `${newValues[index]}${unit}`;
-    });
-    setAttributes({
-      styles: {
-        ...attributes.styles,
-        [attributeKey]: updatedStyle
-      }
-    });
-  };
-  const onChangeValue = (index, value) => {
-    const numericValue = Math.min(max, Math.max(min, Number(value) || 0));
-    setValues(prev => {
-      let next = [...prev];
-      if (isLinked) {
-        next = [numericValue, numericValue, numericValue, numericValue];
-      } else {
-        next[index] = numericValue;
-      }
-      updateAttributes(next);
+  const [linked, setLinked] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => setValues(expand(style)), [style]);
+  const update = v => setAttributes({
+    container: {
+      ...attributes.container,
+      [attributeKey]: v.map(n => `${n}${unit}`).join(" ")
+    }
+  });
+  const change = (i, val) => {
+    const n = Math.min(max, Math.max(min, +val || 0));
+    setValues(p => {
+      const next = linked ? [n, n, n, n] : p.map((x, idx) => idx === i ? n : x);
+      update(next);
       return next;
     });
   };
-  const toggleLink = () => {
-    setIsLinked(prev => {
-      const nextLinked = !prev;
-      if (nextLinked) {
-        const unified = values[0] || 0;
-        const synced = [unified, unified, unified, unified];
-        setValues(synced);
-        updateAttributes(synced);
-      }
-      return nextLinked;
-    });
-  };
-  const resetValues = () => {
-    const reset = [0, 0, 0, 0];
-    setValues(reset);
-    updateAttributes(reset);
-  };
+  const reset = () => update(setValues([0, 0, 0, 0]) || [0, 0, 0, 0]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
-        children: [label, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {}), " "]
+        children: [label, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
-        onClick: resetValues,
-        title: "Reset",
+        onClick: reset,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_PixelIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: "stepper-container",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
         className: "stepper-box-groups",
-        children: values.map((value, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: values.map((v, i) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
           className: "stepper-box",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
             type: "number",
             min: min,
             max: max,
             step: step,
-            value: value,
-            onChange: e => onChangeValue(index, e.target.value)
+            value: v,
+            onChange: e => change(i, e.target.value)
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-            className: attributeKey === "borderRadius" ? `counter-corner-${index}` : `padding-margin-indicator-${index}`
+            className: attributeKey === "borderRadius" ? `counter-corner-${i}` : `padding-margin-indicator-${i}`
           })]
-        }, index))
+        }, i))
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-        className: `link-button ${!isLinked ? "active" : ""}`,
-        onClick: toggleLink,
-        title: isLinked ? "Unlink values" : "Link values",
+        className: `link-button ${!linked ? "active" : ""}`,
+        onClick: () => setLinked(l => !l),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
           width: "24",
           height: "24",
           viewBox: "0 0 24 24",
           fill: "currentColor",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-            d: "M15.6 7.2H14v1.5h1.6c2 0 3.7 1.7 3.7 3.7s-1.7 3.7-3.7 3.7H14v1.5h1.6c2.8 0 5.2-2.3 5.2-5.2S18.4 7.2 15.6 7.2ZM4.7 12.4c0-2 1.7-3.7 3.7-3.7H10V7.2H8.4c-2.9 0-5.2 2.3-5.2 5.2s2.3 5.2 5.2 5.2H10v-1.5H8.4c-2 0-3.7-1.7-3.7-3.7ZM9.3 13.3h5.3v-1.5H9.3v1.5Z"
+            d: "M15.6 7.2H14v1.5h1.6a3.7 3.7 0 010 7.4H14v1.5h1.6a5.2 5.2 0 000-10.4ZM4.7 12.4a3.7 3.7 0 013.7-3.7H10V7.2H8.4a5.2 5.2 0 000 10.4H10v-1.5H8.4a3.7 3.7 0 01-3.7-3.7ZM9.3 13.3h5.3v-1.5H9.3v1.5Z"
           })
         })
       })]
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "./src/smart-info-box/components/common/CustomRangeControl.js"
+/*!********************************************************************!*\
+  !*** ./src/smart-info-box/components/common/CustomRangeControl.js ***!
+  \********************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CustomRangeControl)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
+/* harmony import */ var _assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/ResetIcon */ "./src/smart-info-box/assets/ResetIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function CustomRangeControl({
+  label,
+  attributeKey,
+  resetValue,
+  subKey,
+  min = 0,
+  max = 50,
+  step = 1,
+  marks = true,
+  unit = "px"
+}) {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__.useAttributes)();
+  const value = attributes[attributeKey]?.[subKey];
+  const handleChange = newValue => {
+    setAttributes({
+      [attributeKey]: {
+        ...attributes[attributeKey],
+        [subKey]: newValue
+      }
+    });
+  };
+  const handleReset = () => {
+    setAttributes({
+      [attributeKey]: {
+        ...attributes[attributeKey],
+        [subKey]: resetValue
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "components-header",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+        children: label
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        onClick: handleReset,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
+      value: value,
+      onChange: handleChange,
+      min: min,
+      max: max,
+      step: step,
+      color: "#884AE3",
+      trackColor: "#884AE3",
+      marks: marks
     })]
   });
 }
@@ -2730,19 +2893,19 @@ function StyleRangeControl({
     attributes,
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__.useAttributes)();
-  const value = attributes.styles?.[attributeKey];
+  const value = attributes.container?.[attributeKey];
   const handleChange = newValue => {
     setAttributes({
-      styles: {
-        ...attributes.styles,
+      container: {
+        ...attributes.container,
         [attributeKey]: newValue
       }
     });
   };
   const handleReset = () => {
     setAttributes({
-      styles: {
-        ...attributes.styles,
+      container: {
+        ...attributes.container,
         [attributeKey]: attributeKey === "iconSize" ? 45 : 1
       }
     });
@@ -3026,13 +3189,12 @@ function Edit({
   setAttributes
 }) {
   const {
-    columns,
-    columnsGap
+    infoBox
   } = attributes;
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-    className: `has-${columns}-columns`,
+    className: `has-${infoBox.columns}-columns`,
     style: {
-      "--columns-gap": `${columnsGap}px`
+      "--columns-gap": `${infoBox.gap}px`
     }
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.AttributesProvider, {

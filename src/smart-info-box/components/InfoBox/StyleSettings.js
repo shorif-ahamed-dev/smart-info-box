@@ -4,7 +4,6 @@ import HoverStyle from "./HoverStyle";
 
 export default function StyleSettings({ attributes, setAttributes }) {
 	const [toggleStyleMode, setToggleStyleMode] = useState("normal");
-	const { contentAlignment } = attributes;
 	return (
 		<>
 			<div className="inspector-section">
@@ -12,7 +11,6 @@ export default function StyleSettings({ attributes, setAttributes }) {
 					<button
 						type="button"
 						className={toggleStyleMode === "normal" ? "is-active" : ""}
-						aria-pressed={contentAlignment === "left"}
 						onClick={() => setToggleStyleMode("normal")}
 					>
 						Normal
@@ -20,7 +18,6 @@ export default function StyleSettings({ attributes, setAttributes }) {
 
 					<button
 						className={toggleStyleMode === "hover" ? "is-active" : ""}
-						aria-pressed={contentAlignment === "center"}
 						onClick={() => setToggleStyleMode("hover")}
 					>
 						Hover

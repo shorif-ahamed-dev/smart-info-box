@@ -31,6 +31,7 @@
 			"type": "object",
 			"default": {}
 		},
+
 		"layout": {
 			"type": "string",
 			"default": "default"
@@ -38,6 +39,38 @@
 		"contentAlignment": {
 			"type": "string",
 			"default": "center"
+		},
+		"infoBox": {
+			"type": "object",
+			"default": {}
+		},
+		"container": {
+			"type": "object",
+			"default": {}
+		},
+		"mediaContainer": {
+			"type": "object",
+			"default": {}
+		},
+		"iconImage": {
+			"type": "object",
+			"default": {}
+		},
+		"title": {
+			"type": "object",
+			"default": {}
+		},
+		"description": {
+			"type": "object",
+			"default": {}
+		},
+		"cta": {
+			"type": "object",
+			"default": {}
+		},
+		"featured": {
+			"type": "object",
+			"default": {}
 		}
 	},
 	"usesContext": [

@@ -6,12 +6,12 @@ import { AttributesProvider } from "./context/AttributesContext";
 import AllPanels from "./components/AllPanels";
 
 export default function Edit({ attributes, setAttributes }) {
-	const { columns, columnsGap } = attributes;
+	const { infoBox } = attributes;
 
 	const blockProps = useBlockProps({
-		className: `has-${columns}-columns`,
+		className: `has-${infoBox.columns}-columns`,
 		style: {
-			"--columns-gap": `${columnsGap}px`,
+			"--columns-gap": `${infoBox.gap}px`,
 		},
 	});
 
