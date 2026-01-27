@@ -85,7 +85,7 @@
 		"infoBox": {
 			"type": "object",
 			"default": {
-				"layout": "layout-five",
+				"layout": "layout-one",
 				"contentAlignment": "center",
 				"gap": 20,
 				"columns": 1,
@@ -107,7 +107,7 @@
 					"size": "cover",
 					"repeat": "no-repeat"
 				},
-				"imageOverlayColor": "#000000",
+				"imageOverlayColor": "#ddd",
 				"imageOverlayOpacity": 50,
 				"padding": "28px 24px 28px 24px",
 				"margin": "0px 0px 0px 0px",
@@ -158,21 +158,25 @@
 		"cta": {
 			"type": "object",
 			"default": {
-				"fontSize": "14px",
+				"fontSize": 14,
+				"iconSize": 14,
 				"width": "",
 				"height": "",
 				"textColor": "black",
-				"border": "none",
+				"borderType": "none",
+				"borderWidth": 1,
+				"borderColor": "#cccccc",
+				"borderRadius": "4px 4px 4px 4px",
 				"backgroundColor": "none",
-				"padding": "0px",
-				"margin": "0px",
+				"padding": "0px 0px 0px 0px",
+				"margin": "0px 0px 0px 0px",
 				"gap": "6px"
 			}
 		},
 		"featured": {
 			"type": "object",
 			"default": {
-				"badge": false,
+				"badge": true,
 				"badgePosition": "top-left",
 				"top": 0,
 				"bottom": null,
@@ -185,7 +189,7 @@
 				"fontSize": "13px",
 				"margin": "0px 0px 0px 0px",
 				"borderRadius": "0px",
-				"color": "red"
+				"color": "#7c3aed"
 			}
 		}
 	},
@@ -209,7 +213,9 @@
 			"margin": true
 		},
 		"html": false,
-		"align": ["wide"]
+		"align": [
+			"wide"
+		]
 	},
 	"textdomain": "smart-info-box",
 	"editorScript": "file:./index.js",

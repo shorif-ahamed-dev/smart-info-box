@@ -26,7 +26,8 @@
         "title": "Automated AI Chatbotsx",
         "buttonText": "Learn More",
         "badgeText": "Sold Out",
-        "ratting": 4
+        "ratting": 4,
+        "badge": true
       }
     },
     "styles": {

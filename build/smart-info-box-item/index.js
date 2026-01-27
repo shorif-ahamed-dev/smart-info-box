@@ -49,11 +49,11 @@ function RightArrow() {
     width: "15",
     height: "15",
     viewBox: "0 0 15 15",
-    fill: "none",
+    fill: "currentColor",
     xmlns: "http://www.w3.org/2000/svg",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
       d: "M1.5 8.25V6.75H10.5L7.5 3.75L8.25 2.25L13.5 7.5L8.25 12.75L7.5 11.25L10.5 8.25H1.5Z",
-      fill: "#2F2F2F"
+      fill: "currentColor"
     })
   });
 }
@@ -146,7 +146,7 @@ const Star = () => {
   \********************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out","ratting":4}},"styles":{"type":"object","default":{}},"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"infoBox":{"type":"object","default":{}},"container":{"type":"object","default":{}},"mediaContainer":{"type":"object","default":{}},"iconImage":{"type":"object","default":{}},"title":{"type":"object","default":{}},"description":{"type":"object","default":{}},"cta":{"type":"object","default":{}},"featured":{"type":"object","default":{}}},"usesContext":["smartInfoBox/layout","smartInfoBox/styles","smartInfoBox/hoverStyles","smartInfoBox/contentAlignment","smartInfoBox/infoBox","smartInfoBox/container","smartInfoBox/mediaContainer","smartInfoBox/iconImage","smartInfoBox/title","smartInfoBox/description","smartInfoBox/cta","smartInfoBox/featured"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out","ratting":4,"badge":true}},"styles":{"type":"object","default":{}},"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"infoBox":{"type":"object","default":{}},"container":{"type":"object","default":{}},"mediaContainer":{"type":"object","default":{}},"iconImage":{"type":"object","default":{}},"title":{"type":"object","default":{}},"description":{"type":"object","default":{}},"cta":{"type":"object","default":{}},"featured":{"type":"object","default":{}}},"usesContext":["smartInfoBox/layout","smartInfoBox/styles","smartInfoBox/hoverStyles","smartInfoBox/contentAlignment","smartInfoBox/infoBox","smartInfoBox/container","smartInfoBox/mediaContainer","smartInfoBox/iconImage","smartInfoBox/title","smartInfoBox/description","smartInfoBox/cta","smartInfoBox/featured"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -166,9 +166,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_Airplane__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/Airplane */ "./src/smart-info-box-item/assets/Airplane.js");
 /* harmony import */ var _assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/RightArrow */ "./src/smart-info-box-item/assets/RightArrow.js");
-/* harmony import */ var _smart_info_box_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../smart-info-box/utils/getBackgroundStyle */ "./src/smart-info-box/utils/getBackgroundStyle.js");
-/* harmony import */ var _assets_Star__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/Star */ "./src/smart-info-box-item/assets/Star.js");
-/* harmony import */ var _utils_CSSVars__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/CSSVars */ "./src/smart-info-box-item/utils/CSSVars.js");
+/* harmony import */ var _assets_Star__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/Star */ "./src/smart-info-box-item/assets/Star.js");
+/* harmony import */ var _utils_CSSVars__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/CSSVars */ "./src/smart-info-box-item/utils/CSSVars.js");
+/* harmony import */ var _utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/getBackgroundStyle */ "./src/smart-info-box-item/utils/getBackgroundStyle.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
 
@@ -185,12 +185,14 @@ function InfoBox2({
   context
 }) {
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-    style: (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_6__["default"])(attributes)
+    style: (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_5__["default"])(attributes)
   });
+  const backgroundStyles = (0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_6__["default"])(attributes.container);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: `smart-info-box-item-container ${attributes?.infoBox?.layout}`,
+      style: backgroundStyles,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "media-container",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_2__["default"], {})
@@ -204,15 +206,13 @@ function InfoBox2({
         href: "google.com",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
           children: "Learn More"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+      }), attributes?.featured?.badge === true ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "featured-container",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
           children: "Featured"
         })
-      })]
+      }) : null]
     })
   });
 }
@@ -259,7 +259,7 @@ function Edit({
   const title = context["smartInfoBox/title"];
   const description = context["smartInfoBox/description"];
   const cta = context["smartInfoBox/cta"];
-  const featuredStyle = context["smartInfoBox/featured"];
+  const featured = context["smartInfoBox/featured"];
   const handleTitleChange = newTitle => {
     setAttributes({
       content: {
@@ -293,9 +293,9 @@ function Edit({
       title,
       description,
       cta,
-      featuredStyle
+      featured
     });
-  }, [infoBox, container, mediaContainer, iconImage, title, description, cta, featuredStyle]);
+  }, [infoBox, container, mediaContainer, iconImage, title, description, cta, featured]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_InfoBox2__WEBPACK_IMPORTED_MODULE_3__["default"], {
       attributes: attributes,
@@ -551,11 +551,12 @@ const CSSVars = attributes => {
     title,
     description,
     cta,
-    featuredStyle
+    featured
   } = attributes;
-
-  // const borderRadius = `${container?.borderRadius?.topLeft} ${container?.borderRadius?.topRight} ${container?.borderRadius?.bottomLeft} ${container?.borderRadius?.bottomRight}`;
-  // console.log(borderRadius);
+  const formatSize = value => {
+    if (typeof value === 'number') return `${value}px`;
+    return value;
+  };
   return {
     /* layout */
     "--sib-layout": infoBox?.layout,
@@ -564,7 +565,7 @@ const CSSVars = attributes => {
     "--sib-columns-gap": `${infoBox?.columnsGap}px`,
     "--sib-row-gap": `${infoBox?.rowGap}px`,
     /* container */
-    "--sib-bg-color": container?.backgroundColor,
+    // "--sib-bg-color": container?.backgroundColor,
     "--sib-text-color": container?.color,
     "--sib-padding": container?.padding,
     "--sib-margin": container?.margin,
@@ -574,7 +575,9 @@ const CSSVars = attributes => {
     /* media */
     "--sib-media-bg": mediaContainer?.backgroundColor,
     "--sib-media-width": mediaContainer?.width,
+    "--sib-media-height": formatSize(mediaContainer?.height),
     "--sib-media-padding": `${mediaContainer?.padding}px`,
+    "--sib-media-margin": mediaContainer?.margin,
     "--sib-media-radius": mediaContainer?.borderRadius,
     "--sib-media-color": mediaContainer?.color,
     "--sib-icon-color": mediaContainer?.color,
@@ -589,24 +592,92 @@ const CSSVars = attributes => {
     "--sib-desc-padding": description?.padding,
     /* CTA */
     "--sib-cta-bg": cta?.backgroundColor,
-    "--sib-cta-fontSize": cta?.fontSize,
+    "--sib-cta-fontSize": `${cta?.fontSize}px`,
+    "--sib-cta-iconSize": `${cta?.iconSize}px`,
+    "--sib-cta-border": `${cta?.borderWidth}px ${cta?.borderType} ${cta?.borderColor}`,
+    "--sib-cta-border-radius": cta?.borderRadius,
     "--sib-cta-color": cta?.textColor,
     "--sib-cta-padding": cta?.padding,
     "--sib-cta-margin": cta?.margin,
     "--sib-cta-gap": cta?.gap,
     /* featured */
-    "--sib-featured-bg": featuredStyle?.backgroundColor,
-    "--sib-featured-color": featuredStyle?.color,
-    "--sib-featured-padding": featuredStyle?.padding,
-    "--sib-featured-radius": featuredStyle?.borderRadius,
-    "--sib-featured-top": featuredStyle?.top,
-    "--sib-featured-bottom": featuredStyle?.bottom,
-    "--sib-featured-right": featuredStyle?.right,
-    "--sib-featured-left": featuredStyle?.left,
-    "--sib-featured-fontSize": featuredStyle?.fontSize
+    "--sib-featured-bg": featured?.backgroundColor,
+    "--sib-featured-color": featured?.color,
+    "--sib-featured-padding": featured?.padding,
+    "--sib-featured-radius": featured?.borderRadius,
+    "--sib-featured-top": featured?.top,
+    "--sib-featured-bottom": featured?.bottom,
+    "--sib-featured-right": featured?.right,
+    "--sib-featured-left": featured?.left,
+    "--sib-featured-fontSize": featured?.fontSize
   };
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CSSVars);
+
+/***/ },
+
+/***/ "./src/smart-info-box-item/utils/getBackgroundStyle.js"
+/*!*************************************************************!*\
+  !*** ./src/smart-info-box-item/utils/getBackgroundStyle.js ***!
+  \*************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _hexToRgb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hexToRgb */ "./src/smart-info-box-item/utils/hexToRgb.js");
+
+const getBackgroundStyle = styles => {
+  if (!styles) return {};
+  const bgStyle = {};
+  if (styles.backgroundType === 'solid') {
+    bgStyle.backgroundColor = styles.backgroundColor;
+  } else if (styles.backgroundType === 'gradient') {
+    bgStyle.background = styles.gradient;
+  } else if (styles.backgroundType === 'image' && styles.image?.url) {
+    bgStyle.backgroundImage = `url(${styles.image.url})`;
+    bgStyle.backgroundPosition = styles.image.position || 'center';
+    bgStyle.backgroundSize = styles.image.size || 'cover';
+    bgStyle.backgroundRepeat = styles.image.repeat || 'no-repeat';
+
+    // Add overlay if specified
+    if (styles.imageOverlayColor && styles.imageOverlayOpacity) {
+      const opacity = styles.imageOverlayOpacity / 100;
+      const overlay = opacity ? `linear-gradient(${(0,_hexToRgb__WEBPACK_IMPORTED_MODULE_0__["default"])(styles.imageOverlayColor, opacity)}, ${(0,_hexToRgb__WEBPACK_IMPORTED_MODULE_0__["default"])(styles.imageOverlayColor, opacity)})` : '';
+      bgStyle.position = 'relative';
+      bgStyle.backgroundImage = `${overlay}, url(${styles.image.url})`;
+      // bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
+    }
+  }
+  return bgStyle;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getBackgroundStyle);
+
+/***/ },
+
+/***/ "./src/smart-info-box-item/utils/hexToRgb.js"
+/*!***************************************************!*\
+  !*** ./src/smart-info-box-item/utils/hexToRgb.js ***!
+  \***************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const hexToRgb = (hex, opacity) => {
+  const cleaned = hex.replace("#", "");
+  const bigint = parseInt(cleaned, 16);
+  const r = bigint >> 16 & 255;
+  const g = bigint >> 8 & 255;
+  const b = bigint & 255;
+  if (opacity !== undefined) {
+    return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+  }
+  return `${r}, ${g}, ${b}`;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hexToRgb);
 
 /***/ },
 
@@ -640,8 +711,8 @@ const getBackgroundStyle = styles => {
       const opacity = styles.imageOverlayOpacity / 100;
       const overlay = opacity ? `linear-gradient(${(0,_hexToRgb__WEBPACK_IMPORTED_MODULE_0__["default"])(styles.imageOverlayColor, opacity)}, ${(0,_hexToRgb__WEBPACK_IMPORTED_MODULE_0__["default"])(styles.imageOverlayColor, opacity)})` : '';
       bgStyle.position = 'relative';
-      // bgStyle.backgroundImage = `${overlay}, url(${styles.image.url})`;
-      bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
+      bgStyle.backgroundImage = `${overlay}, url(${styles.image.url})`;
+      // bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
     }
   }
   return bgStyle;

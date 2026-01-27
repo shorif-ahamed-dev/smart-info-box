@@ -15,14 +15,16 @@ export default function NormalStyle() {
 			<BoxShadow label="Box Shadow" />
 			<CustomBoxControls
 				label="Padding"
-				attributeKey="padding"
+				attributeKey="container"
+				subKey="padding"
 				min={0}
 				max={200}
 			/>
 			<br />
 			<CustomBoxControls
 				label="Margin"
-				attributeKey="margin"
+				attributeKey="container"
+				subKey="margin"
 				min={0}
 				max={200}
 			/>

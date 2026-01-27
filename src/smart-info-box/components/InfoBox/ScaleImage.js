@@ -3,17 +3,17 @@ import { useAttributes } from "../../context/AttributesContext";
 
 export default function ScaleImage() {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { image } = styles;
+	const { container } = attributes;
+	const { image } = container;
 	const [toggleStyleMode, setToggleStyleMode] = useState(image.size);
 
 	const onImageScaleSelect = (scale) => {
 		setToggleStyleMode(scale);
 		setAttributes({
-			styles: {
-				...styles,
+			container: {
+				...container,
 				image: {
-					...styles.image,
+					...container.image,
 					size: scale,
 				},
 			},

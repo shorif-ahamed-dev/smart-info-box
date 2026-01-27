@@ -1278,7 +1278,7 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":1},"columnsGap":{"type":"number","default":16},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20,"descriptionFontSize":14,"buttonFontSize":14,"badge":false,"badgePosition":"top-left","descriptionColor":"#757575","titleColor":"black","buttonTextColor":"black","badgeColor":"#E0E0E0"}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}},"infoBox":{"type":"object","default":{"layout":"layout-five","contentAlignment":"center","gap":20,"columns":1,"columnsGap":16,"rowGap":12}},"container":{"type":"object","default":{"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"padding":"28px 24px 28px 24px","margin":"0px 0px 0px 0px","borderType":"solid","borderWidth":1,"borderColor":"#cccccc","borderRadius":"4px 8px 4px 8px","boxShadow":"none"}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":"0px 0px 0px 0px","borderRadius":"4px 4px 4px 4px","color":"#ddd"}},"iconImage":{"type":"object","default":{"iconColor":"red","size":24,"position":"top","alignment":"center"}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":12}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":"14px","width":"","height":"","textColor":"black","border":"none","backgroundColor":"none","padding":"0px","margin":"0px","gap":"6px"}},"featured":{"type":"object","default":{"badge":false,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","padding":"6px 12px 6px 12px","fontSize":"13px","margin":"0px 0px 0px 0px","borderRadius":"0px","color":"red"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/iconImage":"iconImage","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featured":"featured"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":1},"columnsGap":{"type":"number","default":16},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20,"descriptionFontSize":14,"buttonFontSize":14,"badge":false,"badgePosition":"top-left","descriptionColor":"#757575","titleColor":"black","buttonTextColor":"black","badgeColor":"#E0E0E0"}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}},"infoBox":{"type":"object","default":{"layout":"layout-one","contentAlignment":"center","gap":20,"columns":1,"columnsGap":16,"rowGap":12}},"container":{"type":"object","default":{"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#ddd","imageOverlayOpacity":50,"padding":"28px 24px 28px 24px","margin":"0px 0px 0px 0px","borderType":"solid","borderWidth":1,"borderColor":"#cccccc","borderRadius":"4px 8px 4px 8px","boxShadow":"none"}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":"0px 0px 0px 0px","borderRadius":"4px 4px 4px 4px","color":"#ddd"}},"iconImage":{"type":"object","default":{"iconColor":"red","size":24,"position":"top","alignment":"center"}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":12}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":14,"iconSize":14,"width":"","height":"","textColor":"black","borderType":"none","borderWidth":1,"borderColor":"#cccccc","borderRadius":"4px 4px 4px 4px","backgroundColor":"none","padding":"0px 0px 0px 0px","margin":"0px 0px 0px 0px","gap":"6px"}},"featured":{"type":"object","default":{"badge":true,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","padding":"6px 12px 6px 12px","fontSize":"13px","margin":"0px 0px 0px 0px","borderRadius":"0px","color":"#7c3aed"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/iconImage":"iconImage","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featured":"featured"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -1304,8 +1304,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Icon_Image_IconImagePanel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Icon-Image/IconImagePanel */ "./src/smart-info-box/components/Icon-Image/IconImagePanel.js");
 /* harmony import */ var _title_TitlePanle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./title/TitlePanle */ "./src/smart-info-box/components/title/TitlePanle.js");
 /* harmony import */ var _description_DescriptionPanel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./description/DescriptionPanel */ "./src/smart-info-box/components/description/DescriptionPanel.js");
-/* harmony import */ var _cta_ctaPannel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./cta/ctaPannel */ "./src/smart-info-box/components/cta/ctaPannel.js");
-/* harmony import */ var _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./badge/BadgePanel */ "./src/smart-info-box/components/badge/BadgePanel.js");
+/* harmony import */ var _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./badge/BadgePanel */ "./src/smart-info-box/components/badge/BadgePanel.js");
+/* harmony import */ var _cta_CtaPannel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./cta/CtaPannel */ "./src/smart-info-box/components/cta/CtaPannel.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
 
@@ -1340,11 +1340,11 @@ function AllPanels() {
   }, {
     key: "calltoaction",
     title: "Call To Action",
-    Component: _cta_ctaPannel__WEBPACK_IMPORTED_MODULE_8__["default"]
+    Component: _cta_CtaPannel__WEBPACK_IMPORTED_MODULE_9__["default"]
   }, {
     key: "badge",
     title: "Badge",
-    Component: _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_9__["default"]
+    Component: _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_8__["default"]
   }];
   const togglePanel = key => {
     setOpenPanel(current => current === key ? null : key);
@@ -1377,10 +1377,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
 /* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -1394,64 +1397,104 @@ const IconImagePanel = () => {
   const {
     mediaContainer
   } = attributes;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-    className: "inspector-section",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      label: "Icon Size",
-      attributeKey: "iconSize",
-      subKey: "size",
-      marks: false,
-      min: 25,
-      max: 100,
-      step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      label: "Icon Size",
-      attributeKey: "iconImage",
-      subKey: "size",
-      resetValue: 45,
-      marks: false,
-      min: 10,
-      max: 100,
-      step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      label: "Padding",
-      attributeKey: "mediaContainer",
-      subKey: "padding",
-      resetValue: 45,
-      marks: false,
-      min: 0,
-      max: 100,
-      step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      label: "Background Color",
-      value: mediaContainer.backgroundColor,
-      onChange: color => setAttributes({
-        mediaContainer: {
-          ...mediaContainer,
-          backgroundColor: color
-        }
-      }),
-      onReset: () => setAttributes({
-        mediaContainer: {
-          ...mediaContainer,
-          backgroundColor: "#ffffff"
-        }
+  const [toggleStyleMode, setToggleStyleMode] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)(mediaContainer.width);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "inspector-section",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "style-hover-buttons",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+          type: "button",
+          className: toggleStyleMode === "100%" ? "is-active" : "",
+          onClick: () => {
+            setAttributes({
+              mediaContainer: {
+                ...mediaContainer,
+                width: "100%"
+              }
+            });
+            setToggleStyleMode("100%");
+          },
+          children: "Full Width"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+          className: toggleStyleMode === "min-content" ? "is-active" : "",
+          onClick: () => {
+            setAttributes({
+              mediaContainer: {
+                ...mediaContainer,
+                width: "min-content",
+                height: 0
+              }
+            });
+            setToggleStyleMode("min-content");
+          },
+          children: "Min Width"
+        })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      label: "Icon Color",
-      value: mediaContainer.color,
-      onChange: color => setAttributes({
-        mediaContainer: {
-          ...mediaContainer,
-          color: color
-        }
-      }),
-      onReset: () => setAttributes({
-        mediaContainer: {
-          ...mediaContainer,
-          color: "#ffffff"
-        }
-      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "inspector-section",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: "Container Height",
+        attributeKey: "mediaContainer",
+        subKey: "height",
+        resetValue: "min-content",
+        marks: false,
+        min: 0,
+        max: 300,
+        step: 10
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: "Icon Size",
+        attributeKey: "iconImage",
+        subKey: "size",
+        resetValue: 10,
+        marks: false,
+        min: 10,
+        max: 45,
+        step: 1
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: "Padding",
+        attributeKey: "mediaContainer",
+        subKey: "padding",
+        resetValue: 0,
+        marks: false,
+        min: 0,
+        max: 200,
+        step: 1
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: "Margin",
+        attributeKey: "mediaContainer",
+        subKey: "margin"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        label: "Background Color",
+        value: mediaContainer.backgroundColor,
+        onChange: color => setAttributes({
+          mediaContainer: {
+            ...mediaContainer,
+            backgroundColor: color
+          }
+        }),
+        onReset: () => setAttributes({
+          mediaContainer: {
+            ...mediaContainer,
+            backgroundColor: "#ffffff"
+          }
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        label: "Icon Color",
+        value: mediaContainer.color,
+        onChange: color => setAttributes({
+          mediaContainer: {
+            ...mediaContainer,
+            color: color
+          }
+        }),
+        onReset: () => setAttributes({
+          mediaContainer: {
+            ...mediaContainer,
+            color: "#ffffff"
+          }
+        })
+      })]
     })]
   });
 };
@@ -1631,7 +1674,8 @@ function BorderStyle() {
       step: 1
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Border Radius",
-      attributeKey: "borderRadius"
+      attributeKey: "container",
+      subKey: "borderRadius"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {})]
   });
 }
@@ -1663,15 +1707,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function BorderType() {
+function BorderType({
+  attributePath = "container",
+  label = "Border",
+  showToolbarIcon = true,
+  borderOptions = null
+}) {
   const {
     attributes,
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
-  const {
-    borderType
-  } = attributes.container;
-  const borderButtons = [{
+  const defaultBorderButtons = [{
     type: "none",
     label: "None",
     icon: null
@@ -1688,10 +1734,12 @@ function BorderType() {
     type: "double",
     icon: _assets_styleLayoutIcon_DoubleBorder__WEBPACK_IMPORTED_MODULE_4__["default"]
   }];
+  const borderButtons = borderOptions || defaultBorderButtons;
+  const currentBorderType = attributes[attributePath]?.borderType;
   const handleBorderChange = type => {
     setAttributes({
-      container: {
-        ...attributes.container,
+      [attributePath]: {
+        ...attributes[attributePath],
         borderType: type
       }
     });
@@ -1700,7 +1748,7 @@ function BorderType() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: "components-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
-        children: "Border"
+        children: label
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_ToolbarIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {})
       })]
@@ -1708,14 +1756,14 @@ function BorderType() {
       className: "style-border-buttons",
       children: borderButtons.map(({
         type,
-        label,
+        label: btnLabel,
         icon: Icon
       }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
         type: "button",
-        className: borderType === type ? "is-active" : "",
-        "aria-pressed": borderType === type,
+        className: currentBorderType === type ? "is-active" : "",
+        "aria-pressed": currentBorderType === type,
         onClick: () => handleBorderChange(type),
-        children: Icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Icon, {}) : label
+        children: Icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Icon, {}) : btnLabel
       }, type))
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {})]
   });
@@ -1903,16 +1951,17 @@ function ImageOverlay({}) {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.useAttributes)();
   const {
-    styles
+    styles,
+    container
   } = attributes;
   const {
     imageOverlayOpacity,
     imageOverlayColor
-  } = styles;
+  } = container;
   const onOpacityChange = value => {
     setAttributes({
-      styles: {
-        ...styles,
+      container: {
+        ...container,
         imageOverlayOpacity: value
       }
     });
@@ -1922,14 +1971,14 @@ function ImageOverlay({}) {
       label: "Overlay Color",
       value: imageOverlayColor,
       onChange: color => setAttributes({
-        styles: {
-          ...styles,
+        container: {
+          ...container,
           imageOverlayColor: color
         }
       }),
       onReset: () => setAttributes({
-        styles: {
-          ...styles,
+        container: {
+          ...container,
           imageOverlayColor: "#ddd"
         }
       })
@@ -2266,12 +2315,14 @@ function NormalStyle() {
       label: "Box Shadow"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Padding",
-      attributeKey: "padding",
+      attributeKey: "container",
+      subKey: "padding",
       min: 0,
       max: 200
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Margin",
-      attributeKey: "margin",
+      attributeKey: "container",
+      subKey: "margin",
       min: 0,
       max: 200
     })]
@@ -2304,19 +2355,19 @@ function ScaleImage() {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__.useAttributes)();
   const {
-    styles
+    container
   } = attributes;
   const {
     image
-  } = styles;
+  } = container;
   const [toggleStyleMode, setToggleStyleMode] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(image.size);
   const onImageScaleSelect = scale => {
     setToggleStyleMode(scale);
     setAttributes({
-      styles: {
-        ...styles,
+      container: {
+        ...container,
         image: {
-          ...styles.image,
+          ...container.image,
           size: scale
         }
       }
@@ -2373,17 +2424,18 @@ function SelectImage() {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__.useAttributes)();
   const {
-    styles
+    styles,
+    container
   } = attributes;
   const {
     image
-  } = styles;
+  } = container;
   const onImageSelect = media => {
     setAttributes({
-      styles: {
-        ...styles,
+      container: {
+        ...container,
         image: {
-          ...styles.image,
+          ...container.image,
           id: media.id,
           url: media.url,
           alt: media.alt
@@ -2393,10 +2445,10 @@ function SelectImage() {
   };
   const handleRemoveImage = () => {
     setAttributes({
-      styles: {
-        ...styles,
+      container: {
+        ...container,
         image: {
-          ...styles.image,
+          ...container.image,
           id: "",
           url: "",
           alt: ""
@@ -2515,8 +2567,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -2528,39 +2582,67 @@ const BadgePanel = () => {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__.useAttributes)();
   const {
-    styles
+    featured
   } = attributes;
   const {
-    badgeColor
-  } = styles;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    backgroundColor,
+    color
+  } = featured;
+  const BADGE_POSITIONS = {
+    "top-left": {
+      top: 0,
+      left: 0,
+      right: null,
+      bottom: null
+    },
+    "top-right": {
+      top: 0,
+      right: 0,
+      left: null,
+      bottom: null
+    },
+    "bottom-left": {
+      bottom: 0,
+      left: 0,
+      top: null,
+      right: null
+    },
+    "bottom-right": {
+      bottom: 0,
+      right: 0,
+      top: null,
+      left: null
+    }
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "components-header inspector-section",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
         children: "Badge"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-          checked: styles.badge,
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
+          checked: featured?.badge,
           onChange: value => {
             setAttributes({
-              styles: {
-                ...styles,
+              featured: {
+                ...featured,
                 badge: value
               }
             });
           }
         })
       })]
-    }), styles.badge && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    }), featured.badge && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "components-header",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
           children: "Badge Position"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ToolbarIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_ToolbarIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-        value: styles.badgePosition,
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
+        label: "Badge Position",
+        value: featured.badgePosition,
         options: [{
           label: "Top Left",
           value: "top-left"
@@ -2574,27 +2656,52 @@ const BadgePanel = () => {
           label: "Bottom Right",
           value: "bottom-right"
         }],
-        onChange: value => setAttributes({
-          styles: {
-            ...styles,
-            badgePosition: value
-          }
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        onChange: value => {
+          const position = BADGE_POSITIONS[value];
+          setAttributes({
+            featured: {
+              ...featured,
+              badgePosition: value,
+              ...position
+            }
+          });
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Badge Color",
-        value: badgeColor,
+        value: backgroundColor,
         onChange: color => setAttributes({
-          styles: {
-            ...styles,
-            badgeColor: color
+          featured: {
+            ...featured,
+            backgroundColor: color
           }
         }),
         onReset: () => setAttributes({
-          styles: {
-            ...styles,
-            badgeColor: "#000000ff"
+          featured: {
+            ...featured,
+            backgroundColor: "#ddd"
           }
         })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: "Text Color",
+        value: color,
+        onChange: color => setAttributes({
+          featured: {
+            ...featured,
+            color: color
+          }
+        }),
+        onReset: () => setAttributes({
+          featured: {
+            ...featured,
+            color: "#ddd"
+          }
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: "Padding",
+        attributeKey: "featured",
+        subKey: "padding",
+        min: 0,
+        max: 100
       })]
     })]
   });
@@ -2709,7 +2816,8 @@ const expand = (v = "") => {
 };
 function CustomBoxControls({
   label,
-  attributeKey = "borderRadius",
+  attributeKey,
+  subKey,
   min = 0,
   max = 100,
   step = 1,
@@ -2719,16 +2827,18 @@ function CustomBoxControls({
     attributes,
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.useAttributes)();
-  const style = attributes.container?.[attributeKey] || "";
+  const style = attributes[attributeKey]?.[subKey] || "";
   const [values, setValues] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([0, 0, 0, 0]);
   const [linked, setLinked] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => setValues(expand(style)), [style]);
-  const update = v => setAttributes({
-    container: {
-      ...attributes.container,
-      [attributeKey]: v.map(n => `${n}${unit}`).join(" ")
-    }
-  });
+  const update = v => {
+    setAttributes({
+      [attributeKey]: {
+        ...attributes[attributeKey],
+        [subKey]: v.map(n => `${n}${unit}`).join(" ")
+      }
+    });
+  };
   const change = (i, val) => {
     const n = Math.min(max, Math.max(min, +val || 0));
     setValues(p => {
@@ -2936,9 +3046,9 @@ function StyleRangeControl({
 
 /***/ },
 
-/***/ "./src/smart-info-box/components/cta/ctaPannel.js"
+/***/ "./src/smart-info-box/components/cta/CtaPannel.js"
 /*!********************************************************!*\
-  !*** ./src/smart-info-box/components/cta/ctaPannel.js ***!
+  !*** ./src/smart-info-box/components/cta/CtaPannel.js ***!
   \********************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -2948,9 +3058,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
 /* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var _InfoBox_BorderType__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../InfoBox/BorderType */ "./src/smart-info-box/components/InfoBox/BorderType.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+
 
 
 
@@ -2961,35 +3075,106 @@ const CtaPannel = () => {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
   const {
-    styles
+    cta
   } = attributes;
   const {
-    buttonTextColor
-  } = styles;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    buttonTextColor,
+    backgroundColor,
+    borderColor
+  } = cta;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "inspector-section",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Button Font Size",
-      attributeKey: "buttonFontSize",
+      attributeKey: "cta",
+      subKey: "fontSize",
+      resetValue: 18,
       marks: false,
       min: 10,
       max: 100,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Button Text Color",
       value: buttonTextColor,
       onChange: color => setAttributes({
-        styles: {
-          ...styles,
-          buttonTextColor: color
+        cta: {
+          ...cta,
+          textColor: color
         }
       }),
       onReset: () => setAttributes({
-        styles: {
-          ...styles,
-          buttonTextColor: "#000000ff"
+        cta: {
+          ...cta,
+          textColor: "#000000ff"
         }
       })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "Icon Size",
+      attributeKey: "cta",
+      subKey: "iconSize",
+      resetValue: 18,
+      marks: false,
+      min: 10,
+      max: 100,
+      step: 1
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_InfoBox_BorderType__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      attributePath: "cta",
+      label: "CTA Border"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Background Color",
+      value: backgroundColor,
+      onChange: color => setAttributes({
+        cta: {
+          ...cta,
+          backgroundColor: color
+        }
+      }),
+      onReset: () => setAttributes({
+        cta: {
+          ...cta,
+          backgroundColor: "#cccc"
+        }
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Border Color",
+      value: borderColor,
+      onChange: color => setAttributes({
+        cta: {
+          ...cta,
+          borderColor: color
+        }
+      }),
+      onReset: () => setAttributes({
+        cta: {
+          ...cta,
+          borderColor: "#cccc"
+        }
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "Border Width",
+      attributeKey: "cta",
+      subKey: "borderWidth",
+      resetValue: 1,
+      marks: false,
+      min: 1,
+      max: 10,
+      step: 1
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Border Radius",
+      attributeKey: "cta",
+      subKey: "borderRadius"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Padding",
+      attributeKey: "cta",
+      subKey: "padding",
+      min: 0,
+      max: 200
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Margin",
+      attributeKey: "cta",
+      subKey: "margin",
+      min: 0,
+      max: 200
     })]
   });
 };
@@ -3009,9 +3194,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
 /* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -3022,35 +3209,37 @@ const DescriptionPanel = () => {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
   const {
-    styles
+    description
   } = attributes;
   const {
-    descriptionColor
-  } = styles;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    color
+  } = description;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "inspector-section",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        label: "Description Font Size",
-        attributeKey: "descriptionFontSize",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: "Title Font Size",
+        attributeKey: "description",
+        subKey: "fontSize",
+        resetValue: 18,
         marks: false,
         min: 10,
         max: 100,
         step: 1
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Description Color",
-      value: descriptionColor,
+      value: color,
       onChange: color => setAttributes({
-        styles: {
-          ...styles,
-          descriptionColor: color
+        description: {
+          ...description,
+          color: color
         }
       }),
       onReset: () => setAttributes({
-        styles: {
-          ...styles,
-          descriptionColor: "#ffffff"
+        description: {
+          ...description,
+          color: "#ddd"
         }
       })
     })]
@@ -3072,9 +3261,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
 /* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -3085,35 +3276,38 @@ const TitlePanle = () => {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
   const {
-    styles
+    title
   } = attributes;
   const {
-    titleColor
-  } = styles;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    color,
+    fontSize
+  } = title;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "inspector-section",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Title Font Size",
-        attributeKey: "titleFontSize",
+        attributeKey: "title",
+        subKey: "fontSize",
+        resetValue: 18,
         marks: false,
         min: 10,
         max: 100,
         step: 1
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      label: "Border Color",
-      value: titleColor,
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Title Color",
+      value: color,
       onChange: color => setAttributes({
-        styles: {
-          ...styles,
-          titleColor: color
+        title: {
+          ...title,
+          color: color
         }
       }),
       onReset: () => setAttributes({
-        styles: {
-          ...styles,
-          titleColor: "#000000ff"
+        title: {
+          ...title,
+          color: "#000000ff"
         }
       })
     })]

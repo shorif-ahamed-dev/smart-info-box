@@ -1,17 +1,20 @@
 import { useAttributes } from "../../context/AttributesContext";
 import ColorControl from "../common/ColorControl";
+import CustomRangeControl from "../common/CustomRangeControl";
 import StyleRangeControl from "../common/StyleRangeControl";
 
 const DescriptionPanel = () => {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { descriptionColor } = styles;
+	const { description } = attributes;
+	const { color } = description;
 	return (
 		<>
 			<div className="inspector-section">
-				<StyleRangeControl
-					label="Description Font Size"
-					attributeKey="descriptionFontSize"
+				<CustomRangeControl
+					label="Title Font Size"
+					attributeKey="description"
+					subKey="fontSize"
+					resetValue={18}
 					marks={false}
 					min={10}
 					max={100}
@@ -20,20 +23,20 @@ const DescriptionPanel = () => {
 			</div>
 			<ColorControl
 				label="Description Color"
-				value={descriptionColor}
+				value={color}
 				onChange={(color) =>
 					setAttributes({
-						styles: {
-							...styles,
-							descriptionColor: color,
+						description: {
+							...description,
+							color: color,
 						},
 					})
 				}
 				onReset={() =>
 					setAttributes({
-						styles: {
-							...styles,
-							descriptionColor: "#ffffff",
+						description: {
+							...description,
+							color: "#ddd",
 						},
 					})
 				}

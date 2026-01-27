@@ -6,8 +6,8 @@ import InfoBoxPanel from "./InfoBox/InfoBoxPanel";
 import IconImagePanel from "./Icon-Image/IconImagePanel";
 import TitlePanle from "./title/TitlePanle";
 import DescriptionPanel from "./description/DescriptionPanel";
-import CtaPannel from "./cta/ctaPannel";
 import BadgePanel from "./badge/BadgePanel";
+import CtaPannel from "./cta/CtaPannel";
 
 export default function AllPanels() {
 	const [openPanel, setOpenPanel] = useState("info");

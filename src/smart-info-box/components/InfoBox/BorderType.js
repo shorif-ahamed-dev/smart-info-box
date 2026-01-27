@@ -5,11 +5,15 @@ import DottedBorder from "../../assets/styleLayoutIcon/DottedBorder";
 import DoubleBorder from "../../assets/styleLayoutIcon/DoubleBorder";
 import ToolbarIcon from "../../assets/ToolbarIcon";
 
-export default function BorderType() {
+export default function BorderType({
+	attributePath = "container",
+	label = "Border",
+	showToolbarIcon = true,
+	borderOptions = null
+}) {
 	const { attributes, setAttributes } = useAttributes();
-	const { borderType } = attributes.container;
 
-	const borderButtons = [
+	const defaultBorderButtons = [
 		{
 			type: "none",
 			label: "None",
@@ -33,33 +37,37 @@ export default function BorderType() {
 		},
 	];
 
+	const borderButtons = borderOptions || defaultBorderButtons;
+	const currentBorderType = attributes[attributePath]?.borderType;
+
 	const handleBorderChange = (type) => {
 		setAttributes({
-			container: {
-				...attributes.container,
+			[attributePath]: {
+				...attributes[attributePath],
 				borderType: type,
 			},
 		});
 	};
+
 	return (
 		<>
 			<div className="components-header">
-				<p>Border</p>
+				<p>{label}</p>
 				<span>
 					<ToolbarIcon />
 				</span>
 			</div>
 
 			<div className="style-border-buttons">
-				{borderButtons.map(({ type, label, icon: Icon }) => (
+				{borderButtons.map(({ type, label: btnLabel, icon: Icon }) => (
 					<button
 						key={type}
 						type="button"
-						className={borderType === type ? "is-active" : ""}
-						aria-pressed={borderType === type}
+						className={currentBorderType === type ? "is-active" : ""}
+						aria-pressed={currentBorderType === type}
 						onClick={() => handleBorderChange(type)}
 					>
-						{Icon ? <Icon /> : label}
+						{Icon ? <Icon /> : btnLabel}
 					</button>
 				))}
 			</div>

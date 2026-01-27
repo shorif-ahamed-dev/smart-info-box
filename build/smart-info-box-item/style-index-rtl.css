@@ -25,7 +25,6 @@
   row-gap: var(--sib-row-gap);
   -moz-column-gap: var(--sib-columns-gap);
        column-gap: var(--sib-columns-gap);
-  background: var(--sib-bg-color);
   color: var(--sib-text-color);
   padding: var(--sib-padding);
   margin: var(--sib-margin);
@@ -47,9 +46,10 @@
   align-items: center;
   justify-content: center;
   width: var(--sib-media-width);
-  height: var(--sib-media-width);
+  height: var(--sib-media-height);
   background: var(--sib-media-bg);
   padding: var(--sib-media-padding);
+  margin: var(--sib-media-margin);
   border-radius: var(--sib-media-radius);
   color: var(--sib-media-color);
 }
@@ -80,7 +80,7 @@
   /* CTA */
 }
 .wp-block-create-block-smart-info-box-item .smart-info-box-item-container .cta {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   font-weight: 600;
   font-size: var(--sib-cta-fontSize);
@@ -89,7 +89,18 @@
   color: var(--sib-cta-color);
   padding: var(--sib-cta-padding);
   margin: var(--sib-cta-margin);
+  border: var(--sib-cta-border);
+  border-radius: var(--sib-cta-border-radius);
   text-decoration: none;
+}
+.wp-block-create-block-smart-info-box-item .smart-info-box-item-container .cta p {
+  font-size: inherit;
+  color: inherit;
+}
+.wp-block-create-block-smart-info-box-item .smart-info-box-item-container .cta svg {
+  width: var(--sib-cta-iconSize);
+  height: var(--sib-cta-iconSize);
+  color: inherit;
 }
 .wp-block-create-block-smart-info-box-item .smart-info-box-item-container {
   /* Featured badge */
@@ -237,7 +248,7 @@
   position: relative;
   justify-items: var(--sib-content-align);
   align-items: var(--sib-content-align);
-  text-align: var(--sib-text-align);
+  text-align: var(--sib-content-align);
 }
 .wp-block-create-block-smart-info-box-item .smart-info-box-item-container.layout-five .media-container {
   position: absolute;
@@ -245,4 +256,9 @@
   right: 50%;
   transform: translate(50%, -50%);
   z-index: 2;
+}
+.wp-block-create-block-smart-info-box-item .smart-info-box-item-container.layout-five p,
+.wp-block-create-block-smart-info-box-item .smart-info-box-item-container.layout-five .description {
+  align-items: var(--sib-content-align);
+  text-align: var(--sib-content-align);
 }

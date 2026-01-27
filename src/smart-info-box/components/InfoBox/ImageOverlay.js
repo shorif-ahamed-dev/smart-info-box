@@ -2,15 +2,15 @@ import { RangeControl } from "@wordpress/components";
 import ResetIcon from "../../assets/ResetIcon";
 import ColorControl from "../common/ColorControl";
 import { useAttributes } from "../../context/AttributesContext";
-export default function ImageOverlay({}) {
+export default function ImageOverlay({ }) {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { imageOverlayOpacity, imageOverlayColor } = styles;
+	const { styles, container } = attributes;
+	const { imageOverlayOpacity, imageOverlayColor } = container;
 
 	const onOpacityChange = (value) => {
 		setAttributes({
-			styles: {
-				...styles,
+			container: {
+				...container,
 				imageOverlayOpacity: value,
 			},
 		});
@@ -24,16 +24,16 @@ export default function ImageOverlay({}) {
 				value={imageOverlayColor}
 				onChange={(color) =>
 					setAttributes({
-						styles: {
-							...styles,
+						container: {
+							...container,
 							imageOverlayColor: color,
 						},
 					})
 				}
 				onReset={() =>
 					setAttributes({
-						styles: {
-							...styles,
+						container: {
+							...container,
 							imageOverlayColor: "#ddd",
 						},
 					})

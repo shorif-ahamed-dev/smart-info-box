@@ -14,7 +14,7 @@ export default function Edit({ attributes, setAttributes, context }) {
 	const title = context["smartInfoBox/title"];
 	const description = context["smartInfoBox/description"];
 	const cta = context["smartInfoBox/cta"];
-	const featuredStyle = context["smartInfoBox/featured"];
+	const featured = context["smartInfoBox/featured"];
 
 	const handleTitleChange = (newTitle) => {
 		setAttributes({
@@ -52,7 +52,7 @@ export default function Edit({ attributes, setAttributes, context }) {
 			title,
 			description,
 			cta,
-			featuredStyle,
+			featured,
 		});
 	}, [
 		infoBox,
@@ -62,7 +62,7 @@ export default function Edit({ attributes, setAttributes, context }) {
 		title,
 		description,
 		cta,
-		featuredStyle,
+		featured,
 	]);
 
 	return (

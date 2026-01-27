@@ -6,7 +6,9 @@
 	"title": "Info Box Item",
 	"category": "text",
 	"icon": "id",
-	"parent": ["create-block/smart-info-box"],
+	"parent": [
+		"create-block/smart-info-box"
+	],
 	"description": "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.",
 	"example": {},
 	"attributes": {
@@ -24,14 +26,14 @@
 				"title": "Automated AI Chatbotsx",
 				"buttonText": "Learn More",
 				"badgeText": "Sold Out",
-				"ratting": 4
+				"ratting": 4,
+				"badge": true
 			}
 		},
 		"styles": {
 			"type": "object",
 			"default": {}
 		},
-
 		"layout": {
 			"type": "string",
 			"default": "default"
@@ -89,7 +91,13 @@
 	],
 	"supports": {
 		"html": false,
-		"align": ["wide", "center", "full", "left", "right"]
+		"align": [
+			"wide",
+			"center",
+			"full",
+			"left",
+			"right"
+		]
 	},
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

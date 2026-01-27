@@ -10,37 +10,39 @@ const expand = (v = "") => {
 	return p.length === 1
 		? [p[0], p[0], p[0], p[0]]
 		: p.length === 2
-		? [p[0], p[1], p[0], p[1]]
-		: p.length === 3
-		? [p[0], p[1], p[2], p[1]]
-		: p.length === 4
-		? p
-		: [0, 0, 0, 0];
+			? [p[0], p[1], p[0], p[1]]
+			: p.length === 3
+				? [p[0], p[1], p[2], p[1]]
+				: p.length === 4
+					? p
+					: [0, 0, 0, 0];
 };
 
 export default function CustomBoxControls({
 	label,
-	attributeKey = "borderRadius",
+	attributeKey,
+	subKey,
 	min = 0,
 	max = 100,
 	step = 1,
 	unit = "px",
 }) {
 	const { attributes, setAttributes } = useAttributes();
-	const style = attributes.container?.[attributeKey] || "";
+	const style = attributes[attributeKey]?.[subKey] || "";
 
 	const [values, setValues] = useState([0, 0, 0, 0]);
 	const [linked, setLinked] = useState(true);
 
 	useEffect(() => setValues(expand(style)), [style]);
 
-	const update = (v) =>
+	const update = (v) => {
 		setAttributes({
-			container: {
-				...attributes.container,
-				[attributeKey]: v.map((n) => `${n}${unit}`).join(" "),
+			[attributeKey]: {
+				...attributes[attributeKey],
+				[subKey]: v.map((n) => `${n}${unit}`).join(" "),
 			},
 		});
+	};
 
 	const change = (i, val) => {
 		const n = Math.min(max, Math.max(min, +val || 0));

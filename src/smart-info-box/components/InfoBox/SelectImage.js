@@ -6,15 +6,15 @@ import ImageOverlay from "./ImageOverlay";
 
 export default function SelectImage() {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles } = attributes;
-	const { image } = styles;
+	const { styles, container } = attributes;
+	const { image } = container;
 
 	const onImageSelect = (media) => {
 		setAttributes({
-			styles: {
-				...styles,
+			container: {
+				...container,
 				image: {
-					...styles.image,
+					...container.image,
 					id: media.id,
 					url: media.url,
 					alt: media.alt,
@@ -24,10 +24,10 @@ export default function SelectImage() {
 	};
 	const handleRemoveImage = () => {
 		setAttributes({
-			styles: {
-				...styles,
+			container: {
+				...container,
 				image: {
-					...styles.image,
+					...container.image,
 					id: "",
 					url: "",
 					alt: "",
@@ -51,7 +51,7 @@ export default function SelectImage() {
 										<img
 											src={image.url}
 											alt={image.alt || ""}
-											// onClick={open}
+										// onClick={open}
 										/>
 
 										<div className="image-actions">

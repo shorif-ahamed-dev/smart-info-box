@@ -37,7 +37,7 @@ export default function BorderStyle() {
 				max={5}
 				step={1}
 			/>
-			<CustomBoxControls label="Border Radius" attributeKey="borderRadius" />
+			<CustomBoxControls label="Border Radius" attributeKey="container" subKey="borderRadius" />
 			<br />
 		</>
 	);

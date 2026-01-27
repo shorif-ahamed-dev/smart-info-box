@@ -90,7 +90,7 @@ return array(
 			'infoBox' => array(
 				'type' => 'object',
 				'default' => array(
-					'layout' => 'layout-five',
+					'layout' => 'layout-one',
 					'contentAlignment' => 'center',
 					'gap' => 20,
 					'columns' => 1,
@@ -112,7 +112,7 @@ return array(
 						'size' => 'cover',
 						'repeat' => 'no-repeat'
 					),
-					'imageOverlayColor' => '#000000',
+					'imageOverlayColor' => '#ddd',
 					'imageOverlayOpacity' => 50,
 					'padding' => '28px 24px 28px 24px',
 					'margin' => '0px 0px 0px 0px',
@@ -163,21 +163,25 @@ return array(
 			'cta' => array(
 				'type' => 'object',
 				'default' => array(
-					'fontSize' => '14px',
+					'fontSize' => 14,
+					'iconSize' => 14,
 					'width' => '',
 					'height' => '',
 					'textColor' => 'black',
-					'border' => 'none',
+					'borderType' => 'none',
+					'borderWidth' => 1,
+					'borderColor' => '#cccccc',
+					'borderRadius' => '4px 4px 4px 4px',
 					'backgroundColor' => 'none',
-					'padding' => '0px',
-					'margin' => '0px',
+					'padding' => '0px 0px 0px 0px',
+					'margin' => '0px 0px 0px 0px',
 					'gap' => '6px'
 				)
 			),
 			'featured' => array(
 				'type' => 'object',
 				'default' => array(
-					'badge' => false,
+					'badge' => true,
 					'badgePosition' => 'top-left',
 					'top' => 0,
 					'bottom' => null,
@@ -190,7 +194,7 @@ return array(
 					'fontSize' => '13px',
 					'margin' => '0px 0px 0px 0px',
 					'borderRadius' => '0px',
-					'color' => 'red'
+					'color' => '#7c3aed'
 				)
 			)
 		),
@@ -254,7 +258,8 @@ return array(
 					'title' => 'Automated AI Chatbotsx',
 					'buttonText' => 'Learn More',
 					'badgeText' => 'Sold Out',
-					'ratting' => 4
+					'ratting' => 4,
+					'badge' => true
 				)
 			),
 			'styles' => array(

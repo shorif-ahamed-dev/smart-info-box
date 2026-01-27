@@ -3,7 +3,6 @@ import hexToRgb from "./hexToRgb";
 const getBackgroundStyle = (styles) => {
     if (!styles) return {};
     const bgStyle = {};
-
     if (styles.backgroundType === 'solid') {
         bgStyle.backgroundColor = styles.backgroundColor;
     } else if (styles.backgroundType === 'gradient') {

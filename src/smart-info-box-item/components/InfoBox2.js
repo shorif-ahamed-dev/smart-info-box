@@ -2,19 +2,21 @@ import { __ } from "@wordpress/i18n";
 import { useBlockProps, RichText } from "@wordpress/block-editor";
 import Airplane from "../assets/Airplane";
 import RightArrow from "../assets/RightArrow";
-import getBackgroundStyle from "../../smart-info-box/utils/getBackgroundStyle";
 import Star from "../assets/Star";
 import CSSVars from "../utils/CSSVars";
+import getBackgroundStyle from "../utils/getBackgroundStyle";
 
 export default function InfoBox2({ attributes, setAttributes, context }) {
 	const blockProps = useBlockProps({
 		style: CSSVars(attributes),
 	});
+	const backgroundStyles = getBackgroundStyle(attributes.container)
 
 	return (
 		<div {...blockProps}>
 			<div
 				className={`smart-info-box-item-container ${attributes?.infoBox?.layout}`}
+				style={backgroundStyles}
 			>
 				<div className="media-container">
 					<Airplane />
@@ -34,13 +36,11 @@ export default function InfoBox2({ attributes, setAttributes, context }) {
 				</div> */}
 				<a className="cta" href="google.com">
 					<p>Learn More</p>
-					<span>
-						<RightArrow />
-					</span>
+					<RightArrow />
 				</a>
-				<div className="featured-container">
+				{attributes?.featured?.badge === true ? (<div className="featured-container">
 					<p>Featured</p>
-				</div>
+				</div>) : null}
 			</div>
 		</div>
 	);
