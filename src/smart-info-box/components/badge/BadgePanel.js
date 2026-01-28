@@ -1,10 +1,17 @@
 import ToolbarIcon from "../../assets/ToolbarIcon";
+import { useSelect } from "@wordpress/data";
 import { useAttributes } from "../../context/AttributesContext";
 import ColorControl from "../common/ColorControl";
 import { ToggleControl, SelectControl } from "@wordpress/components";
 import CustomBoxControls from "../common/CustomBoxControls";
 const BadgePanel = () => {
 	const { attributes, setAttributes } = useAttributes();
+	const isSiteEditor = document.body.classList.contains("site-editor");
+	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
+	const deviceType = useSelect(
+		(select) => select(store)?.__experimentalGetPreviewDeviceType?.(),
+		[],
+	);
 	const { featuredContainer } = attributes;
 	const { backgroundColor, color } = featuredContainer;
 
@@ -105,10 +112,28 @@ const BadgePanel = () => {
 						}
 					/>
 					<CustomBoxControls
+						label="Border Radius"
+						attributeKey="featuredContainer"
+						subKey="borderRadius"
+						deviceType={deviceType}
+						min={0}
+						max={100}
+						isResponsive={true}
+					/>
+					<CustomBoxControls
 						label="Padding"
 						attributeKey="featuredContainer"
 						subKey="padding"
-						deviceType={"desktop"}
+						deviceType={deviceType}
+						min={0}
+						max={100}
+						isResponsive={true}
+					/>
+					<CustomBoxControls
+						label="Margin"
+						attributeKey="featuredContainer"
+						subKey="margin"
+						deviceType={deviceType}
 						min={0}
 						max={100}
 						isResponsive={true}

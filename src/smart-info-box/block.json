@@ -14,7 +14,11 @@
 			"default": {
 				"layout": "layout-one",
 				"gap": 20,
-				"columns": 1
+				"columns": {
+					"Desktop": 1,
+					"Tablet": 2,
+					"Mobile": 1
+				}
 			}
 		},
 		"container": {
@@ -175,9 +179,7 @@
 			"margin": true
 		},
 		"html": false,
-		"align": [
-			"wide"
-		]
+		"align": ["wide"]
 	},
 	"textdomain": "smart-info-box",
 	"editorScript": "file:./index.js",

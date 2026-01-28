@@ -1,15 +1,23 @@
 import { __ } from "@wordpress/i18n";
+import { dispatch, useSelect } from "@wordpress/data";
 import { RangeControl } from "@wordpress/components";
 import Box1 from "../../assets/Box1";
 import Box2 from "../../assets/Box2";
 import Box3 from "../../assets/Box3";
 import Box4 from "../../assets/Box4";
 import Box5 from "../../assets/Box5";
+import Responsive from "../Responsive";
 
 export default function LayoutSettings({ attributes, setAttributes }) {
 	const { infoBox, container } = attributes;
-	const { contentAlignment, columnsGap, rowGap } = container
-	const { layout, columns, gap, } = infoBox;
+	const isSiteEditor = document.body.classList.contains("site-editor");
+	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
+	const deviceType = useSelect(
+		(select) => select(store)?.__experimentalGetPreviewDeviceType?.(),
+		[],
+	);
+	const { contentAlignment, columnsGap, rowGap } = container;
+	const { layout, columns, gap } = infoBox;
 	const layouts = [
 		{ id: "layout-one", label: "Icon Top", icon: Box1 },
 		{ id: "layout-two", label: "Icon Left", icon: Box2 },
@@ -17,6 +25,10 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 		{ id: "layout-four", label: "Icon Link", icon: Box4 },
 		{ id: "layout-five", label: "Icon Top", icon: Box5 },
 	];
+
+	const setDevice = (device) => {
+		dispatch(store).__experimentalSetPreviewDeviceType(device);
+	};
 
 	return (
 		<>
@@ -31,8 +43,9 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 							<div
 								key={item.id}
 								role="button"
-								className={`layout-card ${layout === item.id ? "is-active" : ""
-									}`}
+								className={`layout-card ${
+									layout === item.id ? "is-active" : ""
+								}`}
 								onClick={() =>
 									setAttributes({ infoBox: { ...infoBox, layout: item.id } })
 								}
@@ -91,14 +104,34 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 				</div>
 			</div>
 			<br />
-			<div className="inspector-section">
+			<div className="">
 				<RangeControl
-					label={__("Columns", "smart-info-box")}
+					label={
+						<div
+							style={{
+								display: "flex",
+								gap: "8px",
+								alignItems: "center",
+								width: "100%",
+							}}
+						>
+							<span>Columns</span>
+							<Responsive deviceType={deviceType} setDevice={setDevice} />
+						</div>
+					}
 					min={1}
 					max={6}
-					value={columns}
+					value={infoBox?.columns?.[deviceType]}
 					onChange={(value) =>
-						setAttributes({ infoBox: { ...infoBox, columns: value } })
+						setAttributes({
+							infoBox: {
+								...infoBox,
+								columns: {
+									...infoBox.columns,
+									[deviceType]: value,
+								},
+							},
+						})
 					}
 					color="#6f22dd"
 				/>

@@ -19,7 +19,11 @@ return array(
 				'default' => array(
 					'layout' => 'layout-one',
 					'gap' => 20,
-					'columns' => 1
+					'columns' => array(
+						'Desktop' => 1,
+						'Tablet' => 2,
+						'Mobile' => 1
+					)
 				)
 			),
 			'container' => array(
