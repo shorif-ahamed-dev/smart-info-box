@@ -5,8 +5,8 @@ import { ToggleControl, SelectControl } from "@wordpress/components";
 import CustomBoxControls from "../common/CustomBoxControls";
 const BadgePanel = () => {
 	const { attributes, setAttributes } = useAttributes();
-	const { featured } = attributes;
-	const { backgroundColor, color } = featured;
+	const { featuredContainer } = attributes;
+	const { backgroundColor, color } = featuredContainer;
 
 	const BADGE_POSITIONS = {
 		"top-left": { top: 0, left: 0, right: null, bottom: null },
@@ -21,11 +21,11 @@ const BadgePanel = () => {
 				<p>Badge</p>
 				<span>
 					<ToggleControl
-						checked={featured?.badge}
+						checked={featuredContainer?.badge}
 						onChange={(value) => {
 							setAttributes({
-								featured: {
-									...featured,
+								featuredContainer: {
+									...featuredContainer,
 									badge: value,
 								},
 							});
@@ -33,7 +33,7 @@ const BadgePanel = () => {
 					/>
 				</span>
 			</div>
-			{featured.badge && (
+			{featuredContainer.badge && (
 				<>
 					<div className="components-header">
 						<p>Badge Position</p>
@@ -44,7 +44,7 @@ const BadgePanel = () => {
 
 					<SelectControl
 						label="Badge Position"
-						value={featured.badgePosition}
+						value={featuredContainer.badgePosition}
 						options={[
 							{ label: "Top Left", value: "top-left" },
 							{ label: "Top Right", value: "top-right" },
@@ -55,8 +55,8 @@ const BadgePanel = () => {
 							const position = BADGE_POSITIONS[value];
 
 							setAttributes({
-								featured: {
-									...featured,
+								featuredContainer: {
+									...featuredContainer,
 									badgePosition: value,
 									...position,
 								},
@@ -69,16 +69,16 @@ const BadgePanel = () => {
 						value={backgroundColor}
 						onChange={(color) =>
 							setAttributes({
-								featured: {
-									...featured,
+								featuredContainer: {
+									...featuredContainer,
 									backgroundColor: color,
 								},
 							})
 						}
 						onReset={() =>
 							setAttributes({
-								featured: {
-									...featured,
+								featuredContainer: {
+									...featuredContainer,
 									backgroundColor: "#ddd",
 								},
 							})
@@ -89,30 +89,30 @@ const BadgePanel = () => {
 						value={color}
 						onChange={(color) =>
 							setAttributes({
-								featured: {
-									...featured,
+								featuredContainer: {
+									...featuredContainer,
 									color: color,
 								},
 							})
 						}
 						onReset={() =>
 							setAttributes({
-								featured: {
-									...featured,
+								featuredContainer: {
+									...featuredContainer,
 									color: "#ddd",
 								},
 							})
 						}
 					/>
-
 					<CustomBoxControls
 						label="Padding"
-						attributeKey="featured"
+						attributeKey="featuredContainer"
 						subKey="padding"
+						deviceType={"desktop"}
 						min={0}
 						max={100}
+						isResponsive={true}
 					/>
-
 				</>
 			)}
 		</>

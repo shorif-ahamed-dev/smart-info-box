@@ -105,26 +105,35 @@ const CtaPannel = () => {
 				max={10}
 				step={1}
 			/>
+
 			<CustomBoxControls
 				label="Border Radius"
 				attributeKey="cta"
 				subKey="borderRadius"
+				deviceType={"desktop"}
+				min={0}
+				max={100}
+				isResponsive={true}
 			/>
 			<br />
 			<CustomBoxControls
 				label="Padding"
 				attributeKey="cta"
 				subKey="padding"
+				deviceType={"desktop"}
 				min={0}
-				max={200}
+				max={100}
+				isResponsive={true}
 			/>
 			<br />
 			<CustomBoxControls
 				label="Margin"
 				attributeKey="cta"
 				subKey="margin"
+				deviceType={"desktop"}
 				min={0}
-				max={200}
+				max={100}
+				isResponsive={true}
 			/>
 		</div>
 	);

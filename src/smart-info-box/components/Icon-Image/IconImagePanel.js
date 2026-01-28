@@ -54,8 +54,8 @@ const IconImagePanel = () => {
 				/>
 				<CustomRangeControl
 					label="Icon Size"
-					attributeKey="iconImage"
-					subKey="size"
+					attributeKey="mediaContainer"
+					subKey="fontSize"
 					resetValue={10}
 					marks={false}
 					min={10}
@@ -76,6 +76,10 @@ const IconImagePanel = () => {
 					label="Margin"
 					attributeKey="mediaContainer"
 					subKey="margin"
+					deviceType={"desktop"}
+					min={0}
+					max={200}
+					isResponsive={true}
 				/>
 				<br />
 

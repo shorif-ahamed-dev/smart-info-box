@@ -3,11 +3,10 @@ const CSSVars = (attributes) => {
 		infoBox,
 		container,
 		mediaContainer,
-		iconImage,
 		title,
 		description,
 		cta,
-		featured,
+		featuredContainer,
 	} = attributes;
 
 	const formatSize = (value) => {
@@ -16,64 +15,77 @@ const CSSVars = (attributes) => {
 	};
 
 	return {
-		/* layout */
-		"--sib-layout": infoBox?.layout,
-		"--sib-content-align": infoBox?.contentAlignment,
-		"--sib-columns": infoBox?.columns,
-		"--sib-columns-gap": `${infoBox?.columnsGap}px`,
-		"--sib-row-gap": `${infoBox?.rowGap}px`,
+		/* infoBox */
+		"--infoBox-layout": infoBox?.layout,
+		"--infoBox-columns": infoBox?.columns,
+		"--infoBox-gap": `${infoBox?.gap}px`,
 
 		/* container */
-		// "--sib-bg-color": container?.backgroundColor,
-		"--sib-text-color": container?.color,
-		"--sib-padding": container?.padding,
-		"--sib-margin": container?.margin,
-		"--sib-border": `${container?.borderWidth}px ${container?.borderType} ${container?.borderColor}`,
-		"--sib-border-radius": container?.borderRadius,
-		"--sib-shadow": container?.boxShadow,
+		"--container-contentAlignment": container?.contentAlignment,
+		"--container-columnsGap": `${container?.columnsGap}px`,
+		"--container-rowGap": `${container?.rowGap}px`,
+		"--container-color": container?.color,
+		"--container-backgroundColor": container?.backgroundColor,
+		"--container-padding": container?.padding?.Desktop,
+		"--container-margin": container?.margin?.Desktop,
+		"--container-borderType": container?.borderType,
+		"--container-borderWidth": `${container?.borderWidth}px`,
+		"--container-borderColor": container?.borderColor,
+		"--container-border": `${container?.borderWidth}px ${container?.borderType} ${container?.borderColor}`,
+		"--container-borderRadius": container?.borderRadius?.Desktop,
+		"--container-boxShadow": container?.boxShadow,
 
-		/* media */
-		"--sib-media-bg": mediaContainer?.backgroundColor,
-		"--sib-media-width": mediaContainer?.width,
-		"--sib-media-height": formatSize(mediaContainer?.height),
-		"--sib-media-padding": `${mediaContainer?.padding}px`,
-		"--sib-media-margin": mediaContainer?.margin,
-		"--sib-media-radius": mediaContainer?.borderRadius,
-		"--sib-media-color": mediaContainer?.color,
-		"--sib-icon-color": mediaContainer?.color,
-		"--sib-icon-size": `${iconImage?.size}px`,
+		/* mediaContainer */
+		"--mediaContainer-width": mediaContainer?.width,
+		"--mediaContainer-height": formatSize(mediaContainer?.height),
+		"--mediaContainer-backgroundColor": mediaContainer?.backgroundColor,
+		"--mediaContainer-padding": `${mediaContainer?.padding}px`,
+		"--mediaContainer-margin": mediaContainer?.margin?.Desktop,
+		"--mediaContainer-borderRadius": mediaContainer?.borderRadius?.Desktop,
+		"--mediaContainer-color": mediaContainer?.color,
+		"--mediaContainer-fontSize": `${mediaContainer?.fontSize}px`,
 
 		/* title */
-		"--sib-title-color": title?.color,
-		"--sib-title-size": `${title?.fontSize}px`,
-		"--sib-title-padding": title?.padding,
+		"--title-color": title?.color,
+		"--title-fontSize": `${title?.fontSize}px`,
+		"--title-padding": `${title?.padding}px`,
 
 		/* description */
-		"--sib-desc-color": description?.color,
-		"--sib-desc-font-size": `${description?.fontSize}px`,
-		"--sib-desc-padding": description?.padding,
+		"--description-color": description?.color,
+		"--description-fontSize": `${description?.fontSize}px`,
+		"--description-padding": description?.padding,
 
-		/* CTA */
-		"--sib-cta-bg": cta?.backgroundColor,
-		"--sib-cta-fontSize": `${cta?.fontSize}px`,
-		"--sib-cta-iconSize": `${cta?.iconSize}px`,
-		"--sib-cta-border": `${cta?.borderWidth}px ${cta?.borderType} ${cta?.borderColor}`,
-		"--sib-cta-border-radius": cta?.borderRadius,
-		"--sib-cta-color": cta?.textColor,
-		"--sib-cta-padding": cta?.padding,
-		"--sib-cta-margin": cta?.margin,
-		"--sib-cta-gap": cta?.gap,
+		/* cta */
+		"--cta-fontSize": `${cta?.fontSize}px`,
+		"--cta-iconSize": `${cta?.iconSize}px`,
+		"--cta-width": cta?.width,
+		"--cta-height": cta?.height,
+		"--cta-textColor": cta?.textColor,
+		"--cta-borderType": cta?.borderType,
+		"--cta-borderWidth": `${cta?.borderWidth}px`,
+		"--cta-borderColor": cta?.borderColor,
+		"--cta-border": `${cta?.borderWidth}px ${cta?.borderType} ${cta?.borderColor}`,
+		"--cta-backgroundColor": cta?.backgroundColor,
+		"--cta-padding": cta?.padding?.Desktop,
+		"--cta-margin": cta?.margin?.Desktop,
+		"--cta-borderRadius": cta?.borderRadius?.Desktop,
+		"--cta-gap": cta?.gap,
 
-		/* featured */
-		"--sib-featured-bg": featured?.backgroundColor,
-		"--sib-featured-color": featured?.color,
-		"--sib-featured-padding": featured?.padding,
-		"--sib-featured-radius": featured?.borderRadius,
-		"--sib-featured-top": featured?.top,
-		"--sib-featured-bottom": featured?.bottom,
-		"--sib-featured-right": featured?.right,
-		"--sib-featured-left": featured?.left,
-		"--sib-featured-fontSize": featured?.fontSize,
+		/* featuredContainer */
+		"--featuredContainer-badge": featuredContainer?.badge,
+		"--featuredContainer-badgePosition": featuredContainer?.badgePosition,
+		"--featuredContainer-top": featuredContainer?.top !== null ? `${featuredContainer?.top}px` : 'auto',
+		"--featuredContainer-bottom": featuredContainer?.bottom !== null ? `${featuredContainer?.bottom}px` : 'auto',
+		"--featuredContainer-right": featuredContainer?.right !== null ? `${featuredContainer?.right}px` : 'auto',
+		"--featuredContainer-left": featuredContainer?.left !== null ? `${featuredContainer?.left}px` : 'auto',
+		"--featuredContainer-width": featuredContainer?.width,
+		"--featuredContainer-height": featuredContainer?.height,
+		"--featuredContainer-backgroundColor": featuredContainer?.backgroundColor,
+		"--featuredContainer-fontSize": featuredContainer?.fontSize,
+		"--featuredContainer-padding": featuredContainer?.padding?.Desktop,
+		"--featuredContainer-margin": featuredContainer?.margin?.Desktop,
+		"--featuredContainer-borderRadius": featuredContainer?.borderRadius?.Desktop,
+		"--featuredContainer-color": featuredContainer?.color,
 	};
 };
 

@@ -30,18 +30,6 @@
         "badge": true
       }
     },
-    "styles": {
-      "type": "object",
-      "default": {}
-    },
-    "layout": {
-      "type": "string",
-      "default": "default"
-    },
-    "contentAlignment": {
-      "type": "string",
-      "default": "center"
-    },
     "infoBox": {
       "type": "object",
       "default": {}
@@ -51,10 +39,6 @@
       "default": {}
     },
     "mediaContainer": {
-      "type": "object",
-      "default": {}
-    },
-    "iconImage": {
       "type": "object",
       "default": {}
     },
@@ -70,24 +54,19 @@
       "type": "object",
       "default": {}
     },
-    "featured": {
+    "featuredContainer": {
       "type": "object",
       "default": {}
     }
   },
   "usesContext": [
-    "smartInfoBox/layout",
-    "smartInfoBox/styles",
-    "smartInfoBox/hoverStyles",
-    "smartInfoBox/contentAlignment",
     "smartInfoBox/infoBox",
     "smartInfoBox/container",
     "smartInfoBox/mediaContainer",
-    "smartInfoBox/iconImage",
     "smartInfoBox/title",
     "smartInfoBox/description",
     "smartInfoBox/cta",
-    "smartInfoBox/featured"
+    "smartInfoBox/featuredContainer"
   ],
   "supports": {
     "html": false,

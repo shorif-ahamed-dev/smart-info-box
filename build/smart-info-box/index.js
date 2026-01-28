@@ -1144,6 +1144,37 @@ function ImageBox() {
 
 /***/ },
 
+/***/ "./src/smart-info-box/assets/styleLayoutIcon/MobileIcon.js"
+/*!*****************************************************************!*\
+  !*** ./src/smart-info-box/assets/styleLayoutIcon/MobileIcon.js ***!
+  \*****************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function MobileIcon() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-hidden": "true",
+    width: "14",
+    height: "12",
+    viewBox: "0 0 14 12",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M6.286 0H1.714C1.082 0 .571.67.571 1.5v9c0 .83.51 1.5 1.143 1.5h4.572c.632 0 1.142-.67 1.142-1.5v-9c0-.83-.51-1.5-1.142-1.5ZM4.762 11H3.238v-.5h1.524v.5Zm2-1.5H1.238v-8h5.524v8Z",
+      fill: "#8C8F94"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MobileIcon);
+
+/***/ },
+
 /***/ "./src/smart-info-box/assets/styleLayoutIcon/SolidBorder.js"
 /*!******************************************************************!*\
   !*** ./src/smart-info-box/assets/styleLayoutIcon/SolidBorder.js ***!
@@ -1205,6 +1236,37 @@ function SquareBox() {
     })
   });
 }
+
+/***/ },
+
+/***/ "./src/smart-info-box/assets/styleLayoutIcon/TabIcon.js"
+/*!**************************************************************!*\
+  !*** ./src/smart-info-box/assets/styleLayoutIcon/TabIcon.js ***!
+  \**************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function TabIcon() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-hidden": "true",
+    width: "14",
+    height: "12",
+    viewBox: "0 0 14 12",
+    fill: "currentColor",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M9.428 0H2.571C1.623 0 .857.67.857 1.5v9c0 .83.766 1.5 1.714 1.5h6.857c.949 0 1.715-.67 1.715-1.5v-9c0-.83-.766-1.5-1.715-1.5ZM7.143 11H4.857v-.5h2.286v.5Zm3-1.5H1.857v-8h8.286v8Z",
+      fill: "currentColor"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TabIcon);
 
 /***/ },
 
@@ -1278,7 +1340,7 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"columns":{"type":"number","default":1},"columnsGap":{"type":"number","default":16},"styles":{"type":"object","default":{"backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#000000","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderRadius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"},"borderColor":"#cccccc","boxShadow":"none","padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"},"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"iconSize":45,"titleFontSize":20,"descriptionFontSize":14,"buttonFontSize":14,"badge":false,"badgePosition":"top-left","descriptionColor":"#757575","titleColor":"black","buttonTextColor":"black","badgeColor":"#E0E0E0"}},"hoverStyles":{"type":"object","default":{"borderType":"solid","borderColor":"#884AE3","backgroundColor":"#884AE3"}},"infoBox":{"type":"object","default":{"layout":"layout-one","contentAlignment":"center","gap":20,"columns":1,"columnsGap":16,"rowGap":12}},"container":{"type":"object","default":{"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#ddd","imageOverlayOpacity":50,"padding":"28px 24px 28px 24px","margin":"0px 0px 0px 0px","borderType":"solid","borderWidth":1,"borderColor":"#cccccc","borderRadius":"4px 8px 4px 8px","boxShadow":"none"}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":"0px 0px 0px 0px","borderRadius":"4px 4px 4px 4px","color":"#ddd"}},"iconImage":{"type":"object","default":{"iconColor":"red","size":24,"position":"top","alignment":"center"}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":12}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":14,"iconSize":14,"width":"","height":"","textColor":"black","borderType":"none","borderWidth":1,"borderColor":"#cccccc","borderRadius":"4px 4px 4px 4px","backgroundColor":"none","padding":"0px 0px 0px 0px","margin":"0px 0px 0px 0px","gap":"6px"}},"featured":{"type":"object","default":{"badge":true,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","padding":"6px 12px 6px 12px","fontSize":"13px","margin":"0px 0px 0px 0px","borderRadius":"0px","color":"#7c3aed"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/iconImage":"iconImage","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featured":"featured"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"infoBox":{"type":"object","default":{"layout":"layout-one","gap":20,"columns":1}},"container":{"type":"object","default":{"contentAlignment":"center","columnsGap":16,"rowGap":12,"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#ddd","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderColor":"#cccccc","boxShadow":"none","padding":{"Desktop":"28px 24px 28px 24px","Tablet":"0px 0px 0px 0px","Mobile":"28px 24px 28px 24px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"}}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"color":"#ddd","fontSize":24}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":0}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":14,"iconSize":14,"width":"","height":"","textColor":"black","borderType":"none","borderWidth":1,"borderColor":"#cccccc","backgroundColor":"none","padding":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"gap":"6px"}},"featuredContainer":{"type":"object","default":{"badge":true,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","fontSize":"13px","padding":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 4px 4px 4px","Tablet":"4px 4px 4px 4px","Mobile":"4px 4px 4px 4px"},"color":"#7c3aed"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featuredContainer":"featuredContainer"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -1444,8 +1506,8 @@ const IconImagePanel = () => {
         step: 10
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
         label: "Icon Size",
-        attributeKey: "iconImage",
-        subKey: "size",
+        attributeKey: "mediaContainer",
+        subKey: "fontSize",
         resetValue: 10,
         marks: false,
         min: 10,
@@ -1463,7 +1525,11 @@ const IconImagePanel = () => {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Margin",
         attributeKey: "mediaContainer",
-        subKey: "margin"
+        subKey: "margin",
+        deviceType: "desktop",
+        min: 0,
+        max: 200,
+        isResponsive: true
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
         label: "Background Color",
         value: mediaContainer.backgroundColor,
@@ -1675,7 +1741,11 @@ function BorderStyle() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Border Radius",
       attributeKey: "container",
-      subKey: "borderRadius"
+      subKey: "borderRadius",
+      deviceType: "desktop",
+      min: 0,
+      max: 100,
+      isResponsive: true
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {})]
   });
 }
@@ -2106,15 +2176,18 @@ function LayoutSettings({
   setAttributes
 }) {
   const {
-    infoBox
+    infoBox,
+    container
   } = attributes;
   const {
-    layout,
     contentAlignment,
-    columns,
-    gap,
     columnsGap,
     rowGap
+  } = container;
+  const {
+    layout,
+    columns,
+    gap
   } = infoBox;
   const layouts = [{
     id: "layout-one",
@@ -2173,8 +2246,8 @@ function LayoutSettings({
           className: contentAlignment === "start" ? "is-active" : "",
           "aria-pressed": contentAlignment === "start",
           onClick: () => setAttributes({
-            infoBox: {
-              ...infoBox,
+            container: {
+              ...container,
               contentAlignment: "start"
             }
           }),
@@ -2186,8 +2259,8 @@ function LayoutSettings({
           className: contentAlignment === "center" ? "is-active" : "",
           "aria-pressed": contentAlignment === "center",
           onClick: () => setAttributes({
-            infoBox: {
-              ...infoBox,
+            container: {
+              ...container,
               contentAlignment: "center"
             }
           }),
@@ -2199,8 +2272,8 @@ function LayoutSettings({
           className: contentAlignment === "end" ? "is-active" : "",
           "aria-pressed": contentAlignment === "end",
           onClick: () => setAttributes({
-            infoBox: {
-              ...infoBox,
+            container: {
+              ...container,
               contentAlignment: "end"
             }
           }),
@@ -2243,12 +2316,12 @@ function LayoutSettings({
       className: "inspector-section",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.RangeControl, {
         label: "Column Gap",
-        min: 4,
+        min: 0,
         max: 50,
         value: columnsGap,
         onChange: value => setAttributes({
-          infoBox: {
-            ...infoBox,
+          container: {
+            ...container,
             columnsGap: value
           }
         }),
@@ -2258,12 +2331,12 @@ function LayoutSettings({
       className: "inspector-section",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.RangeControl, {
         label: "Row Gap",
-        min: 4,
+        min: 0,
         max: 50,
         value: rowGap,
         onChange: value => setAttributes({
-          infoBox: {
-            ...infoBox,
+          container: {
+            ...container,
             rowGap: value
           }
         }),
@@ -2317,14 +2390,21 @@ function NormalStyle() {
       label: "Padding",
       attributeKey: "container",
       subKey: "padding",
+      deviceType: "desktop" // Pass current device type from state/context
+      ,
       min: 0,
-      max: 200
+      max: 200,
+      step: 1,
+      unit: "px",
+      isResponsive: true // Enable responsive mode
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Margin",
       attributeKey: "container",
       subKey: "margin",
+      deviceType: "desktop",
       min: 0,
-      max: 200
+      max: 200,
+      isResponsive: true
     })]
   });
 }
@@ -2552,6 +2632,59 @@ function StyleSettings({
 
 /***/ },
 
+/***/ "./src/smart-info-box/components/Responsive.js"
+/*!*****************************************************!*\
+  !*** ./src/smart-info-box/components/Responsive.js ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/styleLayoutIcon/DesktopIcon */ "./src/smart-info-box/assets/styleLayoutIcon/DesktopIcon.js");
+/* harmony import */ var _assets_styleLayoutIcon_TabIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/styleLayoutIcon/TabIcon */ "./src/smart-info-box/assets/styleLayoutIcon/TabIcon.js");
+/* harmony import */ var _assets_styleLayoutIcon_MobileIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/styleLayoutIcon/MobileIcon */ "./src/smart-info-box/assets/styleLayoutIcon/MobileIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+const Responsive = ({
+  deviceType,
+  setDevice
+}) => {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "responsive-switcher-wrapper",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "responsive-switcher",
+      children: [deviceType === "Desktop" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), deviceType === "Tablet" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_styleLayoutIcon_TabIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {}), deviceType === "Mobile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_styleLayoutIcon_MobileIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "responsive-switcher__more",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        role: "button",
+        className: `device-btn ${deviceType === "Desktop" ? "is-active" : ""}`,
+        onClick: () => setDevice("Desktop"),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        role: "button",
+        className: `device-btn ${deviceType === "Tablet" ? "is-active" : ""}`,
+        onClick: () => setDevice("Tablet"),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_styleLayoutIcon_TabIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        role: "button",
+        className: `device-btn ${deviceType === "Mobile" ? "is-active" : ""}`,
+        onClick: () => setDevice("Mobile"),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_styleLayoutIcon_MobileIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+      })]
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Responsive);
+
+/***/ },
+
 /***/ "./src/smart-info-box/components/badge/BadgePanel.js"
 /*!***********************************************************!*\
   !*** ./src/smart-info-box/components/badge/BadgePanel.js ***!
@@ -2582,12 +2715,12 @@ const BadgePanel = () => {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_1__.useAttributes)();
   const {
-    featured
+    featuredContainer
   } = attributes;
   const {
     backgroundColor,
     color
-  } = featured;
+  } = featuredContainer;
   const BADGE_POSITIONS = {
     "top-left": {
       top: 0,
@@ -2621,18 +2754,18 @@ const BadgePanel = () => {
         children: "Badge"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-          checked: featured?.badge,
+          checked: featuredContainer?.badge,
           onChange: value => {
             setAttributes({
-              featured: {
-                ...featured,
+              featuredContainer: {
+                ...featuredContainer,
                 badge: value
               }
             });
           }
         })
       })]
-    }), featured.badge && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    }), featuredContainer.badge && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "components-header",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
@@ -2642,7 +2775,7 @@ const BadgePanel = () => {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
         label: "Badge Position",
-        value: featured.badgePosition,
+        value: featuredContainer.badgePosition,
         options: [{
           label: "Top Left",
           value: "top-left"
@@ -2659,8 +2792,8 @@ const BadgePanel = () => {
         onChange: value => {
           const position = BADGE_POSITIONS[value];
           setAttributes({
-            featured: {
-              ...featured,
+            featuredContainer: {
+              ...featuredContainer,
               badgePosition: value,
               ...position
             }
@@ -2670,14 +2803,14 @@ const BadgePanel = () => {
         label: "Badge Color",
         value: backgroundColor,
         onChange: color => setAttributes({
-          featured: {
-            ...featured,
+          featuredContainer: {
+            ...featuredContainer,
             backgroundColor: color
           }
         }),
         onReset: () => setAttributes({
-          featured: {
-            ...featured,
+          featuredContainer: {
+            ...featuredContainer,
             backgroundColor: "#ddd"
           }
         })
@@ -2685,23 +2818,25 @@ const BadgePanel = () => {
         label: "Text Color",
         value: color,
         onChange: color => setAttributes({
-          featured: {
-            ...featured,
+          featuredContainer: {
+            ...featuredContainer,
             color: color
           }
         }),
         onReset: () => setAttributes({
-          featured: {
-            ...featured,
+          featuredContainer: {
+            ...featuredContainer,
             color: "#ddd"
           }
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_4__["default"], {
         label: "Padding",
-        attributeKey: "featured",
+        attributeKey: "featuredContainer",
         subKey: "padding",
+        deviceType: "desktop",
         min: 0,
-        max: 100
+        max: 100,
+        isResponsive: true
       })]
     })]
   });
@@ -2796,13 +2931,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/styleLayoutIcon/DesktopIcon */ "./src/smart-info-box/assets/styleLayoutIcon/DesktopIcon.js");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_css_customBoxControls_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/css/customBoxControls.scss */ "./src/smart-info-box/assets/css/customBoxControls.scss");
 /* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
 /* harmony import */ var _assets_ResetIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/ResetIcon */ "./src/smart-info-box/assets/ResetIcon.js");
 /* harmony import */ var _assets_PixelIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/PixelIcon */ "./src/smart-info-box/assets/PixelIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Responsive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Responsive */ "./src/smart-info-box/components/Responsive.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -2811,78 +2949,117 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const expand = (v = "") => {
-  const p = v?.split(" ").map(x => parseInt(x) || 0);
+  // Handle empty or invalid values
+  if (!v || typeof v !== 'string') {
+    return [0, 0, 0, 0];
+  }
+  const p = v.split(" ").map(x => parseInt(x) || 0);
   return p.length === 1 ? [p[0], p[0], p[0], p[0]] : p.length === 2 ? [p[0], p[1], p[0], p[1]] : p.length === 3 ? [p[0], p[1], p[2], p[1]] : p.length === 4 ? p : [0, 0, 0, 0];
 };
 function CustomBoxControls({
   label,
   attributeKey,
   subKey,
+  // deviceType = "desktop",
   min = 0,
   max = 100,
   step = 1,
-  unit = "px"
+  unit = "px",
+  isResponsive = false
 }) {
   const {
     attributes,
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.useAttributes)();
-  const style = attributes[attributeKey]?.[subKey] || "";
+  const isSiteEditor = document.body.classList.contains("site-editor");
+  const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
+  const deviceType = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useSelect)(select => select(store)?.__experimentalGetPreviewDeviceType?.(), []);
+  const getStyleValue = () => {
+    if (isResponsive) {
+      const responsiveValue = attributes[attributeKey]?.[subKey]?.[deviceType];
+      return typeof responsiveValue === 'string' ? responsiveValue : "";
+    } else {
+      const directValue = attributes[attributeKey]?.[subKey];
+      return typeof directValue === 'string' ? directValue : "";
+    }
+  };
+  const style = getStyleValue();
   const [values, setValues] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([0, 0, 0, 0]);
   const [linked, setLinked] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => setValues(expand(style)), [style]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => setValues(expand(style)), [style, deviceType]);
   const update = v => {
-    setAttributes({
-      [attributeKey]: {
-        ...attributes[attributeKey],
-        [subKey]: v.map(n => `${n}${unit}`).join(" ")
-      }
-    });
+    const newValue = v.map(n => `${n}${unit}`).join(" ");
+    if (isResponsive) {
+      setAttributes({
+        [attributeKey]: {
+          ...attributes[attributeKey],
+          [subKey]: {
+            ...(attributes[attributeKey]?.[subKey] || {}),
+            [deviceType]: newValue
+          }
+        }
+      });
+    } else {
+      setAttributes({
+        [attributeKey]: {
+          ...attributes[attributeKey],
+          [subKey]: newValue
+        }
+      });
+    }
   };
   const change = (i, val) => {
     const n = Math.min(max, Math.max(min, +val || 0));
-    setValues(p => {
-      const next = linked ? [n, n, n, n] : p.map((x, idx) => idx === i ? n : x);
-      update(next);
-      return next;
-    });
+    const next = linked ? [n, n, n, n] : values.map((x, idx) => idx === i ? n : x);
+    setValues(next);
+    update(next);
   };
-  const reset = () => update(setValues([0, 0, 0, 0]) || [0, 0, 0, 0]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  const reset = () => {
+    const resetValues = [0, 0, 0, 0];
+    setValues(resetValues);
+    update(resetValues);
+  };
+  const setDevice = device => {
+    (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)(store).__experimentalSetPreviewDeviceType(device);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "components-header",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
-        children: [label, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_styleLayoutIcon_DesktopIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+        children: [label, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Responsive__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          deviceType: deviceType,
+          setDevice: setDevice
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("span", {
         onClick: reset,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_PixelIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_PixelIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "stepper-container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "stepper-box-groups",
-        children: values.map((v, i) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: values.map((v, i) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "stepper-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
             type: "number",
             min: min,
             max: max,
             step: step,
             value: v,
             onChange: e => change(i, e.target.value)
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: attributeKey === "borderRadius" ? `counter-corner-${i}` : `padding-margin-indicator-${i}`
           })]
         }, i))
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
         className: `link-button ${!linked ? "active" : ""}`,
         onClick: () => setLinked(l => !l),
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("svg", {
           width: "24",
           height: "24",
           viewBox: "0 0 24 24",
           fill: "currentColor",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("path", {
             d: "M15.6 7.2H14v1.5h1.6a3.7 3.7 0 010 7.4H14v1.5h1.6a5.2 5.2 0 000-10.4ZM4.7 12.4a3.7 3.7 0 013.7-3.7H10V7.2H8.4a5.2 5.2 0 000 10.4H10v-1.5H8.4a3.7 3.7 0 01-3.7-3.7ZM9.3 13.3h5.3v-1.5H9.3v1.5Z"
           })
         })
@@ -3162,19 +3339,27 @@ const CtaPannel = () => {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Border Radius",
       attributeKey: "cta",
-      subKey: "borderRadius"
+      subKey: "borderRadius",
+      deviceType: "desktop",
+      min: 0,
+      max: 100,
+      isResponsive: true
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Padding",
       attributeKey: "cta",
       subKey: "padding",
+      deviceType: "desktop",
       min: 0,
-      max: 200
+      max: 100,
+      isResponsive: true
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Margin",
       attributeKey: "cta",
       subKey: "margin",
+      deviceType: "desktop",
       min: 0,
-      max: 200
+      max: 100,
+      isResponsive: true
     })]
   });
 };
@@ -3531,6 +3716,16 @@ module.exports = window["wp"]["blocks"];
 (module) {
 
 module.exports = window["wp"]["components"];
+
+/***/ },
+
+/***/ "@wordpress/data"
+/*!******************************!*\
+  !*** external ["wp","data"] ***!
+  \******************************/
+(module) {
+
+module.exports = window["wp"]["data"];
 
 /***/ },
 

@@ -1,12 +1,18 @@
 import { useEffect, useState } from "@wordpress/element";
-import DesktopIcon from "../../assets/styleLayoutIcon/DesktopIcon";
+import { dispatch, useSelect } from "@wordpress/data";
 import "../../assets/css/customBoxControls.scss";
 import { useAttributes } from "../../context/AttributesContext";
 import ResetIcon from "../../assets/ResetIcon";
 import PixelIcon from "../../assets/PixelIcon";
+import Responsive from "../Responsive";
 
 const expand = (v = "") => {
-	const p = v?.split(" ").map((x) => parseInt(x) || 0);
+	// Handle empty or invalid values
+	if (!v || typeof v !== 'string') {
+		return [0, 0, 0, 0];
+	}
+
+	const p = v.split(" ").map((x) => parseInt(x) || 0);
 	return p.length === 1
 		? [p[0], p[0], p[0], p[0]]
 		: p.length === 2
@@ -22,46 +28,89 @@ export default function CustomBoxControls({
 	label,
 	attributeKey,
 	subKey,
+	// deviceType = "desktop",
 	min = 0,
 	max = 100,
 	step = 1,
 	unit = "px",
+	isResponsive = false,
 }) {
 	const { attributes, setAttributes } = useAttributes();
-	const style = attributes[attributeKey]?.[subKey] || "";
+	const isSiteEditor = document.body.classList.contains("site-editor");
+	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
+	const deviceType = useSelect(
+		(select) =>
+			select(store)?.__experimentalGetPreviewDeviceType?.(),
+		[]
+	);
+	const getStyleValue = () => {
+		if (isResponsive) {
+			const responsiveValue = attributes[attributeKey]?.[subKey]?.[deviceType];
+			return typeof responsiveValue === 'string' ? responsiveValue : "";
+		} else {
+			const directValue = attributes[attributeKey]?.[subKey];
+			return typeof directValue === 'string' ? directValue : "";
+		}
+	};
 
+	const style = getStyleValue();
 	const [values, setValues] = useState([0, 0, 0, 0]);
 	const [linked, setLinked] = useState(true);
 
-	useEffect(() => setValues(expand(style)), [style]);
+	useEffect(() => setValues(expand(style)), [style, deviceType]);
 
 	const update = (v) => {
-		setAttributes({
-			[attributeKey]: {
-				...attributes[attributeKey],
-				[subKey]: v.map((n) => `${n}${unit}`).join(" "),
-			},
-		});
+		const newValue = v.map((n) => `${n}${unit}`).join(" ");
+
+		if (isResponsive) {
+			setAttributes({
+				[attributeKey]: {
+					...attributes[attributeKey],
+					[subKey]: {
+						...(attributes[attributeKey]?.[subKey] || {}),
+						[deviceType]: newValue,
+					},
+				},
+			});
+		} else {
+			setAttributes({
+				[attributeKey]: {
+					...attributes[attributeKey],
+					[subKey]: newValue,
+				},
+			});
+		}
 	};
 
 	const change = (i, val) => {
 		const n = Math.min(max, Math.max(min, +val || 0));
-		setValues((p) => {
-			const next = linked
-				? [n, n, n, n]
-				: p.map((x, idx) => (idx === i ? n : x));
-			update(next);
-			return next;
-		});
+		const next = linked
+			? [n, n, n, n]
+			: values.map((x, idx) => (idx === i ? n : x));
+
+		setValues(next);
+		update(next);
 	};
 
-	const reset = () => update(setValues([0, 0, 0, 0]) || [0, 0, 0, 0]);
+	const reset = () => {
+		const resetValues = [0, 0, 0, 0];
+		setValues(resetValues);
+		update(resetValues);
+	};
+
+
+
+
+	const setDevice = (device) => {
+		dispatch(store).__experimentalSetPreviewDeviceType(device);
+	};
 
 	return (
 		<>
 			<div className="components-header">
 				<p>
-					{label} <DesktopIcon />
+					{label}
+					<Responsive deviceType={deviceType} setDevice={setDevice} />
 				</p>
 				<span onClick={reset}>
 					<ResetIcon />

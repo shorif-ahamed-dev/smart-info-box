@@ -7,9 +7,9 @@ import Box4 from "../../assets/Box4";
 import Box5 from "../../assets/Box5";
 
 export default function LayoutSettings({ attributes, setAttributes }) {
-	const { infoBox } = attributes;
-	const { layout, contentAlignment, columns, gap, columnsGap, rowGap } =
-		infoBox;
+	const { infoBox, container } = attributes;
+	const { contentAlignment, columnsGap, rowGap } = container
+	const { layout, columns, gap, } = infoBox;
 	const layouts = [
 		{ id: "layout-one", label: "Icon Top", icon: Box1 },
 		{ id: "layout-two", label: "Icon Left", icon: Box2 },
@@ -31,9 +31,8 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 							<div
 								key={item.id}
 								role="button"
-								className={`layout-card ${
-									layout === item.id ? "is-active" : ""
-								}`}
+								className={`layout-card ${layout === item.id ? "is-active" : ""
+									}`}
 								onClick={() =>
 									setAttributes({ infoBox: { ...infoBox, layout: item.id } })
 								}
@@ -57,7 +56,7 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 						aria-pressed={contentAlignment === "start"}
 						onClick={() =>
 							setAttributes({
-								infoBox: { ...infoBox, contentAlignment: "start" },
+								container: { ...container, contentAlignment: "start" },
 							})
 						}
 					>
@@ -70,7 +69,7 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 						aria-pressed={contentAlignment === "center"}
 						onClick={() =>
 							setAttributes({
-								infoBox: { ...infoBox, contentAlignment: "center" },
+								container: { ...container, contentAlignment: "center" },
 							})
 						}
 					>
@@ -83,7 +82,7 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 						aria-pressed={contentAlignment === "end"}
 						onClick={() =>
 							setAttributes({
-								infoBox: { ...infoBox, contentAlignment: "end" },
+								container: { ...container, contentAlignment: "end" },
 							})
 						}
 					>
@@ -119,12 +118,12 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 			<div className="inspector-section">
 				<RangeControl
 					label="Column Gap"
-					min={4}
+					min={0}
 					max={50}
 					value={columnsGap}
 					onChange={(value) =>
 						setAttributes({
-							infoBox: { ...infoBox, columnsGap: value },
+							container: { ...container, columnsGap: value },
 						})
 					}
 					color="#6f22dd"
@@ -133,11 +132,11 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 			<div className="inspector-section">
 				<RangeControl
 					label="Row Gap"
-					min={4}
+					min={0}
 					max={50}
 					value={rowGap}
 					onChange={(value) =>
-						setAttributes({ infoBox: { ...infoBox, rowGap: value } })
+						setAttributes({ container: { ...container, rowGap: value } })
 					}
 					color="#6f22dd"
 				/>

@@ -110,43 +110,13 @@ function SingleBoxItem() {
 
 /***/ },
 
-/***/ "./src/smart-info-box-item/assets/Star.js"
-/*!************************************************!*\
-  !*** ./src/smart-info-box-item/assets/Star.js ***!
-  \************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-const Star = () => {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
-    width: "15",
-    height: "15",
-    viewBox: "0 0 15 15",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-      d: "M7.2 0L9.6 4.8L14.4 5.4L11.104 9.096L12 14.4L7.2 12L2.4 14.4L3.304 9.096L0 5.4L4.8 4.8L7.2 0Z",
-      fill: "#F0B849"
-    })
-  });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Star);
-
-/***/ },
-
 /***/ "./src/smart-info-box-item/block.json"
 /*!********************************************!*\
   !*** ./src/smart-info-box-item/block.json ***!
   \********************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out","ratting":4,"badge":true}},"styles":{"type":"object","default":{}},"layout":{"type":"string","default":"default"},"contentAlignment":{"type":"string","default":"center"},"infoBox":{"type":"object","default":{}},"container":{"type":"object","default":{}},"mediaContainer":{"type":"object","default":{}},"iconImage":{"type":"object","default":{}},"title":{"type":"object","default":{}},"description":{"type":"object","default":{}},"cta":{"type":"object","default":{}},"featured":{"type":"object","default":{}}},"usesContext":["smartInfoBox/layout","smartInfoBox/styles","smartInfoBox/hoverStyles","smartInfoBox/contentAlignment","smartInfoBox/infoBox","smartInfoBox/container","smartInfoBox/mediaContainer","smartInfoBox/iconImage","smartInfoBox/title","smartInfoBox/description","smartInfoBox/cta","smartInfoBox/featured"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out","ratting":4,"badge":true}},"infoBox":{"type":"object","default":{}},"container":{"type":"object","default":{}},"mediaContainer":{"type":"object","default":{}},"title":{"type":"object","default":{}},"description":{"type":"object","default":{}},"cta":{"type":"object","default":{}},"featuredContainer":{"type":"object","default":{}}},"usesContext":["smartInfoBox/infoBox","smartInfoBox/container","smartInfoBox/mediaContainer","smartInfoBox/title","smartInfoBox/description","smartInfoBox/cta","smartInfoBox/featuredContainer"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -166,12 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_Airplane__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/Airplane */ "./src/smart-info-box-item/assets/Airplane.js");
 /* harmony import */ var _assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/RightArrow */ "./src/smart-info-box-item/assets/RightArrow.js");
-/* harmony import */ var _assets_Star__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/Star */ "./src/smart-info-box-item/assets/Star.js");
-/* harmony import */ var _utils_CSSVars__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/CSSVars */ "./src/smart-info-box-item/utils/CSSVars.js");
-/* harmony import */ var _utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/getBackgroundStyle */ "./src/smart-info-box-item/utils/getBackgroundStyle.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
-
+/* harmony import */ var _utils_CSSVars__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/CSSVars */ "./src/smart-info-box-item/utils/CSSVars.js");
+/* harmony import */ var _utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/getBackgroundStyle */ "./src/smart-info-box-item/utils/getBackgroundStyle.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -180,36 +148,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function InfoBox2({
-  attributes,
-  setAttributes,
-  context
+  attributes
 }) {
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-    style: (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_5__["default"])(attributes)
+    style: (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_4__["default"])(attributes)
   });
-  const backgroundStyles = (0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_6__["default"])(attributes.container);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+  const backgroundStyles = (0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_5__["default"])(attributes.container);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
     ...blockProps,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: `smart-info-box-item-container ${attributes?.infoBox?.layout}`,
       style: backgroundStyles,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-        className: "media-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_2__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "mediaContainer",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h4", {
+        className: "title",
         children: "Automated AI Chatbots"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
         className: "description",
         children: "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("a", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("a", {
         className: "cta",
         href: "google.com",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
           children: "Learn More"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
-      }), attributes?.featured?.badge === true ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-        className: "featured-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+      }), attributes?.featuredContainer?.badge === true ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "featuredContainer",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
           children: "Featured"
         })
       }) : null]
@@ -255,11 +222,10 @@ function Edit({
   const infoBox = context["smartInfoBox/infoBox"];
   const container = context["smartInfoBox/container"];
   const mediaContainer = context["smartInfoBox/mediaContainer"];
-  const iconImage = context["smartInfoBox/iconImage"];
   const title = context["smartInfoBox/title"];
   const description = context["smartInfoBox/description"];
   const cta = context["smartInfoBox/cta"];
-  const featured = context["smartInfoBox/featured"];
+  const featuredContainer = context["smartInfoBox/featuredContainer"];
   const handleTitleChange = newTitle => {
     setAttributes({
       content: {
@@ -289,13 +255,12 @@ function Edit({
       infoBox,
       container,
       mediaContainer,
-      iconImage,
       title,
       description,
       cta,
-      featured
+      featuredContainer
     });
-  }, [infoBox, container, mediaContainer, iconImage, title, description, cta, featured]);
+  }, [infoBox, container, mediaContainer, title, description, cta, featuredContainer]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_InfoBox2__WEBPACK_IMPORTED_MODULE_3__["default"], {
       attributes: attributes,
@@ -547,69 +512,81 @@ const CSSVars = attributes => {
     infoBox,
     container,
     mediaContainer,
-    iconImage,
     title,
     description,
     cta,
-    featured
+    featuredContainer
   } = attributes;
   const formatSize = value => {
     if (typeof value === 'number') return `${value}px`;
     return value;
   };
   return {
-    /* layout */
-    "--sib-layout": infoBox?.layout,
-    "--sib-content-align": infoBox?.contentAlignment,
-    "--sib-columns": infoBox?.columns,
-    "--sib-columns-gap": `${infoBox?.columnsGap}px`,
-    "--sib-row-gap": `${infoBox?.rowGap}px`,
+    /* infoBox */
+    "--infoBox-layout": infoBox?.layout,
+    "--infoBox-columns": infoBox?.columns,
+    "--infoBox-gap": `${infoBox?.gap}px`,
     /* container */
-    // "--sib-bg-color": container?.backgroundColor,
-    "--sib-text-color": container?.color,
-    "--sib-padding": container?.padding,
-    "--sib-margin": container?.margin,
-    "--sib-border": `${container?.borderWidth}px ${container?.borderType} ${container?.borderColor}`,
-    "--sib-border-radius": container?.borderRadius,
-    "--sib-shadow": container?.boxShadow,
-    /* media */
-    "--sib-media-bg": mediaContainer?.backgroundColor,
-    "--sib-media-width": mediaContainer?.width,
-    "--sib-media-height": formatSize(mediaContainer?.height),
-    "--sib-media-padding": `${mediaContainer?.padding}px`,
-    "--sib-media-margin": mediaContainer?.margin,
-    "--sib-media-radius": mediaContainer?.borderRadius,
-    "--sib-media-color": mediaContainer?.color,
-    "--sib-icon-color": mediaContainer?.color,
-    "--sib-icon-size": `${iconImage?.size}px`,
+    "--container-contentAlignment": container?.contentAlignment,
+    "--container-columnsGap": `${container?.columnsGap}px`,
+    "--container-rowGap": `${container?.rowGap}px`,
+    "--container-color": container?.color,
+    "--container-backgroundColor": container?.backgroundColor,
+    "--container-padding": container?.padding?.Desktop,
+    "--container-margin": container?.margin?.Desktop,
+    "--container-borderType": container?.borderType,
+    "--container-borderWidth": `${container?.borderWidth}px`,
+    "--container-borderColor": container?.borderColor,
+    "--container-border": `${container?.borderWidth}px ${container?.borderType} ${container?.borderColor}`,
+    "--container-borderRadius": container?.borderRadius?.Desktop,
+    "--container-boxShadow": container?.boxShadow,
+    /* mediaContainer */
+    "--mediaContainer-width": mediaContainer?.width,
+    "--mediaContainer-height": formatSize(mediaContainer?.height),
+    "--mediaContainer-backgroundColor": mediaContainer?.backgroundColor,
+    "--mediaContainer-padding": `${mediaContainer?.padding}px`,
+    "--mediaContainer-margin": mediaContainer?.margin?.Desktop,
+    "--mediaContainer-borderRadius": mediaContainer?.borderRadius?.Desktop,
+    "--mediaContainer-color": mediaContainer?.color,
+    "--mediaContainer-fontSize": `${mediaContainer?.fontSize}px`,
     /* title */
-    "--sib-title-color": title?.color,
-    "--sib-title-size": `${title?.fontSize}px`,
-    "--sib-title-padding": title?.padding,
+    "--title-color": title?.color,
+    "--title-fontSize": `${title?.fontSize}px`,
+    "--title-padding": `${title?.padding}px`,
     /* description */
-    "--sib-desc-color": description?.color,
-    "--sib-desc-font-size": `${description?.fontSize}px`,
-    "--sib-desc-padding": description?.padding,
-    /* CTA */
-    "--sib-cta-bg": cta?.backgroundColor,
-    "--sib-cta-fontSize": `${cta?.fontSize}px`,
-    "--sib-cta-iconSize": `${cta?.iconSize}px`,
-    "--sib-cta-border": `${cta?.borderWidth}px ${cta?.borderType} ${cta?.borderColor}`,
-    "--sib-cta-border-radius": cta?.borderRadius,
-    "--sib-cta-color": cta?.textColor,
-    "--sib-cta-padding": cta?.padding,
-    "--sib-cta-margin": cta?.margin,
-    "--sib-cta-gap": cta?.gap,
-    /* featured */
-    "--sib-featured-bg": featured?.backgroundColor,
-    "--sib-featured-color": featured?.color,
-    "--sib-featured-padding": featured?.padding,
-    "--sib-featured-radius": featured?.borderRadius,
-    "--sib-featured-top": featured?.top,
-    "--sib-featured-bottom": featured?.bottom,
-    "--sib-featured-right": featured?.right,
-    "--sib-featured-left": featured?.left,
-    "--sib-featured-fontSize": featured?.fontSize
+    "--description-color": description?.color,
+    "--description-fontSize": `${description?.fontSize}px`,
+    "--description-padding": description?.padding,
+    /* cta */
+    "--cta-fontSize": `${cta?.fontSize}px`,
+    "--cta-iconSize": `${cta?.iconSize}px`,
+    "--cta-width": cta?.width,
+    "--cta-height": cta?.height,
+    "--cta-textColor": cta?.textColor,
+    "--cta-borderType": cta?.borderType,
+    "--cta-borderWidth": `${cta?.borderWidth}px`,
+    "--cta-borderColor": cta?.borderColor,
+    "--cta-border": `${cta?.borderWidth}px ${cta?.borderType} ${cta?.borderColor}`,
+    "--cta-backgroundColor": cta?.backgroundColor,
+    "--cta-padding": cta?.padding?.Desktop,
+    "--cta-margin": cta?.margin?.Desktop,
+    "--cta-borderRadius": cta?.borderRadius?.Desktop,
+    "--cta-gap": cta?.gap,
+    /* featuredContainer */
+    "--featuredContainer-badge": featuredContainer?.badge,
+    "--featuredContainer-badgePosition": featuredContainer?.badgePosition,
+    "--featuredContainer-top": featuredContainer?.top !== null ? `${featuredContainer?.top}px` : 'auto',
+    "--featuredContainer-bottom": featuredContainer?.bottom !== null ? `${featuredContainer?.bottom}px` : 'auto',
+    "--featuredContainer-right": featuredContainer?.right !== null ? `${featuredContainer?.right}px` : 'auto',
+    "--featuredContainer-left": featuredContainer?.left !== null ? `${featuredContainer?.left}px` : 'auto',
+    "--featuredContainer-width": featuredContainer?.width,
+    "--featuredContainer-height": featuredContainer?.height,
+    "--featuredContainer-backgroundColor": featuredContainer?.backgroundColor,
+    "--featuredContainer-fontSize": featuredContainer?.fontSize,
+    "--featuredContainer-padding": featuredContainer?.padding?.Desktop,
+    "--featuredContainer-margin": featuredContainer?.margin?.Desktop,
+    "--featuredContainer-borderRadius": featuredContainer?.borderRadius?.Desktop,
+    "--featuredContainer-color": featuredContainer?.color
   };
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CSSVars);

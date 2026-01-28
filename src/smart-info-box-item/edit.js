@@ -10,11 +10,10 @@ export default function Edit({ attributes, setAttributes, context }) {
 	const infoBox = context["smartInfoBox/infoBox"];
 	const container = context["smartInfoBox/container"];
 	const mediaContainer = context["smartInfoBox/mediaContainer"];
-	const iconImage = context["smartInfoBox/iconImage"];
 	const title = context["smartInfoBox/title"];
 	const description = context["smartInfoBox/description"];
 	const cta = context["smartInfoBox/cta"];
-	const featured = context["smartInfoBox/featured"];
+	const featuredContainer = context["smartInfoBox/featuredContainer"];
 
 	const handleTitleChange = (newTitle) => {
 		setAttributes({
@@ -48,21 +47,19 @@ export default function Edit({ attributes, setAttributes, context }) {
 			infoBox,
 			container,
 			mediaContainer,
-			iconImage,
 			title,
 			description,
 			cta,
-			featured,
+			featuredContainer,
 		});
 	}, [
 		infoBox,
 		container,
 		mediaContainer,
-		iconImage,
 		title,
 		description,
 		cta,
-		featured,
+		featuredContainer,
 	]);
 
 	return (

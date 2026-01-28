@@ -37,7 +37,15 @@ export default function BorderStyle() {
 				max={5}
 				step={1}
 			/>
-			<CustomBoxControls label="Border Radius" attributeKey="container" subKey="borderRadius" />
+			<CustomBoxControls
+				label="Border Radius"
+				attributeKey="container"
+				subKey="borderRadius"
+				deviceType={"desktop"}
+				min={0}
+				max={100}
+				isResponsive={true}
+			/>
 			<br />
 		</>
 	);

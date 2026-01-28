@@ -14,93 +14,20 @@ return array(
 			
 		),
 		'attributes' => array(
-			'layout' => array(
-				'type' => 'string',
-				'default' => 'default'
-			),
-			'contentAlignment' => array(
-				'type' => 'string',
-				'default' => 'center'
-			),
-			'columns' => array(
-				'type' => 'number',
-				'default' => 1
-			),
-			'columnsGap' => array(
-				'type' => 'number',
-				'default' => 16
-			),
-			'styles' => array(
-				'type' => 'object',
-				'default' => array(
-					'backgroundType' => 'solid',
-					'backgroundColor' => '#ffffff',
-					'gradient' => 'linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)',
-					'image' => array(
-						'id' => '',
-						'url' => '',
-						'position' => 'center',
-						'size' => 'cover',
-						'repeat' => 'no-repeat'
-					),
-					'imageOverlayColor' => '#000000',
-					'imageOverlayOpacity' => 50,
-					'borderType' => 'solid',
-					'borderWidth' => 1,
-					'borderRadius' => array(
-						'topLeft' => '4px',
-						'topRight' => '4px',
-						'bottomLeft' => '4px',
-						'bottomRight' => '4px'
-					),
-					'borderColor' => '#cccccc',
-					'boxShadow' => 'none',
-					'padding' => array(
-						'top' => '28px',
-						'bottom' => '28px',
-						'left' => '24px',
-						'right' => '24px'
-					),
-					'margin' => array(
-						'top' => '0px',
-						'bottom' => '0px',
-						'left' => '0px',
-						'right' => '0px'
-					),
-					'iconSize' => 45,
-					'titleFontSize' => 20,
-					'descriptionFontSize' => 14,
-					'buttonFontSize' => 14,
-					'badge' => false,
-					'badgePosition' => 'top-left',
-					'descriptionColor' => '#757575',
-					'titleColor' => 'black',
-					'buttonTextColor' => 'black',
-					'badgeColor' => '#E0E0E0'
-				)
-			),
-			'hoverStyles' => array(
-				'type' => 'object',
-				'default' => array(
-					'borderType' => 'solid',
-					'borderColor' => '#884AE3',
-					'backgroundColor' => '#884AE3'
-				)
-			),
 			'infoBox' => array(
 				'type' => 'object',
 				'default' => array(
 					'layout' => 'layout-one',
-					'contentAlignment' => 'center',
 					'gap' => 20,
-					'columns' => 1,
-					'columnsGap' => 16,
-					'rowGap' => 12
+					'columns' => 1
 				)
 			),
 			'container' => array(
 				'type' => 'object',
 				'default' => array(
+					'contentAlignment' => 'center',
+					'columnsGap' => 16,
+					'rowGap' => 12,
 					'color' => 'black',
 					'backgroundType' => 'solid',
 					'backgroundColor' => '#ffffff',
@@ -114,13 +41,25 @@ return array(
 					),
 					'imageOverlayColor' => '#ddd',
 					'imageOverlayOpacity' => 50,
-					'padding' => '28px 24px 28px 24px',
-					'margin' => '0px 0px 0px 0px',
 					'borderType' => 'solid',
 					'borderWidth' => 1,
 					'borderColor' => '#cccccc',
-					'borderRadius' => '4px 8px 4px 8px',
-					'boxShadow' => 'none'
+					'boxShadow' => 'none',
+					'padding' => array(
+						'Desktop' => '28px 24px 28px 24px',
+						'Tablet' => '0px 0px 0px 0px',
+						'Mobile' => '28px 24px 28px 24px'
+					),
+					'margin' => array(
+						'Desktop' => '0px 0px 0px 0px',
+						'Tablet' => '0px 0px 0px 0px',
+						'Mobile' => '0px 0px 0px 0px'
+					),
+					'borderRadius' => array(
+						'Desktop' => '4px 8px 4px 8px',
+						'Tablet' => '4px 8px 4px 8px',
+						'Mobile' => '4px 8px 4px 8px'
+					)
 				)
 			),
 			'mediaContainer' => array(
@@ -130,18 +69,18 @@ return array(
 					'height' => 'min-content',
 					'backgroundColor' => 'black',
 					'padding' => 12,
-					'margin' => '0px 0px 0px 0px',
-					'borderRadius' => '4px 4px 4px 4px',
-					'color' => '#ddd'
-				)
-			),
-			'iconImage' => array(
-				'type' => 'object',
-				'default' => array(
-					'iconColor' => 'red',
-					'size' => 24,
-					'position' => 'top',
-					'alignment' => 'center'
+					'margin' => array(
+						'Desktop' => '0px 0px 0px 0px',
+						'Tablet' => '0px 0px 0px 0px',
+						'Mobile' => '0px 0px 0px 0px'
+					),
+					'borderRadius' => array(
+						'Desktop' => '4px 8px 4px 8px',
+						'Tablet' => '4px 8px 4px 8px',
+						'Mobile' => '4px 8px 4px 8px'
+					),
+					'color' => '#ddd',
+					'fontSize' => 24
 				)
 			),
 			'title' => array(
@@ -149,7 +88,7 @@ return array(
 				'default' => array(
 					'color' => 'black',
 					'fontSize' => 20,
-					'padding' => 12
+					'padding' => 0
 				)
 			),
 			'description' => array(
@@ -171,14 +110,26 @@ return array(
 					'borderType' => 'none',
 					'borderWidth' => 1,
 					'borderColor' => '#cccccc',
-					'borderRadius' => '4px 4px 4px 4px',
 					'backgroundColor' => 'none',
-					'padding' => '0px 0px 0px 0px',
-					'margin' => '0px 0px 0px 0px',
+					'padding' => array(
+						'Desktop' => '0px 0px 0px 0px',
+						'Tablet' => '0px 0px 0px 0px',
+						'Mobile' => '0px 0px 0px 0px'
+					),
+					'margin' => array(
+						'Desktop' => '0px 0px 0px 0px',
+						'Tablet' => '0px 0px 0px 0px',
+						'Mobile' => '0px 0px 0px 0px'
+					),
+					'borderRadius' => array(
+						'Desktop' => '4px 8px 4px 8px',
+						'Tablet' => '4px 8px 4px 8px',
+						'Mobile' => '4px 8px 4px 8px'
+					),
 					'gap' => '6px'
 				)
 			),
-			'featured' => array(
+			'featuredContainer' => array(
 				'type' => 'object',
 				'default' => array(
 					'badge' => true,
@@ -190,10 +141,22 @@ return array(
 					'width' => '',
 					'height' => '',
 					'backgroundColor' => '#e0e0e0',
-					'padding' => '6px 12px 6px 12px',
 					'fontSize' => '13px',
-					'margin' => '0px 0px 0px 0px',
-					'borderRadius' => '0px',
+					'padding' => array(
+						'Desktop' => '4px 8px 4px 8px',
+						'Tablet' => '4px 8px 4px 8px',
+						'Mobile' => '4px 8px 4px 8px'
+					),
+					'margin' => array(
+						'Desktop' => '0px 0px 0px 0px',
+						'Tablet' => '0px 0px 0px 0px',
+						'Mobile' => '0px 0px 0px 0px'
+					),
+					'borderRadius' => array(
+						'Desktop' => '4px 4px 4px 4px',
+						'Tablet' => '4px 4px 4px 4px',
+						'Mobile' => '4px 4px 4px 4px'
+					),
 					'color' => '#7c3aed'
 				)
 			)
@@ -202,11 +165,10 @@ return array(
 			'smartInfoBox/infoBox' => 'infoBox',
 			'smartInfoBox/container' => 'container',
 			'smartInfoBox/mediaContainer' => 'mediaContainer',
-			'smartInfoBox/iconImage' => 'iconImage',
 			'smartInfoBox/title' => 'title',
 			'smartInfoBox/description' => 'description',
 			'smartInfoBox/cta' => 'cta',
-			'smartInfoBox/featured' => 'featured'
+			'smartInfoBox/featuredContainer' => 'featuredContainer'
 		),
 		'supports' => array(
 			'color' => array(
@@ -262,20 +224,6 @@ return array(
 					'badge' => true
 				)
 			),
-			'styles' => array(
-				'type' => 'object',
-				'default' => array(
-					
-				)
-			),
-			'layout' => array(
-				'type' => 'string',
-				'default' => 'default'
-			),
-			'contentAlignment' => array(
-				'type' => 'string',
-				'default' => 'center'
-			),
 			'infoBox' => array(
 				'type' => 'object',
 				'default' => array(
@@ -289,12 +237,6 @@ return array(
 				)
 			),
 			'mediaContainer' => array(
-				'type' => 'object',
-				'default' => array(
-					
-				)
-			),
-			'iconImage' => array(
 				'type' => 'object',
 				'default' => array(
 					
@@ -318,7 +260,7 @@ return array(
 					
 				)
 			),
-			'featured' => array(
+			'featuredContainer' => array(
 				'type' => 'object',
 				'default' => array(
 					
@@ -326,18 +268,13 @@ return array(
 			)
 		),
 		'usesContext' => array(
-			'smartInfoBox/layout',
-			'smartInfoBox/styles',
-			'smartInfoBox/hoverStyles',
-			'smartInfoBox/contentAlignment',
 			'smartInfoBox/infoBox',
 			'smartInfoBox/container',
 			'smartInfoBox/mediaContainer',
-			'smartInfoBox/iconImage',
 			'smartInfoBox/title',
 			'smartInfoBox/description',
 			'smartInfoBox/cta',
-			'smartInfoBox/featured'
+			'smartInfoBox/featuredContainer'
 		),
 		'supports' => array(
 			'html' => false,
