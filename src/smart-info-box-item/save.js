@@ -5,10 +5,10 @@ import CSSVars from "./utils/CSSVars";
 import getBackgroundStyle from "./utils/getBackgroundStyle";
 
 export default function save({ attributes }) {
+	const blockId = attributes?.blockId
 	const cssVars = CSSVars(attributes);
 	const backgroundStyles = getBackgroundStyle(attributes.container);
 
-	const blockId = `smart-info-box-${Math.random().toString(36).substr(2, 9)}`;
 
 	const generateStyleString = (vars) => {
 		return Object.entries(vars)

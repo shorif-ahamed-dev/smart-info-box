@@ -13,8 +13,8 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 	const isSiteEditor = document.body.classList.contains("site-editor");
 	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
 	const deviceType = useSelect(
-		(select) => select(store)?.__experimentalGetPreviewDeviceType?.(),
-		[],
+		(select) => select(store)?.__experimentalGetPreviewDeviceType(),
+		[]
 	);
 	const { contentAlignment, columnsGap, rowGap } = container;
 	const { layout, columns, gap } = infoBox;
@@ -43,9 +43,8 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 							<div
 								key={item.id}
 								role="button"
-								className={`layout-card ${
-									layout === item.id ? "is-active" : ""
-								}`}
+								className={`layout-card ${layout === item.id ? "is-active" : ""
+									}`}
 								onClick={() =>
 									setAttributes({ infoBox: { ...infoBox, layout: item.id } })
 								}

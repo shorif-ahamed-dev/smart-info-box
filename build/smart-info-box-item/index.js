@@ -116,7 +116,7 @@ function SingleBoxItem() {
   \********************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out","ratting":4,"badge":true}},"infoBox":{"type":"object","default":{}},"container":{"type":"object","default":{}},"mediaContainer":{"type":"object","default":{}},"title":{"type":"object","default":{}},"description":{"type":"object","default":{}},"cta":{"type":"object","default":{}},"featuredContainer":{"type":"object","default":{}}},"usesContext":["smartInfoBox/infoBox","smartInfoBox/container","smartInfoBox/mediaContainer","smartInfoBox/title","smartInfoBox/description","smartInfoBox/cta","smartInfoBox/featuredContainer"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box-item","version":"0.1.0","title":"Info Box Item","category":"text","icon":"id","parent":["create-block/smart-info-box"],"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"blockId":{"type":"string","default":""},"content":{"type":"object","default":{"icon":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","title":"Automated AI Chatbotsx","buttonText":"Learn More","badgeText":"Sold Out","ratting":4,"badge":true}},"infoBox":{"type":"object","default":{}},"container":{"type":"object","default":{}},"mediaContainer":{"type":"object","default":{}},"title":{"type":"object","default":{}},"description":{"type":"object","default":{}},"cta":{"type":"object","default":{}},"featuredContainer":{"type":"object","default":{}}},"usesContext":["smartInfoBox/infoBox","smartInfoBox/container","smartInfoBox/mediaContainer","smartInfoBox/title","smartInfoBox/description","smartInfoBox/cta","smartInfoBox/featuredContainer"],"supports":{"html":false,"align":["wide","center","full","left","right"]},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -155,7 +155,7 @@ function InfoBox2({
 }) {
   const isSiteEditor = document.body.classList.contains("site-editor");
   const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
-  const deviceType = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useSelect)(select => select(store)?.__experimentalGetPreviewDeviceType?.(), []);
+  const deviceType = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useSelect)(select => select(store)?.__experimentalGetPreviewDeviceType(), []);
   const cssVars = (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_5__["default"])(attributes);
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
     style: {
@@ -235,6 +235,11 @@ function Edit({
   const description = context["smartInfoBox/description"];
   const cta = context["smartInfoBox/cta"];
   const featuredContainer = context["smartInfoBox/featuredContainer"];
+  if (!attributes.blockId) {
+    setAttributes({
+      blockId: `smart-info-box-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
+    });
+  }
   const handleTitleChange = newTitle => {
     setAttributes({
       content: {
@@ -357,9 +362,9 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
+  const blockId = attributes?.blockId;
   const cssVars = (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_3__["default"])(attributes);
   const backgroundStyles = (0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_4__["default"])(attributes.container);
-  const blockId = `smart-info-box-${Math.random().toString(36).substr(2, 9)}`;
   const generateStyleString = vars => {
     return Object.entries(vars).map(([key, value]) => `${key}: ${value};`).join("\n\t\t");
   };

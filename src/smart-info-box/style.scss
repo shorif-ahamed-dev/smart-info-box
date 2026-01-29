@@ -1,11 +1,21 @@
 .wp-block-create-block-smart-info-box {
+	display: grid;
+	grid-template-columns: repeat(var(--columns-desktop, 1), 1fr);
+	gap: var(--columns-gap, 20px);
+}
 
-	@for $i from 1 through 6 {
-		&.has-#{$i}-columns {
-			display: grid;
-			grid-template-columns: repeat($i, 1fr);
-			gap: 20px;
-		}
+/* Tablet */
+@media (max-width: 1024px) {
+	.wp-block-create-block-smart-info-box {
+		grid-template-columns: repeat(var(--columns-tablet, var(--columns-desktop, 1)),
+				1fr);
 	}
+}
 
+/* Mobile */
+@media (max-width: 767px) {
+	.wp-block-create-block-smart-info-box {
+		grid-template-columns: repeat(var(--columns-mobile, var(--columns-tablet, 1)),
+				1fr);
+	}
 }

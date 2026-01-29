@@ -1,4 +1,5 @@
 import { __ } from "@wordpress/i18n";
+import { useSelect } from "@wordpress/data";
 import { InspectorControls } from "@wordpress/block-editor";
 import { InnerBlocks, useBlockProps } from "@wordpress/block-editor";
 import "./editor.scss";
@@ -6,10 +7,16 @@ import { AttributesProvider } from "./context/AttributesContext";
 import AllPanels from "./components/AllPanels";
 
 export default function Edit({ attributes, setAttributes }) {
+	const isSiteEditor = document.body.classList.contains("site-editor");
+	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
+	const deviceType = useSelect(
+		(select) => select(store)?.__experimentalGetPreviewDeviceType(),
+		[]
+	);
 	const { infoBox } = attributes;
 
 	const blockProps = useBlockProps({
-		className: `has-${infoBox.columns}-columns`,
+		className: `has-${infoBox.columns[deviceType]}-columns`,
 		style: {
 			"--columns-gap": `${infoBox.gap}px`,
 		},

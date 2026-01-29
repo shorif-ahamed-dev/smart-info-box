@@ -12,6 +12,10 @@
 	"description": "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.",
 	"example": {},
 	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
 		"content": {
 			"type": "object",
 			"default": {

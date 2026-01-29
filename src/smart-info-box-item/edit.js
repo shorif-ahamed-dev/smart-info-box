@@ -14,6 +14,11 @@ export default function Edit({ attributes, setAttributes, context }) {
 	const description = context["smartInfoBox/description"];
 	const cta = context["smartInfoBox/cta"];
 	const featuredContainer = context["smartInfoBox/featuredContainer"];
+	if (!attributes.blockId) {
+		setAttributes({
+			blockId: `smart-info-box-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
+		});
+	}
 
 	const handleTitleChange = (newTitle) => {
 		setAttributes({

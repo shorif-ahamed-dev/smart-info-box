@@ -210,6 +210,10 @@ return array(
 			
 		),
 		'attributes' => array(
+			'blockId' => array(
+				'type' => 'string',
+				'default' => ''
+			),
 			'content' => array(
 				'type' => 'object',
 				'default' => array(

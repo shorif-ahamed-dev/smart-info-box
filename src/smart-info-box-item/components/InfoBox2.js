@@ -10,11 +10,10 @@ export default function InfoBox2({ attributes }) {
 	const isSiteEditor = document.body.classList.contains("site-editor");
 	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
 	const deviceType = useSelect(
-		(select) => select(store)?.__experimentalGetPreviewDeviceType?.(),
-		[],
+		(select) => select(store)?.__experimentalGetPreviewDeviceType(),
+		[]
 	);
 	const cssVars = CSSVars(attributes);
-
 	const blockProps = useBlockProps({
 		style: {
 			...cssVars[deviceType],
