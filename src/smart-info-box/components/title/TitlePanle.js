@@ -9,37 +9,21 @@ const TitlePanle = () => {
 	const { color, fontSize } = title;
 	return (
 		<>
-			<div className="inspector-section">
-				<CustomRangeControl
-					label="Title Font Size"
-					attributeKey="title"
-					subKey="fontSize"
-					resetValue={18}
-					marks={false}
-					min={10}
-					max={100}
-					step={1}
-				/>
-			</div>
+			<CustomRangeControl
+				label="Title Font Size"
+				attributeKey="title"
+				subKey="fontSize"
+				resetValue={18}
+				marks={false}
+				min={10}
+				max={100}
+				step={1}
+			/>
 			<ColorControl
-				label="Title Color"
-				value={color}
-				onChange={(color) =>
-					setAttributes({
-						title: {
-							...title,
-							color: color,
-						},
-					})
-				}
-				onReset={() =>
-					setAttributes({
-						title: {
-							...title,
-							color: "#000000ff",
-						},
-					})
-				}
+				label="Background Color"
+				attributesKey="title"
+				subKey="color"
+				defaultColor="#ffffff"
 			/>
 		</>
 	);

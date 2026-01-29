@@ -12,23 +12,9 @@ export default function BorderStyle() {
 			<BorderType label="Border Type" />
 			<ColorControl
 				label="Border Color"
-				value={borderColor}
-				onChange={(color) =>
-					setAttributes({
-						container: {
-							...container,
-							borderColor: color,
-						},
-					})
-				}
-				onReset={() =>
-					setAttributes({
-						container: {
-							...container,
-							borderColor: "#cccc",
-						},
-					})
-				}
+				attributesKey="container"
+				subKey="borderColor"
+				defaultColor="#cccc"
 			/>
 			<StyleRangeControl
 				label="Border Width"

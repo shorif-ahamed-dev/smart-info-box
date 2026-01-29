@@ -20,11 +20,11 @@ export default function Edit({ attributes, setAttributes, context }) {
 		});
 	}
 
-	const handleTitleChange = (newTitle) => {
+	const handleChangeValue = (key, value) => {
 		setAttributes({
 			content: {
 				...content,
-				title: newTitle,
+				[key]: value,
 			},
 		});
 	};
@@ -96,7 +96,7 @@ export default function Edit({ attributes, setAttributes, context }) {
 				attributes={attributes}
 				setAttributes={setAttributes}
 				context={context}
-				handleTitleChange={handleTitleChange}
+				onChangeValue={handleChangeValue}
 				handleDescriptionChange={handleDescriptionChange}
 				handleButtonTextChange={handleButtonTextChange}
 			/>

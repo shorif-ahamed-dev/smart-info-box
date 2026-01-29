@@ -51,26 +51,10 @@ export default function BackgroundStyle() {
 			</div>
 			{backgroundType === "solid" && (
 				<ColorControl
-					label="Solid Color"
-					value={backgroundColor}
-					onChange={(color) =>
-						setAttributes({
-							container: {
-								...container,
-								backgroundType: "solid",
-								backgroundColor: color,
-							},
-						})
-					}
-					onReset={() =>
-						setAttributes({
-							container: {
-								...container,
-								backgroundType: "solid",
-								backgroundColor: "#ffffff",
-							},
-						})
-					}
+					label="Background Color"
+					attributesKey="container"
+					subKey="backgroundColor"
+					defaultColor="#ffffff"
 				/>
 			)}
 

@@ -28,7 +28,6 @@ export default function CustomBoxControls({
 	label,
 	attributeKey,
 	subKey,
-	// deviceType = "desktop",
 	min = 0,
 	max = 100,
 	step = 1,
@@ -132,7 +131,7 @@ export default function CustomBoxControls({
 							/>
 							<div
 								className={
-									attributeKey === "borderRadius"
+									subKey === "borderRadius"
 										? `counter-corner-${i}`
 										: `padding-margin-indicator-${i}`
 								}

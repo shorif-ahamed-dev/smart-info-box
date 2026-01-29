@@ -1,10 +1,11 @@
-import { useBlockProps } from "@wordpress/block-editor";
+import { RichText, useBlockProps } from "@wordpress/block-editor";
 import RightArrow from "./assets/RightArrow";
 import Airplane from "./assets/Airplane";
 import CSSVars from "./utils/CSSVars";
 import getBackgroundStyle from "./utils/getBackgroundStyle";
 
 export default function save({ attributes }) {
+	const { title, description, buttonText } = attributes.content
 	const blockId = attributes?.blockId
 	const cssVars = CSSVars(attributes);
 	const backgroundStyles = getBackgroundStyle(attributes.container);
@@ -44,13 +45,21 @@ export default function save({ attributes }) {
 					<div className="mediaContainer">
 						<Airplane />
 					</div>
-					<h4 className="title">Automated AI Chatbots</h4>
-					<p className="description">
-						Contains a high concentration of botanical, marine, and biological
-						extracts. Has no artificial fragrances.
-					</p>
+					<RichText.Content
+						tagName="h4"
+						value={title}
+						className="title"
+					/>
+					<RichText.Content
+						tagName="p"
+						value={description}
+						className="description"
+					/>
 					<a className="cta" href="google.com">
-						<p>Learn More</p>
+						<RichText.Content
+							tagName="p"
+							value={buttonText}
+						/>
 						<RightArrow />
 					</a>
 					{attributes?.featuredContainer?.badge === true && (

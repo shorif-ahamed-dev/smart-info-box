@@ -1,24 +1,43 @@
 import { useState } from "@wordpress/element";
 import { ColorPicker, Popover } from "@wordpress/components";
 import ResetIcon from "../../assets/ResetIcon";
+import { useAttributes } from "../../context/AttributesContext";
 
 const ColorControl = ({
 	label = "Color",
-	value = "#ffffff",
-	onChange,
-	onReset,
+	attributesKey,
+	defaultColor = "#ffffff",
+	subKey,
 	placement = "left-start",
 }) => {
+	const { attributes, setAttributes } = useAttributes();
+	const value = attributes[attributesKey]?.[subKey];
 	const [isPickerOpen, setIsPickerOpen] = useState(false);
+
 	const handleColorChange = (color) => {
-		onChange?.(color.hex);
+		setAttributes({
+			[attributesKey]: {
+				...attributes[attributesKey],
+				[subKey]: color.hex,
+			},
+		});
 	};
+
+	const handleResetColor = () => {
+		setAttributes({
+			[attributesKey]: {
+				...attributes[attributesKey],
+				[subKey]: defaultColor,
+			},
+		});
+	};
+
 	return (
 		<>
 			<div className="components-header">
 				<p>{label}</p>
 				<span>
-					{onReset && <ResetIcon onClick={onReset} />}
+					<ResetIcon onClick={handleResetColor} />
 					<svg
 						onClick={() => setIsPickerOpen((prev) => !prev)}
 						xmlns="http://www.w3.org/2000/svg"

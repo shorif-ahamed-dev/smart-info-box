@@ -1,12 +1,12 @@
 import { __ } from "@wordpress/i18n";
 import { useSelect } from "@wordpress/data";
-import { useBlockProps } from "@wordpress/block-editor";
+import { RichText, useBlockProps } from "@wordpress/block-editor";
 import Airplane from "../assets/Airplane";
 import RightArrow from "../assets/RightArrow";
 import CSSVars from "../utils/CSSVars";
 import getBackgroundStyle from "../utils/getBackgroundStyle";
 
-export default function InfoBox2({ attributes }) {
+export default function InfoBox2({ attributes, onChangeValue }) {
 	const isSiteEditor = document.body.classList.contains("site-editor");
 	const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
 	const deviceType = useSelect(
@@ -19,8 +19,15 @@ export default function InfoBox2({ attributes }) {
 			...cssVars[deviceType],
 		},
 	});
+	const { icon, title, description, buttonText, badgeText } = attributes.content;
 	const backgroundStyles = getBackgroundStyle(attributes.container);
 
+	const mouseEnter = (e) => {
+		e.currentTarget.style.boxShadow = "inset 0 0 0 1px #9051efff";
+	}
+	const mouseLeave = (e) => {
+		e.currentTarget.style.boxShadow = "";
+	}
 	return (
 		<div {...blockProps}>
 			<div
@@ -30,18 +37,41 @@ export default function InfoBox2({ attributes }) {
 				<div className="mediaContainer">
 					<Airplane />
 				</div>
-				<h4 className="title">Automated AI Chatbots</h4>
-				<p className="description">
-					Contains a high concentration of botanical, marine, and biological
-					extracts. Has no artificial fragrances.
-				</p>
-				<a className="cta" href="google.com">
-					<p>Learn More</p>
+				<RichText
+					tagName="h4"
+					className="title"
+					value={title}
+					onChange={(value) => onChangeValue('title', value)}
+					onMouseEnter={mouseEnter}
+					onMouseLeave={mouseLeave}
+				/>
+				<RichText
+					tagName="p"
+					className="description"
+					value={description}
+					onChange={(value) => onChangeValue('description', value)}
+					onMouseEnter={mouseEnter}
+					onMouseLeave={mouseLeave}
+				/>
+				<a className="cta" >
+					<RichText
+						tagName="p"
+						value={buttonText}
+						onChange={(value) => onChangeValue('buttonText', value)}
+						onMouseEnter={mouseEnter}
+						onMouseLeave={mouseLeave}
+					/>
 					<RightArrow />
 				</a>
 				{attributes?.featuredContainer?.badge === true ? (
 					<div className="featuredContainer">
-						<p>Featured</p>
+						<RichText
+							tagName="p"
+							value={badgeText}
+							onChange={(value) => onChangeValue('badgeText', value)}
+							onMouseEnter={mouseEnter}
+							onMouseLeave={mouseLeave}
+						/>
 					</div>
 				) : null}
 			</div>

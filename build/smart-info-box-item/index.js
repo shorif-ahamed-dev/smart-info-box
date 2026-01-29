@@ -151,7 +151,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function InfoBox2({
-  attributes
+  attributes,
+  onChangeValue
 }) {
   const isSiteEditor = document.body.classList.contains("site-editor");
   const store = isSiteEditor ? "core/edit-site" : "core/edit-post";
@@ -162,7 +163,20 @@ function InfoBox2({
       ...cssVars[deviceType]
     }
   });
+  const {
+    icon,
+    title,
+    description,
+    buttonText,
+    badgeText
+  } = attributes.content;
   const backgroundStyles = (0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_6__["default"])(attributes.container);
+  const mouseEnter = e => {
+    e.currentTarget.style.boxShadow = "inset 0 0 0 1px #9051efff";
+  };
+  const mouseLeave = e => {
+    e.currentTarget.style.boxShadow = "";
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
@@ -171,22 +185,37 @@ function InfoBox2({
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "mediaContainer",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+        tagName: "h4",
         className: "title",
-        children: "Automated AI Chatbots"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+        value: title,
+        onChange: value => onChangeValue('title', value),
+        onMouseEnter: mouseEnter,
+        onMouseLeave: mouseLeave
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+        tagName: "p",
         className: "description",
-        children: "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances."
+        value: description,
+        onChange: value => onChangeValue('description', value),
+        onMouseEnter: mouseEnter,
+        onMouseLeave: mouseLeave
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("a", {
         className: "cta",
-        href: "google.com",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-          children: "Learn More"
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+          tagName: "p",
+          value: buttonText,
+          onChange: value => onChangeValue('buttonText', value),
+          onMouseEnter: mouseEnter,
+          onMouseLeave: mouseLeave
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
       }), attributes?.featuredContainer?.badge === true ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "featuredContainer",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-          children: "Featured"
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+          tagName: "p",
+          value: badgeText,
+          onChange: value => onChangeValue('badgeText', value),
+          onMouseEnter: mouseEnter,
+          onMouseLeave: mouseLeave
         })
       }) : null]
     })
@@ -240,11 +269,11 @@ function Edit({
       blockId: `smart-info-box-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
     });
   }
-  const handleTitleChange = newTitle => {
+  const handleChangeValue = (key, value) => {
     setAttributes({
       content: {
         ...content,
-        title: newTitle
+        [key]: value
       }
     });
   };
@@ -280,7 +309,7 @@ function Edit({
       attributes: attributes,
       setAttributes: setAttributes,
       context: context,
-      handleTitleChange: handleTitleChange,
+      onChangeValue: handleChangeValue,
       handleDescriptionChange: handleDescriptionChange,
       handleButtonTextChange: handleButtonTextChange
     })
@@ -362,6 +391,11 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
+  const {
+    title,
+    description,
+    buttonText
+  } = attributes.content;
   const blockId = attributes?.blockId;
   const cssVars = (0,_utils_CSSVars__WEBPACK_IMPORTED_MODULE_3__["default"])(attributes);
   const backgroundStyles = (0,_utils_getBackgroundStyle__WEBPACK_IMPORTED_MODULE_4__["default"])(attributes.container);
@@ -396,17 +430,20 @@ function save({
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "mediaContainer",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Airplane__WEBPACK_IMPORTED_MODULE_2__["default"], {})
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
-          className: "title",
-          children: "Automated AI Chatbots"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
-          className: "description",
-          children: "Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances."
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+          tagName: "h4",
+          value: title,
+          className: "title"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+          tagName: "p",
+          value: description,
+          className: "description"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
           className: "cta",
           href: "google.com",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
-            children: "Learn More"
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+            tagName: "p",
+            value: buttonText
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_RightArrow__WEBPACK_IMPORTED_MODULE_1__["default"], {})]
         }), attributes?.featuredContainer?.badge === true && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "featuredContainer",

@@ -21,23 +21,9 @@ export default function ImageOverlay({ }) {
 			<br />
 			<ColorControl
 				label="Overlay Color"
-				value={imageOverlayColor}
-				onChange={(color) =>
-					setAttributes({
-						container: {
-							...container,
-							imageOverlayColor: color,
-						},
-					})
-				}
-				onReset={() =>
-					setAttributes({
-						container: {
-							...container,
-							imageOverlayColor: "#ddd",
-						},
-					})
-				}
+				attributesKey="container"
+				subKey="imageOverlayColor"
+				defaultColor="#cccc"
 			/>
 
 			<div className="components-header">

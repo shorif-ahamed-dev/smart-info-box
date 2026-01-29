@@ -71,45 +71,18 @@ const BadgePanel = () => {
 						}}
 					/>
 					<br />
+
 					<ColorControl
-						label="Badge Color"
-						value={backgroundColor}
-						onChange={(color) =>
-							setAttributes({
-								featuredContainer: {
-									...featuredContainer,
-									backgroundColor: color,
-								},
-							})
-						}
-						onReset={() =>
-							setAttributes({
-								featuredContainer: {
-									...featuredContainer,
-									backgroundColor: "#ddd",
-								},
-							})
-						}
+						label="Background Color"
+						attributesKey="featuredContainer"
+						subKey="backgroundColor"
+						defaultColor="#ffffff"
 					/>
 					<ColorControl
 						label="Text Color"
-						value={color}
-						onChange={(color) =>
-							setAttributes({
-								featuredContainer: {
-									...featuredContainer,
-									color: color,
-								},
-							})
-						}
-						onReset={() =>
-							setAttributes({
-								featuredContainer: {
-									...featuredContainer,
-									color: "#ddd",
-								},
-							})
-						}
+						attributesKey="featuredContainer"
+						subKey="color"
+						defaultColor="#ffffff"
 					/>
 					<CustomBoxControls
 						label="Border Radius"

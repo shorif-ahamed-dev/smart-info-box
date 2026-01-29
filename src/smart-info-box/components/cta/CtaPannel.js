@@ -20,26 +20,11 @@ const CtaPannel = () => {
 				max={100}
 				step={1}
 			/>
-
 			<ColorControl
 				label="Button Text Color"
-				value={buttonTextColor}
-				onChange={(color) =>
-					setAttributes({
-						cta: {
-							...cta,
-							textColor: color,
-						},
-					})
-				}
-				onReset={() =>
-					setAttributes({
-						cta: {
-							...cta,
-							textColor: "#000000ff",
-						},
-					})
-				}
+				attributesKey="cta"
+				subKey="textColor"
+				defaultColor="#ffffff"
 			/>
 			<CustomRangeControl
 				label="Icon Size"
@@ -57,43 +42,15 @@ const CtaPannel = () => {
 			/>
 			<ColorControl
 				label="Background Color"
-				value={backgroundColor}
-				onChange={(color) =>
-					setAttributes({
-						cta: {
-							...cta,
-							backgroundColor: color,
-						},
-					})
-				}
-				onReset={() =>
-					setAttributes({
-						cta: {
-							...cta,
-							backgroundColor: "#cccc",
-						},
-					})
-				}
+				attributesKey="cta"
+				subKey="backgroundColor"
+				defaultColor="#ffffff"
 			/>
 			<ColorControl
 				label="Border Color"
-				value={borderColor}
-				onChange={(color) =>
-					setAttributes({
-						cta: {
-							...cta,
-							borderColor: color,
-						},
-					})
-				}
-				onReset={() =>
-					setAttributes({
-						cta: {
-							...cta,
-							borderColor: "#cccc",
-						},
-					})
-				}
+				attributesKey="cta"
+				subKey="borderColor"
+				defaultColor="#ffffff"
 			/>
 			<CustomRangeControl
 				label="Border Width"
