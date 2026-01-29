@@ -84,6 +84,7 @@ const BadgePanel = () => {
 						subKey="color"
 						defaultColor="#ffffff"
 					/>
+					<br />
 					<CustomBoxControls
 						label="Border Radius"
 						attributeKey="featuredContainer"
@@ -93,6 +94,7 @@ const BadgePanel = () => {
 						max={100}
 						isResponsive={true}
 					/>
+					<br />
 					<CustomBoxControls
 						label="Padding"
 						attributeKey="featuredContainer"
@@ -102,6 +104,7 @@ const BadgePanel = () => {
 						max={100}
 						isResponsive={true}
 					/>
+					<br />
 					<CustomBoxControls
 						label="Margin"
 						attributeKey="featuredContainer"

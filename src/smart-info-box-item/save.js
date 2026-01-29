@@ -1,15 +1,15 @@
 import { RichText, useBlockProps } from "@wordpress/block-editor";
+import { Dashicon } from "@wordpress/components";
 import RightArrow from "./assets/RightArrow";
 import Airplane from "./assets/Airplane";
 import CSSVars from "./utils/CSSVars";
 import getBackgroundStyle from "./utils/getBackgroundStyle";
 
 export default function save({ attributes }) {
-	const { title, description, buttonText } = attributes.content
-	const blockId = attributes?.blockId
+	const { icon, title, description, buttonText } = attributes.content;
+	const blockId = attributes?.blockId;
 	const cssVars = CSSVars(attributes);
 	const backgroundStyles = getBackgroundStyle(attributes.container);
-
 
 	const generateStyleString = (vars) => {
 		return Object.entries(vars)
@@ -43,23 +43,17 @@ export default function save({ attributes }) {
 					style={backgroundStyles}
 				>
 					<div className="mediaContainer">
-						<Airplane />
+						{/* <Airplane /> */}
+						{icon.dashIcon && <Dashicon icon={"airplane"} size={28} />}
 					</div>
-					<RichText.Content
-						tagName="h4"
-						value={title}
-						className="title"
-					/>
+					<RichText.Content tagName="h4" value={title} className="title" />
 					<RichText.Content
 						tagName="p"
 						value={description}
 						className="description"
 					/>
 					<a className="cta" href="google.com">
-						<RichText.Content
-							tagName="p"
-							value={buttonText}
-						/>
+						<RichText.Content tagName="p" value={buttonText} />
 						<RightArrow />
 					</a>
 					{attributes?.featuredContainer?.badge === true && (

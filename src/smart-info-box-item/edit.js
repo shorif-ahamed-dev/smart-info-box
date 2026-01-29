@@ -1,7 +1,10 @@
 import { __ } from "@wordpress/i18n";
 import "./editor.scss";
 import { useEffect } from "@wordpress/element";
+import { PanelBody, TextareaControl, TextControl } from "@wordpress/components";
 import InfoBox2 from "./components/InfoBox2";
+import { InspectorControls } from "@wordpress/block-editor";
+import IconSelect from "./components/IconSelect";
 
 export default function Edit({ attributes, setAttributes, context }) {
 	const { content } = attributes;
@@ -16,7 +19,9 @@ export default function Edit({ attributes, setAttributes, context }) {
 	const featuredContainer = context["smartInfoBox/featuredContainer"];
 	if (!attributes.blockId) {
 		setAttributes({
-			blockId: `smart-info-box-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
+			blockId: `smart-info-box-${Date.now()}-${Math.random()
+				.toString(36)
+				.substr(2, 9)}`,
 		});
 	}
 
@@ -25,24 +30,6 @@ export default function Edit({ attributes, setAttributes, context }) {
 			content: {
 				...content,
 				[key]: value,
-			},
-		});
-	};
-
-	const handleDescriptionChange = (newDescription) => {
-		setAttributes({
-			content: {
-				...content,
-				description: newDescription,
-			},
-		});
-	};
-
-	const handleButtonTextChange = (newButtonText) => {
-		setAttributes({
-			content: {
-				...content,
-				buttonText: newButtonText,
 			},
 		});
 	};
@@ -69,36 +56,40 @@ export default function Edit({ attributes, setAttributes, context }) {
 
 	return (
 		<>
-			{/* <InspectorControls>
+			<InspectorControls>
 				<PanelBody title="Content">
+					<p>Icon</p>
+					<IconSelect attributes={attributes} setAttributes={setAttributes} />
+					<br />
 					<TextControl
 						label="Title"
-						onChange={handleTitleChange}
-						value={title}
+						onChange={(value) => handleChangeValue("title", value)}
+						value={content.title}
 					/>
 					<br />
 					<TextareaControl
 						label={__("Description", "smart-info-box")}
-						value={description}
-						onChange={handleDescriptionChange}
+						value={content.description}
+						onChange={(value) => handleChangeValue("description", value)}
 					/>
 					<br />
 					<TextControl
 						label={__("Button Text", "smart-info-box")}
-						onChange={handleButtonTextChange}
-						value={buttonText}
+						onChange={(value) => handleChangeValue("buttonText", value)}
+						value={content.buttonText}
 					/>
-					<p>Icon</p>
-					<IconSelect attributes={attributes} setAttributes={setAttributes} />
+					<TextControl
+						label={__("Badge Text", "smart-info-box")}
+						onChange={(value) => handleChangeValue("badgeText", value)}
+						value={content.badgeText}
+					/>
 				</PanelBody>
-			</InspectorControls> */}
+			</InspectorControls>
 			<InfoBox2
 				attributes={attributes}
 				setAttributes={setAttributes}
 				context={context}
 				onChangeValue={handleChangeValue}
-				handleDescriptionChange={handleDescriptionChange}
-				handleButtonTextChange={handleButtonTextChange}
 			/>
 		</>
 	);
