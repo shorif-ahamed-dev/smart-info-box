@@ -1,5 +1,4 @@
 import { __ } from "@wordpress/i18n";
-import { InspectorControls } from "@wordpress/block-editor";
 import { useState } from "@wordpress/element";
 import { PanelBody } from "@wordpress/components";
 import InfoBoxPanel from "./InfoBox/InfoBoxPanel";

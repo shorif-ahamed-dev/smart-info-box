@@ -2,7 +2,6 @@ import { useAttributes } from "../../context/AttributesContext";
 import ColorControl from "../common/ColorControl";
 import CustomBoxControls from "../common/CustomBoxControls";
 import CustomRangeControl from "../common/CustomRangeControl";
-import { useState } from "@wordpress/element";
 import TabControl from "../InfoBox/TabControl";
 const IconImagePanel = () => {
 	const { attributes, setAttributes } = useAttributes();

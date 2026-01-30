@@ -14,7 +14,6 @@ const CSSVars = (attributes) => {
 		return value;
 	};
 
-	// Common styles that don't change across devices
 	const commonVars = {
 		/* infoBox */
 		"--infoBox-layout": infoBox?.layout,
@@ -88,7 +87,6 @@ const CSSVars = (attributes) => {
 		"--featuredContainer-color": featuredContainer?.color,
 	};
 
-	// Desktop-specific styles
 	const desktopVars = {
 		...commonVars,
 		"--container-padding": container?.padding?.Desktop,

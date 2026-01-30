@@ -7,7 +7,6 @@ import PixelIcon from "../../assets/PixelIcon";
 import Responsive from "../Responsive";
 
 const expand = (v = "") => {
-	// Handle empty or invalid values
 	if (!v || typeof v !== 'string') {
 		return [0, 0, 0, 0];
 	}

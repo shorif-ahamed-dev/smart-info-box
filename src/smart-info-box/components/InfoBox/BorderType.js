@@ -8,7 +8,6 @@ import ToolbarIcon from "../../assets/ToolbarIcon";
 export default function BorderType({
 	attributePath = "container",
 	label = "Border",
-	showToolbarIcon = true,
 	borderOptions = null
 }) {
 	const { attributes, setAttributes } = useAttributes();

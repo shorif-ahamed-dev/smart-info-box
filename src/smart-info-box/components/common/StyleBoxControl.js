@@ -1,4 +1,4 @@
-import { RangeControl, Button } from "@wordpress/components";
+import { RangeControl } from "@wordpress/components";
 import { useState } from "@wordpress/element";
 import { useAttributes } from "../../context/AttributesContext";
 import ResetIcon from "../../assets/ResetIcon";
@@ -7,7 +7,7 @@ const SIDES = ["top", "right", "bottom", "left"];
 
 export default function StyleBoxControl({
 	label,
-	attributeKey, // "margin" | "padding"
+	attributeKey,
 	min = 0,
 	max = 100,
 	step = 1,
@@ -15,7 +15,6 @@ export default function StyleBoxControl({
 	const { attributes, setAttributes } = useAttributes();
 	const value = attributes.styles?.[attributeKey] || {};
 	const [isLinked, setIsLinked] = useState(true);
-	const unifiedValue = value.top ?? 0;
 
 	const updateLinked = (newValue) => {
 		const updated = {};
@@ -58,11 +57,11 @@ export default function StyleBoxControl({
 					value={value}
 					max={100}
 					min={0}
-					onBlur={() => {}}
+					onBlur={() => { }}
 					onChange={updateLinked}
-					onFocus={() => {}}
-					onMouseLeave={() => {}}
-					onMouseMove={() => {}}
+					onFocus={() => { }}
+					onMouseLeave={() => { }}
+					onMouseMove={() => { }}
 					color="#884AE3"
 				/>
 			) : (

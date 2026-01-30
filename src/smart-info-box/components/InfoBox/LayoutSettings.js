@@ -1,7 +1,6 @@
 import { __ } from "@wordpress/i18n";
 import { dispatch, useSelect } from "@wordpress/data";
 import { RangeControl } from "@wordpress/components";
-
 import Responsive from "../Responsive";
 import Layouts from "./Layouts";
 import TabControl from "./TabControl";
@@ -15,8 +14,7 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 		[]
 	);
 	const { contentAlignment, columnsGap, rowGap } = container;
-	const { layout, columns, gap } = infoBox;
-
+	const { layout, gap } = infoBox;
 
 	const setDevice = (device) => {
 		dispatch(store).__experimentalSetPreviewDeviceType(device);

@@ -15,7 +15,6 @@ export default function Layouts({ layout, onChange }) {
     return (
         <div className="inspector-section">
             <p>Info Box Layout</p>
-
             <div className="layout-grid">
                 {layouts.map((item) => {
                     const Icon = item.icon;

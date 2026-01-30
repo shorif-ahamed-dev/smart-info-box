@@ -14,7 +14,6 @@ const getBackgroundStyle = (styles) => {
         bgStyle.backgroundSize = styles.image.size || 'cover';
         bgStyle.backgroundRepeat = styles.image.repeat || 'no-repeat';
 
-        // Add overlay if specified
         if (styles.imageOverlayColor && styles.imageOverlayOpacity) {
             const opacity = styles.imageOverlayOpacity / 100;
             const overlay = opacity

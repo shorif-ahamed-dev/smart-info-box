@@ -13,7 +13,6 @@ const BadgePanel = () => {
 		[],
 	);
 	const { featuredContainer } = attributes;
-	const { backgroundColor, color } = featuredContainer;
 
 	const BADGE_POSITIONS = {
 		"top-left": { top: 0, left: 0, right: null, bottom: null },

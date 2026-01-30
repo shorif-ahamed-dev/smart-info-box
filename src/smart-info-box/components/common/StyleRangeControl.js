@@ -4,12 +4,11 @@ import ResetIcon from "../../assets/ResetIcon";
 
 export default function StyleRangeControl({
 	label,
-	attributeKey, // "borderWidth" | "borderRadius"
+	attributeKey,
 	min = 0,
 	max = 50,
 	step = 1,
 	marks = true,
-	unit = "px",
 }) {
 	const { attributes, setAttributes } = useAttributes();
 	const value = attributes.container?.[attributeKey];

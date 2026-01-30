@@ -8,7 +8,7 @@ import StyleSettings from "./StyleSettings";
 const InfoBoxPanel = () => {
 	const { attributes, setAttributes } = useAttributes();
 
-	const onSelect = (value) => {};
+	const onSelect = (value) => { };
 	return (
 		<TabPanel
 			className="my-tab-panel"

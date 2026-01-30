@@ -2,7 +2,7 @@ import { useState } from "@wordpress/element";
 import NormalStyle from "./NormalStyle";
 import HoverStyle from "./HoverStyle";
 
-export default function StyleSettings({ attributes, setAttributes }) {
+export default function StyleSettings() {
 	const [toggleStyleMode, setToggleStyleMode] = useState("normal");
 	return (
 		<>

@@ -1,12 +1,9 @@
-import { useAttributes } from "../../context/AttributesContext";
 import BorderType from "./BorderType";
 import ColorControl from "../common/ColorControl";
 import CustomBoxControls from "../common/CustomBoxControls";
 import StyleRangeControl from "../common/StyleRangeControl";
 export default function BorderStyle() {
-	const { attributes, setAttributes } = useAttributes();
-	const { container } = attributes;
-	const { borderColor } = container;
+
 	return (
 		<>
 			<BorderType label="Border Type" />

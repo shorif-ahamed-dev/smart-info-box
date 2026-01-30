@@ -1398,21 +1398,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _InfoBox_InfoBoxPanel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./InfoBox/InfoBoxPanel */ "./src/smart-info-box/components/InfoBox/InfoBoxPanel.js");
-/* harmony import */ var _Icon_Image_IconImagePanel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Icon-Image/IconImagePanel */ "./src/smart-info-box/components/Icon-Image/IconImagePanel.js");
-/* harmony import */ var _title_TitlePanle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./title/TitlePanle */ "./src/smart-info-box/components/title/TitlePanle.js");
-/* harmony import */ var _description_DescriptionPanel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./description/DescriptionPanel */ "./src/smart-info-box/components/description/DescriptionPanel.js");
-/* harmony import */ var _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./badge/BadgePanel */ "./src/smart-info-box/components/badge/BadgePanel.js");
-/* harmony import */ var _cta_CtaPannel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./cta/CtaPannel */ "./src/smart-info-box/components/cta/CtaPannel.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
-
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _InfoBox_InfoBoxPanel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./InfoBox/InfoBoxPanel */ "./src/smart-info-box/components/InfoBox/InfoBoxPanel.js");
+/* harmony import */ var _Icon_Image_IconImagePanel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Icon-Image/IconImagePanel */ "./src/smart-info-box/components/Icon-Image/IconImagePanel.js");
+/* harmony import */ var _title_TitlePanle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./title/TitlePanle */ "./src/smart-info-box/components/title/TitlePanle.js");
+/* harmony import */ var _description_DescriptionPanel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./description/DescriptionPanel */ "./src/smart-info-box/components/description/DescriptionPanel.js");
+/* harmony import */ var _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./badge/BadgePanel */ "./src/smart-info-box/components/badge/BadgePanel.js");
+/* harmony import */ var _cta_CtaPannel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./cta/CtaPannel */ "./src/smart-info-box/components/cta/CtaPannel.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -1424,45 +1421,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AllPanels() {
-  const [openPanel, setOpenPanel] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useState)("info");
+  const [openPanel, setOpenPanel] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)("info");
   const PANELS = [{
     key: "info",
     title: "Info Box",
-    Component: _InfoBox_InfoBoxPanel__WEBPACK_IMPORTED_MODULE_4__["default"]
+    Component: _InfoBox_InfoBoxPanel__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
     key: "icon",
     title: "Icon / Image",
-    Component: _Icon_Image_IconImagePanel__WEBPACK_IMPORTED_MODULE_5__["default"]
+    Component: _Icon_Image_IconImagePanel__WEBPACK_IMPORTED_MODULE_4__["default"]
   }, {
     key: "title",
     title: "Title",
-    Component: _title_TitlePanle__WEBPACK_IMPORTED_MODULE_6__["default"]
+    Component: _title_TitlePanle__WEBPACK_IMPORTED_MODULE_5__["default"]
   }, {
     key: "description",
     title: "Description",
-    Component: _description_DescriptionPanel__WEBPACK_IMPORTED_MODULE_7__["default"]
+    Component: _description_DescriptionPanel__WEBPACK_IMPORTED_MODULE_6__["default"]
   }, {
     key: "calltoaction",
     title: "Call To Action",
-    Component: _cta_CtaPannel__WEBPACK_IMPORTED_MODULE_9__["default"]
+    Component: _cta_CtaPannel__WEBPACK_IMPORTED_MODULE_8__["default"]
   }, {
     key: "badge",
     title: "Badge",
-    Component: _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_8__["default"]
+    Component: _badge_BadgePanel__WEBPACK_IMPORTED_MODULE_7__["default"]
   }];
   const togglePanel = key => {
     setOpenPanel(current => current === key ? null : key);
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
     children: PANELS.map(({
       key,
       title,
       Component
-    }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
       title: title,
       opened: openPanel === key,
       onToggle: () => togglePanel(key),
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(Component, {})
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Component, {})
     }, key))
   });
 }
@@ -1483,12 +1480,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
 /* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
 /* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _InfoBox_TabControl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../InfoBox/TabControl */ "./src/smart-info-box/components/InfoBox/TabControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
-
+/* harmony import */ var _InfoBox_TabControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../InfoBox/TabControl */ "./src/smart-info-box/components/InfoBox/TabControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -1518,12 +1512,12 @@ const IconImagePanel = () => {
       }
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_InfoBox_TabControl__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_InfoBox_TabControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
       options: options,
       value: mediaContainer.width,
       onChange: setWidth
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Container Height",
       attributeKey: "mediaContainer",
       subKey: "height",
@@ -1532,7 +1526,7 @@ const IconImagePanel = () => {
       min: 0,
       max: 300,
       step: 10
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Icon Size",
       attributeKey: "mediaContainer",
       subKey: "fontSize",
@@ -1541,7 +1535,7 @@ const IconImagePanel = () => {
       min: 10,
       max: 45,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Padding",
       attributeKey: "mediaContainer",
       subKey: "padding",
@@ -1550,7 +1544,7 @@ const IconImagePanel = () => {
       min: 0,
       max: 200,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Margin",
       attributeKey: "mediaContainer",
       subKey: "margin",
@@ -1558,12 +1552,12 @@ const IconImagePanel = () => {
       min: 0,
       max: 200,
       isResponsive: true
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Icon Color",
       attributesKey: "mediaContainer",
       subKey: "color",
       defaultColor: "#cccc"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Background Color",
       attributesKey: "mediaContainer",
       subKey: "backgroundColor",
@@ -1616,8 +1610,7 @@ function BackgroundStyle() {
     container
   } = attributes;
   const {
-    backgroundType,
-    backgroundColor
+    backgroundType
   } = container;
   const [bgType, setBgType] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)(backgroundType);
   const backgroundTypes = [{
@@ -1685,45 +1678,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ BorderStyle)
 /* harmony export */ });
-/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
-/* harmony import */ var _BorderType__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BorderType */ "./src/smart-info-box/components/InfoBox/BorderType.js");
-/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
-
+/* harmony import */ var _BorderType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BorderType */ "./src/smart-info-box/components/InfoBox/BorderType.js");
+/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
+/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
+/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
 
 function BorderStyle() {
-  const {
-    attributes,
-    setAttributes
-  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
-  const {
-    container
-  } = attributes;
-  const {
-    borderColor
-  } = container;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_BorderType__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BorderType__WEBPACK_IMPORTED_MODULE_0__["default"], {
       label: "Border Type"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Border Color",
       attributesKey: "container",
       subKey: "borderColor",
       defaultColor: "#cccc"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Border Width",
       attributeKey: "borderWidth",
       min: 1,
       max: 5,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Border Radius",
       attributeKey: "container",
       subKey: "borderRadius",
@@ -1731,7 +1712,7 @@ function BorderStyle() {
       min: 0,
       max: 100,
       isResponsive: true
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {})]
   });
 }
 
@@ -1765,7 +1746,6 @@ __webpack_require__.r(__webpack_exports__);
 function BorderType({
   attributePath = "container",
   label = "Border",
-  showToolbarIcon = true,
   borderOptions = null
 }) {
   const {
@@ -2006,12 +1986,10 @@ function ImageOverlay({}) {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_3__.useAttributes)();
   const {
-    styles,
     container
   } = attributes;
   const {
-    imageOverlayOpacity,
-    imageOverlayColor
+    imageOverlayOpacity
   } = container;
   const onOpacityChange = value => {
     setAttributes({
@@ -2163,7 +2141,6 @@ function LayoutSettings({
   } = container;
   const {
     layout,
-    columns,
     gap
   } = infoBox;
   const setDevice = device => {
@@ -2357,31 +2334,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BoxShadow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BoxShadow */ "./src/smart-info-box/components/InfoBox/BoxShadow.js");
 /* harmony import */ var _BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BackgroundStyle */ "./src/smart-info-box/components/InfoBox/BackgroundStyle.js");
 /* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
-/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
-
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
 
 function NormalStyle() {
-  const {
-    attributes,
-    setAttributes
-  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_4__.useAttributes)();
-  const {
-    rowGap,
-    columnsGap
-  } = attributes.infoBox;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_BorderStyle__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_BoxShadow__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BorderStyle__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BoxShadow__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Box Shadow"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Padding",
       attributeKey: "container",
       subKey: "padding",
@@ -2392,7 +2356,7 @@ function NormalStyle() {
       step: 1,
       unit: "px",
       isResponsive: true // Enable responsive mode
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Margin",
       attributeKey: "container",
       subKey: "margin",
@@ -2499,7 +2463,6 @@ function SelectImage() {
     setAttributes
   } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_2__.useAttributes)();
   const {
-    styles,
     container
   } = attributes;
   const {
@@ -2600,10 +2563,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function StyleSettings({
-  attributes,
-  setAttributes
-}) {
+function StyleSettings() {
   const [toggleStyleMode, setToggleStyleMode] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)("normal");
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
@@ -2762,10 +2722,6 @@ const BadgePanel = () => {
   const {
     featuredContainer
   } = attributes;
-  const {
-    backgroundColor,
-    color
-  } = featuredContainer;
   const BADGE_POSITIONS = {
     "top-left": {
       top: 0,
@@ -3013,7 +2969,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const expand = (v = "") => {
-  // Handle empty or invalid values
   if (!v || typeof v !== 'string') {
     return [0, 0, 0, 0];
   }
@@ -3232,12 +3187,10 @@ __webpack_require__.r(__webpack_exports__);
 function StyleRangeControl({
   label,
   attributeKey,
-  // "borderWidth" | "borderRadius"
   min = 0,
   max = 50,
   step = 1,
-  marks = true,
-  unit = "px"
+  marks = true
 }) {
   const {
     attributes,
@@ -3296,35 +3249,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
-/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
-/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
-/* harmony import */ var _InfoBox_BorderType__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../InfoBox/BorderType */ "./src/smart-info-box/components/InfoBox/BorderType.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
-
+/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
+/* harmony import */ var _common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/CustomBoxControls */ "./src/smart-info-box/components/common/CustomBoxControls.js");
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var _InfoBox_BorderType__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../InfoBox/BorderType */ "./src/smart-info-box/components/InfoBox/BorderType.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
 
 const CtaPannel = () => {
-  const {
-    attributes,
-    setAttributes
-  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
-  const {
-    cta
-  } = attributes;
-  const {
-    buttonTextColor,
-    backgroundColor,
-    borderColor
-  } = cta;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "inspector-section",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Button Font Size",
       attributeKey: "cta",
       subKey: "fontSize",
@@ -3333,12 +3272,12 @@ const CtaPannel = () => {
       min: 10,
       max: 100,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
       label: "Button Text Color",
       attributesKey: "cta",
       subKey: "textColor",
       defaultColor: "#ffffff"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Icon Size",
       attributeKey: "cta",
       subKey: "iconSize",
@@ -3347,20 +3286,20 @@ const CtaPannel = () => {
       min: 10,
       max: 100,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_InfoBox_BorderType__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_InfoBox_BorderType__WEBPACK_IMPORTED_MODULE_3__["default"], {
       attributePath: "cta",
       label: "CTA Border"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
       label: "Background Color",
       attributesKey: "cta",
       subKey: "backgroundColor",
       defaultColor: "#ffffff"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
       label: "Border Color",
       attributesKey: "cta",
       subKey: "borderColor",
       defaultColor: "#ffffff"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Border Width",
       attributeKey: "cta",
       subKey: "borderWidth",
@@ -3369,7 +3308,7 @@ const CtaPannel = () => {
       min: 1,
       max: 10,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Border Radius",
       attributeKey: "cta",
       subKey: "borderRadius",
@@ -3377,7 +3316,7 @@ const CtaPannel = () => {
       min: 0,
       max: 100,
       isResponsive: true
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Padding",
       attributeKey: "cta",
       subKey: "padding",
@@ -3385,7 +3324,7 @@ const CtaPannel = () => {
       min: 0,
       max: 100,
       isResponsive: true
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomBoxControls__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Margin",
       attributeKey: "cta",
       subKey: "margin",
@@ -3410,28 +3349,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
-/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
-
+/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 const DescriptionPanel = () => {
-  const {
-    attributes,
-    setAttributes
-  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
-  const {
-    description
-  } = attributes;
-  const {
-    color
-  } = description;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Title Font Size",
       attributeKey: "description",
       subKey: "fontSize",
@@ -3440,7 +3367,7 @@ const DescriptionPanel = () => {
       min: 10,
       max: 100,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
       label: "Description Color",
       attributesKey: "description",
       subKey: "color",
@@ -3462,31 +3389,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../context/AttributesContext */ "./src/smart-info-box/context/AttributesContext.js");
-/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
-/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
-/* harmony import */ var _common_StyleRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/StyleRangeControl */ "./src/smart-info-box/components/common/StyleRangeControl.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
-
-
+/* harmony import */ var _common_ColorControl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/ColorControl */ "./src/smart-info-box/components/common/ColorControl.js");
+/* harmony import */ var _common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/CustomRangeControl */ "./src/smart-info-box/components/common/CustomRangeControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 const TitlePanle = () => {
-  const {
-    attributes,
-    setAttributes
-  } = (0,_context_AttributesContext__WEBPACK_IMPORTED_MODULE_0__.useAttributes)();
-  const {
-    title
-  } = attributes;
-  const {
-    color,
-    fontSize
-  } = title;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_CustomRangeControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Title Font Size",
       attributeKey: "title",
       subKey: "fontSize",
@@ -3495,7 +3407,7 @@ const TitlePanle = () => {
       min: 10,
       max: 100,
       step: 1
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_0__["default"], {
       label: "Title Color",
       attributesKey: "title",
       subKey: "color",

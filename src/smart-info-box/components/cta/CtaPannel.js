@@ -1,13 +1,9 @@
-import { useAttributes } from "../../context/AttributesContext";
 import ColorControl from "../common/ColorControl";
 import CustomBoxControls from "../common/CustomBoxControls";
 import CustomRangeControl from "../common/CustomRangeControl";
 import BorderType from "../InfoBox/BorderType";
 
 const CtaPannel = () => {
-	const { attributes, setAttributes } = useAttributes();
-	const { cta } = attributes;
-	const { buttonTextColor, backgroundColor, borderColor } = cta;
 	return (
 		<div className="inspector-section">
 			<CustomRangeControl

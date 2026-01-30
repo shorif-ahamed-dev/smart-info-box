@@ -1,7 +1,5 @@
-import { Button } from "@wordpress/components";
 import "./dashicon-picker.scss";
 import { DASHICONS } from "./dashicons";
-import { lazy, Suspense } from 'react';
 import * as icons from 'lucide-react';
 
 export default function DashiconPicker({ value, onChange }) {

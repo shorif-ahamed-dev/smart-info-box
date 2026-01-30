@@ -8,8 +8,6 @@ import IconSelect from "./components/IconSelect";
 
 export default function Edit({ attributes, setAttributes, context }) {
 	const { content } = attributes;
-
-	// 🔥 Parent attributes via context
 	const infoBox = context["smartInfoBox/infoBox"];
 	const container = context["smartInfoBox/container"];
 	const mediaContainer = context["smartInfoBox/mediaContainer"];

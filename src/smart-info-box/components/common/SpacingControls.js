@@ -7,7 +7,7 @@ import PixelIcon from "../../assets/PixelIcon";
 
 export default function SpacingControls({
 	label,
-	attributeKey = "padding", // padding | margin
+	attributeKey = "padding",
 	min = 0,
 	max = 100,
 	step = 4,

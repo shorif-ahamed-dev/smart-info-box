@@ -24,11 +24,9 @@ export default function Edit({ attributes, setAttributes }) {
 
 	return (
 		<AttributesProvider attributes={attributes} setAttributes={setAttributes}>
-			{/* Inspector Controls  */}
 			<InspectorControls>
 				<AllPanels />
 			</InspectorControls>
-			{/* Editor Content */}
 			<div {...blockProps}>
 				<InnerBlocks
 					allowedBlocks={["create-block/smart-info-box-item"]}

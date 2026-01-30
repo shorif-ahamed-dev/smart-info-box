@@ -10,7 +10,7 @@ import { useAttributes } from "../../context/AttributesContext";
 export default function BackgroundStyle() {
 	const { attributes, setAttributes } = useAttributes();
 	const { container } = attributes;
-	const { backgroundType, backgroundColor } = container;
+	const { backgroundType } = container;
 	const [bgType, setBgType] = useState(backgroundType);
 
 	const backgroundTypes = [

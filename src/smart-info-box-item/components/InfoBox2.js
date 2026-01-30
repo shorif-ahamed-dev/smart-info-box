@@ -1,12 +1,10 @@
 import { __ } from "@wordpress/i18n";
-import { Dashicon } from "@wordpress/components";
 import { useSelect } from "@wordpress/data";
 import { RichText, useBlockProps } from "@wordpress/block-editor";
 import Airplane from "../assets/Airplane";
 import RightArrow from "../assets/RightArrow";
 import CSSVars from "../utils/CSSVars";
 import getBackgroundStyle from "../utils/getBackgroundStyle";
-import { Icon, check, widget } from '@wordpress/icons';
 import * as icons from 'lucide-react';
 
 export default function InfoBox2({ attributes, onChangeValue }) {

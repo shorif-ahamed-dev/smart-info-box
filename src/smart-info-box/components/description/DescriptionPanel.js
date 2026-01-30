@@ -1,11 +1,7 @@
-import { useAttributes } from "../../context/AttributesContext";
 import ColorControl from "../common/ColorControl";
 import CustomRangeControl from "../common/CustomRangeControl";
 
 const DescriptionPanel = () => {
-	const { attributes, setAttributes } = useAttributes();
-	const { description } = attributes;
-	const { color } = description;
 	return (
 		<>
 			<CustomRangeControl

@@ -1,6 +1,4 @@
 import { RichText, useBlockProps } from "@wordpress/block-editor";
-
-import { Dashicon } from "@wordpress/components";
 import RightArrow from "./assets/RightArrow";
 import Airplane from "./assets/Airplane";
 import CSSVars from "./utils/CSSVars";

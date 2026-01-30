@@ -6,7 +6,7 @@ import ImageOverlay from "./ImageOverlay";
 
 export default function SelectImage() {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles, container } = attributes;
+	const { container } = attributes;
 	const { image } = container;
 
 	const onImageSelect = (media) => {

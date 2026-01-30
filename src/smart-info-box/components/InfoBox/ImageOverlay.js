@@ -4,8 +4,8 @@ import ColorControl from "../common/ColorControl";
 import { useAttributes } from "../../context/AttributesContext";
 export default function ImageOverlay({ }) {
 	const { attributes, setAttributes } = useAttributes();
-	const { styles, container } = attributes;
-	const { imageOverlayOpacity, imageOverlayColor } = container;
+	const { container } = attributes;
+	const { imageOverlayOpacity } = container;
 
 	const onOpacityChange = (value) => {
 		setAttributes({
