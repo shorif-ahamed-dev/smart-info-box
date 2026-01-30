@@ -41,17 +41,13 @@ export default function LayoutSettings({ attributes, setAttributes }) {
 			<br />
 			<TabControl label="Content Alignment" options={options} value={contentAlignment} onChange={onAlignMentChange} />
 			<br />
-			<div style={{
-				display: 'flex',
-				gap: "8px",
-				alignItems: "center"
-
-			}}>
-				<span>Columns</span>
-				<Responsive deviceType={deviceType} setDevice={setDevice} />
+			<div className="components-header">
+				<p>
+					Columns
+					<Responsive deviceType={deviceType} setDevice={setDevice} />
+				</p>
 			</div>
 			<RangeControl
-
 				min={1}
 				max={6}
 				value={infoBox?.columns?.[deviceType]}

@@ -6,6 +6,8 @@ import Airplane from "../assets/Airplane";
 import RightArrow from "../assets/RightArrow";
 import CSSVars from "../utils/CSSVars";
 import getBackgroundStyle from "../utils/getBackgroundStyle";
+import { Icon, check, widget } from '@wordpress/icons';
+import * as icons from 'lucide-react';
 
 export default function InfoBox2({ attributes, onChangeValue }) {
 	const isSiteEditor = document.body.classList.contains("site-editor");
@@ -30,6 +32,22 @@ export default function InfoBox2({ attributes, onChangeValue }) {
 	const mouseLeave = (e) => {
 		e.currentTarget.style.boxShadow = "";
 	};
+	const renderMedia = () => {
+		if (icon?.url) {
+			return (
+				<img
+					src={icon.url}
+					alt={title || "Icon"}
+				/>
+			);
+		}
+		if (icon?.dashIcon) {
+			const SelectedIcon = icons[icon.dashIcon];
+			return SelectedIcon ? <SelectedIcon size={48} strokeWidth={2} fill={icon.dashIcon === "Circle" ? "currentColor" : "none"} /> : <Airplane />;
+		}
+		return <Airplane />;
+	};
+
 	return (
 		<div {...blockProps}>
 			<div
@@ -37,8 +55,7 @@ export default function InfoBox2({ attributes, onChangeValue }) {
 				style={backgroundStyles}
 			>
 				<div className="mediaContainer">
-					{/* <Airplane /> */}
-					{icon.dashIcon && <Dashicon icon={"airplane"} size={28} />}
+					{renderMedia()}
 				</div>
 				<RichText
 					tagName="h4"

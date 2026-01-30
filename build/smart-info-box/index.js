@@ -149,80 +149,112 @@ __webpack_require__.r(__webpack_exports__);
 function Box2({
   active
 }) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
-    width: "78",
-    height: "72",
-    viewBox: "0 0 78 72",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-      d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
-      fill: "white"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-      d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
-      stroke: "#8796A1",
-      "stroke-width": "1.2"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "10",
-      y: "12.5",
-      width: "14",
-      height: "14",
-      rx: "3",
-      fill: "#58707F"
-    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "28",
-      y: "14.5",
-      width: "40",
-      height: "5",
-      rx: "2.5",
-      fill: "#58707F"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "28",
-      y: "21.5",
-      width: "20",
-      height: "3",
-      rx: "1.5",
-      fill: "#58707F"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "10",
-      y: "32.5",
-      width: "58",
-      height: "3",
-      rx: "1.5",
-      fill: "#9EA9B2"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "10",
-      y: "38.5",
-      width: "58",
-      height: "3",
-      rx: "1.5",
-      fill: "#9EA9B2"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "10",
-      y: "44.5",
-      width: "28",
-      height: "3",
-      rx: "1.5",
-      fill: "#9EA9B2"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-      x: "10",
-      y: "53.5",
-      width: "20",
-      height: "6",
-      rx: "1.5",
-      fill: "#58707F"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
-        id: "clip0_11720_249014",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-          width: "8",
-          height: "8",
-          fill: "white",
-          transform: "translate(13 15.5)"
+  return (
+    /*#__PURE__*/
+    // <svg width="78" height="72" viewBox="0 0 78 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //     <path d="M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z" fill="white" />
+    //     <path d="M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z" stroke="#8796A1" stroke-width="1.2" />
+    //     <rect x="10" y="12.5" width="14" height="14" rx="3" fill="#58707F" />
+    //     {active && <CheckMark />}
+    //     <g clip-path="url(#clip0_11720_249013)">
+    //         <path d="M38.9999 14.4L40.1999 16.8L42.5999 17.1L40.9519 18.948L41.3999 21.6L38.9999 20.4L36.5999 21.6L37.0519 18.948L35.3999 17.1L37.7999 16.8L38.9999 14.4Z" fill="white" />
+    //     </g>
+    //     <rect x="28" y="14.5" width="40" height="5" rx="2.5" fill="#58707F" />
+    //     <rect x="28" y="21.5" width="20" height="3" rx="1.5" fill="#58707F" />
+    //     <rect x="10" y="32.5" width="58" height="3" rx="1.5" fill="#9EA9B2" />
+    //     <rect x="10" y="38.5" width="58" height="3" rx="1.5" fill="#9EA9B2" />
+    //     <rect x="10" y="44.5" width="28" height="3" rx="1.5" fill="#9EA9B2" />
+    //     <rect x="10" y="53.5" width="20" height="6" rx="1.5" fill="#58707F" />
+    //     <defs>
+    //         <clipPath id="clip0_11720_249014">
+    //             <rect width="8" height="8" fill="white" transform="translate(13 15.5)" />
+    //         </clipPath>
+    //         <clipPath id="clip1_11720_249013">
+    //             <rect width="12" height="12" fill="white" transform="translate(61 5)" />
+    //         </clipPath>
+    //     </defs>
+    // </svg>
+    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+      width: "78",
+      height: "72",
+      viewBox: "0 0 78 72",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
+        fill: "white"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
+        stroke: "currentColor",
+        "stroke-width": "1.2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "10",
+        y: "12.5",
+        width: "14",
+        height: "14",
+        rx: "3",
+        fill: "#58707F"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("g", {
+        "clip-path": "url(#clip0_11720_249014)",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+          d: "M16.9999 15.9L18.1999 18.3L20.5999 18.6L18.9519 20.448L19.3999 23.1L16.9999 21.9L14.5999 23.1L15.0519 20.448L13.3999 18.6L15.7999 18.3L16.9999 15.9Z",
+          fill: "white"
         })
-      })
-    })]
-  });
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "28",
+        y: "14.5",
+        width: "40",
+        height: "5",
+        rx: "2.5",
+        fill: "#58707F"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "28",
+        y: "21.5",
+        width: "20",
+        height: "3",
+        rx: "1.5",
+        fill: "#58707F"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "10",
+        y: "32.5",
+        width: "58",
+        height: "3",
+        rx: "1.5",
+        fill: "#9EA9B2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "10",
+        y: "38.5",
+        width: "58",
+        height: "3",
+        rx: "1.5",
+        fill: "#9EA9B2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "10",
+        y: "44.5",
+        width: "28",
+        height: "3",
+        rx: "1.5",
+        fill: "#9EA9B2"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+        x: "10",
+        y: "53.5",
+        width: "20",
+        height: "6",
+        rx: "1.5",
+        fill: "#58707F"
+      }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
+          id: "clip0_11720_249014",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+            width: "8",
+            height: "8",
+            fill: "white",
+            transform: "translate(13 15.5)"
+          })
+        })
+      })]
+    })
+  );
 }
 
 /***/ },
@@ -256,7 +288,7 @@ function Box3({
       fill: "white"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
       d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
-      stroke: "#8796A1",
+      stroke: "currentColor",
       "stroke-width": "1.2"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
       x: "7",
@@ -265,7 +297,13 @@ function Box3({
       height: "14",
       rx: "3",
       fill: "#58707F"
-    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("g", {
+      "clip-path": "url(#clip0_11720_249015)",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M13.9999 21.4L15.1999 23.8L17.5999 24.1L15.9519 25.948L16.3999 28.6L13.9999 27.4L11.5999 28.6L12.0519 25.948L10.3999 24.1L12.7999 23.8L13.9999 21.4Z",
+        fill: "white"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
       x: "27",
       y: "18",
       width: "40",
@@ -300,7 +338,7 @@ function Box3({
       height: "6",
       rx: "1.5",
       fill: "#58707F"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
+    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
         id: "clip0_11720_249015",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
@@ -345,7 +383,7 @@ function Box4({
       fill: "white"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
       d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
-      stroke: "#8796A1",
+      stroke: "currentColor",
       "stroke-width": "1.2"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
       x: "7",
@@ -354,7 +392,13 @@ function Box4({
       height: "14",
       rx: "3",
       fill: "#58707F"
-    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("g", {
+      "clip-path": "url(#clip0_11720_249016)",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M13.9999 16.9L15.1999 19.3L17.5999 19.6L15.9519 21.448L16.3999 24.1L13.9999 22.9L11.5999 24.1L12.0519 21.448L10.3999 19.6L12.7999 19.3L13.9999 16.9Z",
+        fill: "white"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
       x: "51",
       y: "17.5",
       width: "20",
@@ -389,9 +433,9 @@ function Box4({
       height: "3",
       rx: "1.5",
       fill: "#9EA9B2"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
+    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
-        id: "clip0_11774_65270",
+        id: "clip0_11720_249016",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
           width: "8",
           height: "8",
@@ -430,12 +474,12 @@ function Box5({
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-      d: "M6 0.75H72C73.4352 0.75 74.4361 0.752017 75.1914 0.853516C75.9252 0.952169 76.3141 1.13242 76.5908 1.40918C76.8676 1.68594 77.0478 2.07482 77.1465 2.80859C77.248 3.5639 77.25 4.56485 77.25 6V66C77.25 67.4352 77.248 68.4361 77.1465 69.1914C77.0478 69.9252 76.8676 70.3141 76.5908 70.5908C76.3141 70.8676 75.9252 71.0478 75.1914 71.1465C74.4361 71.248 73.4352 71.25 72 71.25H6C4.56485 71.25 3.5639 71.248 2.80859 71.1465C2.07482 71.0478 1.68594 70.8676 1.40918 70.5908C1.13242 70.3141 0.952169 69.9252 0.853516 69.1914C0.752017 68.4361 0.75 67.4352 0.75 66V6C0.75 4.56485 0.752017 3.5639 0.853516 2.80859C0.952169 2.07482 1.13242 1.68594 1.40918 1.40918C1.68594 1.13242 2.07482 0.952169 2.80859 0.853516C3.5639 0.752017 4.56485 0.75 6 0.75Z",
+      d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
       fill: "white"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-      d: "M6 0.75H72C73.4352 0.75 74.4361 0.752017 75.1914 0.853516C75.9252 0.952169 76.3141 1.13242 76.5908 1.40918C76.8676 1.68594 77.0478 2.07482 77.1465 2.80859C77.248 3.5639 77.25 4.56485 77.25 6V66C77.25 67.4352 77.248 68.4361 77.1465 69.1914C77.0478 69.9252 76.8676 70.3141 76.5908 70.5908C76.3141 70.8676 75.9252 71.0478 75.1914 71.1465C74.4361 71.248 73.4352 71.25 72 71.25H6C4.56485 71.25 3.5639 71.248 2.80859 71.1465C2.07482 71.0478 1.68594 70.8676 1.40918 70.5908C1.13242 70.3141 0.952169 69.9252 0.853516 69.1914C0.752017 68.4361 0.75 67.4352 0.75 66V6C0.75 4.56485 0.752017 3.5639 0.853516 2.80859C0.952169 2.07482 1.13242 1.68594 1.40918 1.40918C1.68594 1.13242 2.07482 0.952169 2.80859 0.853516C3.5639 0.752017 4.56485 0.75 6 0.75Z",
-      stroke: "#1A74E4",
-      "stroke-width": "1.5"
+      d: "M6 0.599609H72C73.4312 0.599609 74.4442 0.600892 75.2119 0.704102C75.9623 0.804991 76.388 0.993456 76.6973 1.30273C77.0065 1.61201 77.195 2.03768 77.2959 2.78809C77.3991 3.55575 77.4004 4.56883 77.4004 6V66C77.4004 67.4312 77.3991 68.4442 77.2959 69.2119C77.195 69.9623 77.0065 70.388 76.6973 70.6973C76.388 71.0065 75.9623 71.195 75.2119 71.2959C74.4442 71.3991 73.4312 71.4004 72 71.4004H6C4.56883 71.4004 3.55575 71.3991 2.78809 71.2959C2.03768 71.195 1.61201 71.0065 1.30273 70.6973C0.993456 70.388 0.804991 69.9623 0.704102 69.2119C0.600892 68.4442 0.599609 67.4312 0.599609 66V6C0.599609 4.56883 0.600892 3.55575 0.704102 2.78809C0.804991 2.03768 0.993456 1.61201 1.30273 1.30273C1.61201 0.993456 2.03768 0.804991 2.78809 0.704102C3.55575 0.600892 4.56883 0.599609 6 0.599609Z",
+      stroke: "currentColor",
+      "stroke-width": "1.2"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
       x: "10.5",
       y: "13.5",
@@ -478,24 +522,22 @@ function Box5({
       height: "17",
       rx: "8.5",
       fill: "#58707F"
-    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("defs", {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
-        id: "clip0_11782_74516",
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("g", {
+      "clip-path": "url(#clip0_11720_249017)",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M39.0003 8.6286L40.4575 11.5429L43.3718 11.9072L41.3706 14.1512L41.9146 17.3715L39.0003 15.9143L36.086 17.3715L36.6349 14.1512L34.6289 11.9072L37.5432 11.5429L39.0003 8.6286Z",
+        fill: "white"
+      })
+    }), active && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_CheckMark__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("defs", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
+        id: "clip0_11720_249017",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
           width: "9.71429",
           height: "9.71429",
           fill: "white",
-          transform: "translate(34.1426 8.14258)"
+          transform: "translate(34.1426 8.14288)"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("clipPath", {
-        id: "clip1_11782_74516",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
-          width: "12",
-          height: "12",
-          fill: "white",
-          transform: "translate(61 5)"
-        })
-      })]
+      })
     })]
   });
 }
@@ -1340,7 +1382,7 @@ function TransparentBox() {
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"infoBox":{"type":"object","default":{"layout":"layout-one","gap":20,"columns":{"Desktop":1,"Tablet":2,"Mobile":1}}},"container":{"type":"object","default":{"contentAlignment":"center","columnsGap":16,"rowGap":12,"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#ddd","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderColor":"#cccccc","boxShadow":"none","padding":{"Desktop":"28px 24px 28px 24px","Tablet":"0px 0px 0px 0px","Mobile":"28px 24px 28px 24px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"}}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"color":"#ddd","fontSize":24}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":0}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":14,"iconSize":14,"width":"","height":"","textColor":"black","borderType":"none","borderWidth":1,"borderColor":"#cccccc","backgroundColor":"none","padding":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"gap":"6px"}},"featuredContainer":{"type":"object","default":{"badge":true,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","fontSize":"13px","padding":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 4px 4px 4px","Tablet":"4px 4px 4px 4px","Mobile":"4px 4px 4px 4px"},"color":"#7c3aed"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featuredContainer":"featuredContainer"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-info-box","version":"0.1.0","title":"Smart Info Box","category":"smart-post","icon":"smiley","description":"Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.","example":{},"attributes":{"infoBox":{"type":"object","default":{"layout":"layout-one","gap":20,"columns":{"Desktop":1,"Tablet":2,"Mobile":1}}},"container":{"type":"object","default":{"contentAlignment":"center","columnsGap":16,"rowGap":12,"color":"black","backgroundType":"solid","backgroundColor":"#ffffff","gradient":"linear-gradient(135deg,#1E9600 0%, #FFF200 0%, #FF0000 100%)","image":{"id":"","url":"","position":"center","size":"cover","repeat":"no-repeat"},"imageOverlayColor":"#ddd","imageOverlayOpacity":50,"borderType":"solid","borderWidth":1,"borderColor":"#cccccc","boxShadow":"none","padding":{"Desktop":"28px 24px 28px 24px","Tablet":"0px 0px 0px 0px","Mobile":"28px 24px 28px 24px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"}}},"mediaContainer":{"type":"object","default":{"width":"min-content","height":"min-content","backgroundColor":"black","padding":12,"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 4px 4px 4px","Tablet":"4px 4px 4px 4px","Mobile":"4px 4px 4px 4px"},"color":"white","fontSize":24}},"title":{"type":"object","default":{"color":"black","fontSize":20,"padding":0}},"description":{"type":"object","default":{"color":"#757575","fontSize":14,"padding":"0px"}},"cta":{"type":"object","default":{"fontSize":14,"iconSize":14,"width":"","height":"","textColor":"black","borderType":"none","borderWidth":1,"borderColor":"#cccccc","backgroundColor":"none","padding":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"gap":"6px"}},"featuredContainer":{"type":"object","default":{"badge":true,"badgePosition":"top-left","top":0,"bottom":null,"right":0,"left":null,"width":"","height":"","backgroundColor":"#e0e0e0","fontSize":"13px","padding":{"Desktop":"4px 8px 4px 8px","Tablet":"4px 8px 4px 8px","Mobile":"4px 8px 4px 8px"},"margin":{"Desktop":"0px 0px 0px 0px","Tablet":"0px 0px 0px 0px","Mobile":"0px 0px 0px 0px"},"borderRadius":{"Desktop":"4px 4px 4px 4px","Tablet":"4px 4px 4px 4px","Mobile":"4px 4px 4px 4px"},"color":"#7c3aed"}}},"providesContext":{"smartInfoBox/infoBox":"infoBox","smartInfoBox/container":"container","smartInfoBox/mediaContainer":"mediaContainer","smartInfoBox/title":"title","smartInfoBox/description":"description","smartInfoBox/cta":"cta","smartInfoBox/featuredContainer":"featuredContainer"},"supports":{"color":{"background":true,"text":true},"spacing":{"padding":true,"margin":true},"html":false,"align":["wide"]},"textdomain":"smart-info-box","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2165,18 +2207,14 @@ function LayoutSettings({
       options: options,
       value: contentAlignment,
       onChange: onAlignMentChange
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      style: {
-        display: 'flex',
-        gap: "8px",
-        alignItems: "center"
-      },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-        children: "Columns"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Responsive__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        deviceType: deviceType,
-        setDevice: setDevice
-      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "components-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
+        children: ["Columns", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Responsive__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          deviceType: deviceType,
+          setDevice: setDevice
+        })]
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
       min: 1,
       max: 6,
@@ -2906,8 +2944,11 @@ const ColorControl = ({
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
         children: label
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          onClick: handleResetColor
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          role: "button",
+          cursor: "pointer",
+          onClick: handleResetColor,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
           onClick: () => setIsPickerOpen(prev => !prev),
           xmlns: "http://www.w3.org/2000/svg",
@@ -3455,10 +3496,10 @@ const TitlePanle = () => {
       max: 100,
       step: 1
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ColorControl__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      label: "Background Color",
+      label: "Title Color",
       attributesKey: "title",
       subKey: "color",
-      defaultColor: "#ffffff"
+      defaultColor: "black"
     })]
   });
 };

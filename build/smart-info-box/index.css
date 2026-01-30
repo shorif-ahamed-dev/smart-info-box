@@ -87,6 +87,7 @@
 .components-panel__body .components-header span {
   display: flex;
   justify-content: center;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 }

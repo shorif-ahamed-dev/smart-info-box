@@ -79,11 +79,11 @@ return array(
 						'Mobile' => '0px 0px 0px 0px'
 					),
 					'borderRadius' => array(
-						'Desktop' => '4px 8px 4px 8px',
-						'Tablet' => '4px 8px 4px 8px',
-						'Mobile' => '4px 8px 4px 8px'
+						'Desktop' => '4px 4px 4px 4px',
+						'Tablet' => '4px 4px 4px 4px',
+						'Mobile' => '4px 4px 4px 4px'
 					),
-					'color' => '#ddd',
+					'color' => 'white',
 					'fontSize' => 24
 				)
 			),
@@ -223,7 +223,7 @@ return array(
 						'position' => 'center',
 						'size' => 'cover',
 						'repeat' => 'no-repeat',
-						'dashIcon' => 'dashicons-airplane'
+						'dashIcon' => ''
 					),
 					'description' => 'Contains a high concentration of botanical, marine, and biological extracts. Has no artificial fragrances.',
 					'title' => 'Automated AI Chatbotsx',

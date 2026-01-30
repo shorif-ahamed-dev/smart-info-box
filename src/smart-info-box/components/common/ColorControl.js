@@ -37,7 +37,9 @@ const ColorControl = ({
 			<div className="components-header">
 				<p>{label}</p>
 				<span>
-					<ResetIcon onClick={handleResetColor} />
+					<button role="button" cursor="pointer" onClick={handleResetColor}>
+						<ResetIcon />
+					</button>
 					<svg
 						onClick={() => setIsPickerOpen((prev) => !prev)}
 						xmlns="http://www.w3.org/2000/svg"

@@ -74,11 +74,11 @@
           "Mobile": "0px 0px 0px 0px"
         },
         "borderRadius": {
-          "Desktop": "4px 8px 4px 8px",
-          "Tablet": "4px 8px 4px 8px",
-          "Mobile": "4px 8px 4px 8px"
+          "Desktop": "4px 4px 4px 4px",
+          "Tablet": "4px 4px 4px 4px",
+          "Mobile": "4px 4px 4px 4px"
         },
-        "color": "#ddd",
+        "color": "white",
         "fontSize": 24
       }
     },

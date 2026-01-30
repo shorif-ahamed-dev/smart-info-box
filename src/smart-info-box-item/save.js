@@ -1,9 +1,11 @@
 import { RichText, useBlockProps } from "@wordpress/block-editor";
+
 import { Dashicon } from "@wordpress/components";
 import RightArrow from "./assets/RightArrow";
 import Airplane from "./assets/Airplane";
 import CSSVars from "./utils/CSSVars";
 import getBackgroundStyle from "./utils/getBackgroundStyle";
+import * as icons from 'lucide-react';
 
 export default function save({ attributes }) {
 	const { icon, title, description, buttonText } = attributes.content;
@@ -15,6 +17,22 @@ export default function save({ attributes }) {
 		return Object.entries(vars)
 			.map(([key, value]) => `${key}: ${value};`)
 			.join("\n\t\t");
+	};
+
+	const renderMedia = () => {
+		if (icon?.url) {
+			return (
+				<img
+					src={icon.url}
+					alt={title || "Icon"}
+				/>
+			);
+		}
+		if (icon?.dashIcon) {
+			const SelectedIcon = icons[icon.dashIcon];
+			return SelectedIcon ? <SelectedIcon size={48} strokeWidth={2} /> : <Airplane />;
+		}
+		return <Airplane />;
 	};
 
 	return (
@@ -43,8 +61,7 @@ export default function save({ attributes }) {
 					style={backgroundStyles}
 				>
 					<div className="mediaContainer">
-						{/* <Airplane /> */}
-						{icon.dashIcon && <Dashicon icon={"airplane"} size={28} />}
+						{renderMedia()}
 					</div>
 					<RichText.Content tagName="h4" value={title} className="title" />
 					<RichText.Content

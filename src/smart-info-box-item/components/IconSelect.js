@@ -55,9 +55,9 @@ export default function IconSelect({ attributes, setAttributes }) {
 				</button>
 			</div>
 			<br />
-			<br />
 			{toggleType === "custom" ? (
 				<div className="image-upload-box">
+
 					<MediaUploadCheck>
 						<MediaUpload
 							allowedTypes={["image"]}
@@ -70,7 +70,7 @@ export default function IconSelect({ attributes, setAttributes }) {
 											<img
 												src={icon.url}
 												alt={icon.alt || ""}
-												// onClick={open}
+											// onClick={open}
 											/>
 
 											<div className="image-actions">

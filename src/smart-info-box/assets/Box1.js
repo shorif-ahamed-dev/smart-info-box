@@ -1,6 +1,4 @@
 import CheckMark from "./CheckMark"
-
-
 function Box1({ active }) {
     return (
         <svg width="78" height="72" viewBox="0 0 78 72" fill="none" xmlns="http://www.w3.org/2000/svg">

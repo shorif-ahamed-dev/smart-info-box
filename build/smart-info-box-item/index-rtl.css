@@ -182,6 +182,7 @@
 .image-upload-box {
   position: relative;
   height: 140px;
+  margin-top: 12px;
   border: 1px solid #d6c2f5;
   border-radius: 2px;
   box-sizing: border-box;
@@ -259,15 +260,11 @@
 .def--bb-cd-eebada-7gj15f {
   margin-bottom: 0 !important;
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/smart-info-box-item/components/dashicon-picker.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************/
 .sib-dashicon-picker {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 8px;
 }
-
 .sib-dashicon-btn {
   padding: 10px;
   display: flex;
@@ -275,12 +272,14 @@
   justify-content: center;
   border: 1px solid #ddd;
 }
-
 .sib-dashicon-btn .dashicons {
   font-size: 20px;
 }
-
 .sib-dashicon-btn.is-pressed {
   border-color: #6f22dd;
   background: rgba(111, 34, 221, 0.1);
 }
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/smart-info-box-item/components/dashicon-picker.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+

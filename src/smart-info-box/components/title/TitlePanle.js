@@ -20,10 +20,10 @@ const TitlePanle = () => {
 				step={1}
 			/>
 			<ColorControl
-				label="Background Color"
+				label="Title Color"
 				attributesKey="title"
 				subKey="color"
-				defaultColor="#ffffff"
+				defaultColor="black"
 			/>
 		</>
 	);
