@@ -20,7 +20,6 @@ const getBackgroundStyle = (styles) => {
                 : '';
             bgStyle.position = 'relative';
             bgStyle.backgroundImage = `${overlay}, url(${styles.image.url})`;
-            // bgStyle.backgroundImage = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity})), url(${styles.image.url})`;
         }
     }
 
