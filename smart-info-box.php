@@ -14,38 +14,36 @@
  * @package CreateBlock
  */
 
-if (! defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function create_block_smart_info_box_block_categories($categories, $post)
-{
+function create_block_smart_info_box_block_categories( $categories, $post ) {
 
 	$custom_category = array(
 		array(
 			'slug'  => 'smart-post',
-			'title' => __('Smart Post', 'smart-info-box'),
+			'title' => __( 'Smart Post', 'smart-info-box' ),
 		),
 	);
 
-	return array_merge($custom_category, $categories);
+	return array_merge( $custom_category, $categories );
 }
-add_filter('block_categories_all', 'create_block_smart_info_box_block_categories', 10, 2);
+add_filter( 'block_categories_all', 'create_block_smart_info_box_block_categories', 10, 2 );
 
-function create_block_smart_info_box_block_init()
-{
-	if (function_exists('wp_register_block_types_from_metadata_collection')) {
-		wp_register_block_types_from_metadata_collection(__DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php');
+function create_block_smart_info_box_block_init() {
+	if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) {
+		wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 		return;
 	}
 
-	if (function_exists('wp_register_block_metadata_collection')) {
-		wp_register_block_metadata_collection(__DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php');
+	if ( function_exists( 'wp_register_block_metadata_collection' ) ) {
+		wp_register_block_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 	}
 
-	$manifest_data = require __DIR__ . '/build/blocks-manifest.php';
-	foreach (array_keys($manifest_data) as $block_type) {
-		register_block_type(__DIR__ . "/build/{$block_type}");
+	$manifest_data = include __DIR__ . '/build/blocks-manifest.php';
+	foreach ( array_keys( $manifest_data ) as $block_type ) {
+		register_block_type( __DIR__ . "/build/{$block_type}" );
 	}
 }
-add_action('init', 'create_block_smart_info_box_block_init');
+add_action( 'init', 'create_block_smart_info_box_block_init' );
